@@ -1,4 +1,4 @@
-# RxTfL
+# RxTfL for Swift
 
 Unofficial, auto-generated wrapper (observables) around Transport for London's unified API.  Depends on RxSwift & Alamofire.
 
