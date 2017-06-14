@@ -10,6 +10,7 @@ import Foundation
 
 /** Object that represents an end to end journey (see schematic). */
 open class Journey: JSONEncodable {
+
     public var startDateTime: Date?
     public var duration: Int32?
     public var arrivalDateTime: Date?
@@ -24,6 +25,7 @@ open class Journey: JSONEncodable {
         nillableDictionary["duration"] = self.duration?.encodeToJSON()
         nillableDictionary["arrivalDateTime"] = self.arrivalDateTime?.encodeToJSON()
         nillableDictionary["legs"] = self.legs?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

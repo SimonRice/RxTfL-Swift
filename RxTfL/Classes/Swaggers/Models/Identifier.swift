@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Identifier: JSONEncodable {
+
     public var id: String?
     public var name: String?
     public var uri: String?
@@ -27,6 +28,7 @@ open class Identifier: JSONEncodable {
         nillableDictionary["fullName"] = self.fullName
         nillableDictionary["type"] = self.type
         nillableDictionary["crowding"] = self.crowding?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

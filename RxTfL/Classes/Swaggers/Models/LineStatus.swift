@@ -9,6 +9,7 @@ import Foundation
 
 
 open class LineStatus: JSONEncodable {
+
     public var id: Int32?
     public var lineId: String?
     public var statusSeverity: Int32?
@@ -33,6 +34,7 @@ open class LineStatus: JSONEncodable {
         nillableDictionary["modified"] = self.modified?.encodeToJSON()
         nillableDictionary["validityPeriods"] = self.validityPeriods?.encodeToJSON()
         nillableDictionary["disruption"] = self.disruption?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

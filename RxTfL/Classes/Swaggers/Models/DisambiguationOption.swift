@@ -9,6 +9,7 @@ import Foundation
 
 
 open class DisambiguationOption: JSONEncodable {
+
     public var description: String?
     public var uri: String?
 
@@ -19,6 +20,7 @@ open class DisambiguationOption: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["description"] = self.description
         nillableDictionary["uri"] = self.uri
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

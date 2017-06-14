@@ -10,6 +10,7 @@ import Foundation
 
 /** A paged response containing StopPoints */
 open class StopPointsResponse: JSONEncodable {
+
     /** The centre latitude/longitude of this list of StopPoints */
     public var centrePoint: [Double]?
     /** Collection of stop points */
@@ -31,6 +32,7 @@ open class StopPointsResponse: JSONEncodable {
         nillableDictionary["pageSize"] = self.pageSize?.encodeToJSON()
         nillableDictionary["total"] = self.total?.encodeToJSON()
         nillableDictionary["page"] = self.page?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Street: JSONEncodable {
+
     /** Street name */
     public var name: String?
     /** Type of road closure. Some example values:              Open &#x3D; road is open, not blocked, not closed, not restricted. It maybe that the disruption has been moved out of the carriageway.              Partial Closure &#x3D; road is partially blocked, closed or restricted.               Full Closure &#x3D; road is fully blocked or closed. */
@@ -33,6 +34,7 @@ open class Street: JSONEncodable {
         nillableDictionary["segments"] = self.segments?.encodeToJSON()
         nillableDictionary["sourceSystemId"] = self.sourceSystemId?.encodeToJSON()
         nillableDictionary["sourceSystemKey"] = self.sourceSystemKey
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

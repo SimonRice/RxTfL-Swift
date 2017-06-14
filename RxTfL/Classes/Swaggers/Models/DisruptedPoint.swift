@@ -9,6 +9,7 @@ import Foundation
 
 
 open class DisruptedPoint: JSONEncodable {
+
     public var atcoCode: String?
     public var fromDate: Date?
     public var toDate: Date?
@@ -35,6 +36,7 @@ open class DisruptedPoint: JSONEncodable {
         nillableDictionary["stationAtcoCode"] = self.stationAtcoCode
         nillableDictionary["appearance"] = self.appearance
         nillableDictionary["additionalInformation"] = self.additionalInformation
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class GeoPointBBox: JSONEncodable {
+
     public var swLat: Double?
     public var swLon: Double?
     public var neLat: Double?
@@ -23,6 +24,7 @@ open class GeoPointBBox: JSONEncodable {
         nillableDictionary["swLon"] = self.swLon
         nillableDictionary["neLat"] = self.neLat
         nillableDictionary["neLon"] = self.neLon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

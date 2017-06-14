@@ -9,6 +9,7 @@ import Foundation
 
 
 open class SearchMatch: JSONEncodable {
+
     public var id: String?
     public var url: String?
     public var name: String?
@@ -25,6 +26,7 @@ open class SearchMatch: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

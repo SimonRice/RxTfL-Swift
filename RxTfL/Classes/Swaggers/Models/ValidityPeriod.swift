@@ -10,6 +10,7 @@ import Foundation
 
 /** Represents a period for which a planned works is valid. */
 open class ValidityPeriod: JSONEncodable {
+
     /** Gets or sets the start date. */
     public var fromDate: Date?
     /** Gets or sets the end date. */
@@ -25,6 +26,7 @@ open class ValidityPeriod: JSONEncodable {
         nillableDictionary["fromDate"] = self.fromDate?.encodeToJSON()
         nillableDictionary["toDate"] = self.toDate?.encodeToJSON()
         nillableDictionary["isNow"] = self.isNow
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

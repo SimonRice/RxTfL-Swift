@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Redirect: JSONEncodable {
+
     public var shortUrl: String?
     public var longUrl: String?
     public var active: Bool?
@@ -21,6 +22,7 @@ open class Redirect: JSONEncodable {
         nillableDictionary["shortUrl"] = self.shortUrl
         nillableDictionary["longUrl"] = self.longUrl
         nillableDictionary["active"] = self.active
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

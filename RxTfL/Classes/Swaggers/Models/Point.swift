@@ -10,6 +10,7 @@ import Foundation
 
 /** Represents a point located at a latitude and longitude using the WGS84 co-ordinate system. */
 open class Point: JSONEncodable {
+
     /** WGS84 latitude of the location. */
     public var lat: Double?
     /** WGS84 longitude of the location. */
@@ -22,6 +23,7 @@ open class Point: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

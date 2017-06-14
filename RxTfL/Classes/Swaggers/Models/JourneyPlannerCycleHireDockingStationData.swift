@@ -9,6 +9,7 @@ import Foundation
 
 
 open class JourneyPlannerCycleHireDockingStationData: JSONEncodable {
+
     public var originNumberOfBikes: Int32?
     public var destinationNumberOfBikes: Int32?
     public var originNumberOfEmptySlots: Int32?
@@ -27,6 +28,7 @@ open class JourneyPlannerCycleHireDockingStationData: JSONEncodable {
         nillableDictionary["destinationNumberOfEmptySlots"] = self.destinationNumberOfEmptySlots?.encodeToJSON()
         nillableDictionary["originId"] = self.originId
         nillableDictionary["destinationId"] = self.destinationId
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class OrderedRoute: JSONEncodable {
+
     public var name: String?
     public var naptanIds: [String]?
     public var serviceType: String?
@@ -21,6 +22,7 @@ open class OrderedRoute: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["naptanIds"] = self.naptanIds?.encodeToJSON()
         nillableDictionary["serviceType"] = self.serviceType
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

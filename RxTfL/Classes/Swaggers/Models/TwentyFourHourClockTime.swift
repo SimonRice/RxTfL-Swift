@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TwentyFourHourClockTime: JSONEncodable {
+
     public var hour: String?
     public var minute: String?
 
@@ -19,6 +20,7 @@ open class TwentyFourHourClockTime: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["hour"] = self.hour
         nillableDictionary["minute"] = self.minute
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

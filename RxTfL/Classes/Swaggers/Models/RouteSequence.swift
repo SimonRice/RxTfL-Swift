@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteSequence: JSONEncodable {
+
     public var lineId: String?
     public var lineName: String?
     public var direction: String?
@@ -33,6 +34,7 @@ open class RouteSequence: JSONEncodable {
         nillableDictionary["stations"] = self.stations?.encodeToJSON()
         nillableDictionary["stopPointSequences"] = self.stopPointSequences?.encodeToJSON()
         nillableDictionary["orderedLineRoutes"] = self.orderedLineRoutes?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

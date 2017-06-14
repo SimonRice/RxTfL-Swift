@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Ticket: JSONEncodable {
+
     public var passengerType: String?
     public var ticketType: TicketType?
     public var ticketTime: TicketTime?
@@ -31,6 +32,7 @@ open class Ticket: JSONEncodable {
         nillableDictionary["mode"] = self.mode
         nillableDictionary["displayOrder"] = self.displayOrder?.encodeToJSON()
         nillableDictionary["messages"] = self.messages?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

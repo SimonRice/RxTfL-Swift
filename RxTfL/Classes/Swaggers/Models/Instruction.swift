@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Instruction: JSONEncodable {
+
     public var summary: String?
     public var detailed: String?
     public var steps: [InstructionStep]?
@@ -21,6 +22,7 @@ open class Instruction: JSONEncodable {
         nillableDictionary["summary"] = self.summary
         nillableDictionary["detailed"] = self.detailed
         nillableDictionary["steps"] = self.steps?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

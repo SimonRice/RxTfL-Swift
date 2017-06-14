@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Crowding: JSONEncodable {
+
     /** Busiest times at a station (static information) */
     public var passengerFlows: [PassengerFlow]?
     /** Train Loading on a scale 1-6, 1 being \&quot;Very quiet\&quot; and 6 being \&quot;Exceptionally busy\&quot; (static information) */
@@ -21,6 +22,7 @@ open class Crowding: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["passengerFlows"] = self.passengerFlows?.encodeToJSON()
         nillableDictionary["trainLoadings"] = self.trainLoadings?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

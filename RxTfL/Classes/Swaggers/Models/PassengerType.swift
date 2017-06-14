@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PassengerType: JSONEncodable {
+
     public var type: String?
     public var description: String?
     public var displayName: String?
@@ -23,6 +24,7 @@ open class PassengerType: JSONEncodable {
         nillableDictionary["description"] = self.description
         nillableDictionary["displayName"] = self.displayName
         nillableDictionary["displayOrder"] = self.displayOrder?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

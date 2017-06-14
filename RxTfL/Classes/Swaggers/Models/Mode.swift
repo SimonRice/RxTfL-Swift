@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Mode: JSONEncodable {
+
     public var isTflService: Bool?
     public var isFarePaying: Bool?
     public var isScheduledService: Bool?
@@ -23,6 +24,7 @@ open class Mode: JSONEncodable {
         nillableDictionary["isFarePaying"] = self.isFarePaying
         nillableDictionary["isScheduledService"] = self.isScheduledService
         nillableDictionary["modeName"] = self.modeName
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

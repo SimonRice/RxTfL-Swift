@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RecommendationResponse: JSONEncodable {
+
     public var recommendations: [Recommendation]?
 
     public init() {}
@@ -17,6 +18,7 @@ open class RecommendationResponse: JSONEncodable {
     open func encodeToJSON() -> Any {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["recommendations"] = self.recommendations?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

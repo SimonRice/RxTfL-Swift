@@ -9,6 +9,7 @@ import Foundation
 
 
 open class SearchResponse: JSONEncodable {
+
     public var query: String?
     public var from: Int32?
     public var page: Int32?
@@ -31,6 +32,7 @@ open class SearchResponse: JSONEncodable {
         nillableDictionary["total"] = self.total?.encodeToJSON()
         nillableDictionary["matches"] = self.matches?.encodeToJSON()
         nillableDictionary["maxScore"] = self.maxScore
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteSection: JSONEncodable {
+
     /** The Id of the route */
     public var id: String?
     /** The Id of the Line */
@@ -41,6 +42,7 @@ open class RouteSection: JSONEncodable {
         nillableDictionary["originationName"] = self.originationName
         nillableDictionary["destinationName"] = self.destinationName
         nillableDictionary["routeSectionNaptanEntrySequence"] = self.routeSectionNaptanEntrySequence?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

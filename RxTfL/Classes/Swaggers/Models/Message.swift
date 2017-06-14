@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Message: JSONEncodable {
+
     public var bulletOrder: Int32?
     public var header: Bool?
     public var messageText: String?
@@ -25,6 +26,7 @@ open class Message: JSONEncodable {
         nillableDictionary["messageText"] = self.messageText
         nillableDictionary["linkText"] = self.linkText
         nillableDictionary["url"] = self.url
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

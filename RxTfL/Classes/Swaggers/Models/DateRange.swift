@@ -9,6 +9,7 @@ import Foundation
 
 
 open class DateRange: JSONEncodable {
+
     public var startDate: Date?
     public var endDate: Date?
 
@@ -19,6 +20,7 @@ open class DateRange: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["startDate"] = self.startDate?.encodeToJSON()
         nillableDictionary["endDate"] = self.endDate?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

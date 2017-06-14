@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Disambiguation: JSONEncodable {
+
     public var disambiguationOptions: [DisambiguationOption]?
 
     public init() {}
@@ -17,6 +18,7 @@ open class Disambiguation: JSONEncodable {
     open func encodeToJSON() -> Any {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["disambiguationOptions"] = self.disambiguationOptions?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

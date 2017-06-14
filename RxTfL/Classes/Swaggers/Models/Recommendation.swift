@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Recommendation: JSONEncodable {
+
     public var id: Int32?
     public var rule: Int32?
     public var rank: Int32?
@@ -51,6 +52,7 @@ open class Recommendation: JSONEncodable {
         nillableDictionary["keyFeatures"] = self.keyFeatures?.encodeToJSON()
         nillableDictionary["gettingYourTicket"] = self.gettingYourTicket?.encodeToJSON()
         nillableDictionary["singleFare"] = self.singleFare
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

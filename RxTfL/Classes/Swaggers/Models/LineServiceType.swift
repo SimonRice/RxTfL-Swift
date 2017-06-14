@@ -9,6 +9,7 @@ import Foundation
 
 
 open class LineServiceType: JSONEncodable {
+
     public var lineName: String?
     public var lineSpecificServiceTypes: [LineSpecificServiceType]?
 
@@ -19,6 +20,7 @@ open class LineServiceType: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["lineName"] = self.lineName
         nillableDictionary["lineSpecificServiceTypes"] = self.lineSpecificServiceTypes?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

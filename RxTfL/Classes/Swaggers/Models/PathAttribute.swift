@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PathAttribute: JSONEncodable {
+
     public var name: String?
     public var value: String?
 
@@ -19,6 +20,7 @@ open class PathAttribute: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["name"] = self.name
         nillableDictionary["value"] = self.value
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

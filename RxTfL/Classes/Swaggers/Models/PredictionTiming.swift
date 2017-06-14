@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PredictionTiming: JSONEncodable {
+
     public var countdownServerAdjustment: String?
     public var source: Date?
     public var insert: Date?
@@ -27,6 +28,7 @@ open class PredictionTiming: JSONEncodable {
         nillableDictionary["read"] = self.read?.encodeToJSON()
         nillableDictionary["sent"] = self.sent?.encodeToJSON()
         nillableDictionary["received"] = self.received?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

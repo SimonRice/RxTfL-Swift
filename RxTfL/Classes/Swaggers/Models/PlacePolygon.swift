@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PlacePolygon: JSONEncodable {
+
     public var geoPoints: [GeoPoint]?
     public var commonName: String?
 
@@ -19,6 +20,7 @@ open class PlacePolygon: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["geoPoints"] = self.geoPoints?.encodeToJSON()
         nillableDictionary["commonName"] = self.commonName
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

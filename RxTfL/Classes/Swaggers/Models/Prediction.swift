@@ -10,6 +10,7 @@ import Foundation
 
 /** DTO to capture the prediction details */
 open class Prediction: JSONEncodable {
+
     /** The identitier for the prediction */
     public var id: String?
     /** The type of the operation (1: is new or has been updated, 2: should be deleted from any client cache) */
@@ -76,6 +77,7 @@ open class Prediction: JSONEncodable {
         nillableDictionary["timeToLive"] = self.timeToLive?.encodeToJSON()
         nillableDictionary["modeName"] = self.modeName
         nillableDictionary["timing"] = self.timing?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

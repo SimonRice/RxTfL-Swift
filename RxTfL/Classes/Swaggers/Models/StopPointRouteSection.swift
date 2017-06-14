@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StopPointRouteSection: JSONEncodable {
+
     public var naptanId: String?
     public var lineId: String?
     public var mode: String?
@@ -39,6 +40,7 @@ open class StopPointRouteSection: JSONEncodable {
         nillableDictionary["serviceType"] = self.serviceType
         nillableDictionary["vehicleDestinationText"] = self.vehicleDestinationText
         nillableDictionary["destinationName"] = self.destinationName
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

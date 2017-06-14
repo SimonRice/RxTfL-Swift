@@ -9,6 +9,7 @@ import Foundation
 
 
 open class DbGeography: JSONEncodable {
+
     public var geography: DbGeographyWellKnownValue?
 
     public init() {}
@@ -17,6 +18,7 @@ open class DbGeography: JSONEncodable {
     open func encodeToJSON() -> Any {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["geography"] = self.geography?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

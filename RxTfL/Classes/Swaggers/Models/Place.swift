@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Place: JSONEncodable {
+
     /** A unique identifier. */
     public var id: String?
     /** The unique location of this resource. */
@@ -43,6 +44,7 @@ open class Place: JSONEncodable {
         nillableDictionary["childrenUrls"] = self.childrenUrls?.encodeToJSON()
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

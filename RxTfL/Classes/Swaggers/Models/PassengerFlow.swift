@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PassengerFlow: JSONEncodable {
+
     /** Time in 24hr format with 15 minute intervals e.g. 0500-0515, 0515-0530 etc. */
     public var timeSlice: String?
     /** Count of passenger flow towards a platform */
@@ -21,6 +22,7 @@ open class PassengerFlow: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["timeSlice"] = self.timeSlice
         nillableDictionary["value"] = self.value?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

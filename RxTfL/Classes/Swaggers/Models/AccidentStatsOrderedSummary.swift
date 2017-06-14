@@ -9,6 +9,7 @@ import Foundation
 
 
 open class AccidentStatsOrderedSummary: JSONEncodable {
+
     public var year: Int32?
     public var borough: String?
     public var accidents: Int32?
@@ -21,6 +22,7 @@ open class AccidentStatsOrderedSummary: JSONEncodable {
         nillableDictionary["year"] = self.year?.encodeToJSON()
         nillableDictionary["borough"] = self.borough
         nillableDictionary["accidents"] = self.accidents?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

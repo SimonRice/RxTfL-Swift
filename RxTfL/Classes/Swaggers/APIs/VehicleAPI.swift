@@ -5,6 +5,7 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
+import Foundation
 import Alamofire
 import RxSwift
 
@@ -39,7 +40,7 @@ open class VehicleAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 
@@ -191,7 +192,7 @@ open class VehicleAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 

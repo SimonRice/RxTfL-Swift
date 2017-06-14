@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteSearchResponse: JSONEncodable {
+
     public var input: String?
     public var searchMatches: [RouteSearchMatch]?
 
@@ -19,6 +20,7 @@ open class RouteSearchResponse: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["input"] = self.input
         nillableDictionary["searchMatches"] = self.searchMatches?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

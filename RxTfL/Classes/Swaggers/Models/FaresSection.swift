@@ -9,6 +9,7 @@ import Foundation
 
 
 open class FaresSection: JSONEncodable {
+
     public var header: String?
     public var index: Int32?
     public var rows: [FareDetails]?
@@ -23,6 +24,7 @@ open class FaresSection: JSONEncodable {
         nillableDictionary["index"] = self.index?.encodeToJSON()
         nillableDictionary["rows"] = self.rows?.encodeToJSON()
         nillableDictionary["messages"] = self.messages?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

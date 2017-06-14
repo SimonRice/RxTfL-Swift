@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TimetableResponse: JSONEncodable {
+
     public var lineId: String?
     public var lineName: String?
     public var direction: String?
@@ -33,6 +34,7 @@ open class TimetableResponse: JSONEncodable {
         nillableDictionary["timetable"] = self.timetable?.encodeToJSON()
         nillableDictionary["disambiguation"] = self.disambiguation?.encodeToJSON()
         nillableDictionary["statusErrorMessage"] = self.statusErrorMessage
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

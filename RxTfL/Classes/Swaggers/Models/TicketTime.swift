@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TicketTime: JSONEncodable {
+
     public var type: String?
     public var description: String?
 
@@ -19,6 +20,7 @@ open class TicketTime: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["type"] = self.type
         nillableDictionary["description"] = self.description
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

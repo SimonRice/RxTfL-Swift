@@ -9,6 +9,7 @@ import Foundation
 
 
 open class CycleSuperhighway: JSONEncodable {
+
     /** The Id */
     public var id: String?
     /** The long label to show on maps when zoomed in */
@@ -33,6 +34,7 @@ open class CycleSuperhighway: JSONEncodable {
         nillableDictionary["geography"] = self.geography?.encodeToJSON()
         nillableDictionary["segmented"] = self.segmented
         nillableDictionary["modified"] = self.modified?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

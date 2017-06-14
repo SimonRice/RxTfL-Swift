@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TrainLoading: JSONEncodable {
+
     /** The Line Name e.g. \&quot;Victoria\&quot; */
     public var line: String?
     /** Direction of the Line e.g. NB, SB, WB etc. */
@@ -36,6 +37,7 @@ open class TrainLoading: JSONEncodable {
         nillableDictionary["naptanTo"] = self.naptanTo
         nillableDictionary["timeSlice"] = self.timeSlice
         nillableDictionary["value"] = self.value?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

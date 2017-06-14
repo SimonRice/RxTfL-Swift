@@ -7,10 +7,10 @@
 import Foundation
 
 open class RxTfLAPI {
-    open static var basePath = "https://api-radon.tfl.gov.uk"
+    open static var basePath = "https://api.tfl.gov.uk"
     open static var credential: URLCredential?
     open static var customHeaders: [String:String] = [:]
-    static var requestBuilderFactory: RequestBuilderFactory = AlamofireRequestBuilderFactory()
+    open static var requestBuilderFactory: RequestBuilderFactory = AlamofireRequestBuilderFactory()
 }
 
 open class APIBase {

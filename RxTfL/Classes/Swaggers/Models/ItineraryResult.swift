@@ -10,6 +10,7 @@ import Foundation
 
 /** A DTO representing a list of possible journeys. */
 open class ItineraryResult: JSONEncodable {
+
     public var journeys: [Journey]?
     public var lines: [Line]?
     public var cycleHireDockingStationData: JourneyPlannerCycleHireDockingStationData?
@@ -30,6 +31,7 @@ open class ItineraryResult: JSONEncodable {
         nillableDictionary["recommendedMaxAgeMinutes"] = self.recommendedMaxAgeMinutes?.encodeToJSON()
         nillableDictionary["searchCriteria"] = self.searchCriteria?.encodeToJSON()
         nillableDictionary["journeyVector"] = self.journeyVector?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

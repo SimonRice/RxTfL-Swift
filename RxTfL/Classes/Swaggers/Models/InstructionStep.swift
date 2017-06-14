@@ -9,6 +9,7 @@ import Foundation
 
 
 open class InstructionStep: JSONEncodable {
+
     public enum SkyDirectionDescription: String { 
         case north = "North"
         case northEast = "NorthEast"
@@ -60,6 +61,7 @@ open class InstructionStep: JSONEncodable {
         nillableDictionary["pathAttribute"] = self.pathAttribute?.encodeToJSON()
         nillableDictionary["descriptionHeading"] = self.descriptionHeading
         nillableDictionary["trackType"] = self.trackType?.rawValue
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

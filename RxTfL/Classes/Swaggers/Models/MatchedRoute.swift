@@ -9,6 +9,7 @@ import Foundation
 
 
 open class MatchedRoute: JSONEncodable {
+
     /** The route code */
     public var routeCode: String?
     /** Name such as \&quot;72\&quot; */
@@ -39,6 +40,7 @@ open class MatchedRoute: JSONEncodable {
         nillableDictionary["originator"] = self.originator
         nillableDictionary["destination"] = self.destination
         nillableDictionary["serviceType"] = self.serviceType
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

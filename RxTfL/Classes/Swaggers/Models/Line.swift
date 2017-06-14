@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Line: JSONEncodable {
+
     public var id: String?
     public var name: String?
     public var modeName: String?
@@ -35,6 +36,7 @@ open class Line: JSONEncodable {
         nillableDictionary["routeSections"] = self.routeSections?.encodeToJSON()
         nillableDictionary["serviceTypes"] = self.serviceTypes?.encodeToJSON()
         nillableDictionary["crowding"] = self.crowding?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

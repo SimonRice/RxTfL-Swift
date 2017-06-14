@@ -10,6 +10,7 @@ import Foundation
 
 /** Represents a disruption to a route within the transport network. */
 open class Disruption: JSONEncodable {
+
     public enum Category: String { 
         case undefined = "Undefined"
         case realTime = "RealTime"
@@ -58,6 +59,7 @@ open class Disruption: JSONEncodable {
         nillableDictionary["isBlocking"] = self.isBlocking
         nillableDictionary["isWholeLine"] = self.isWholeLine
         nillableDictionary["closureText"] = self.closureText
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

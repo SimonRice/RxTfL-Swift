@@ -9,6 +9,7 @@ import Foundation
 
 
 open class LineModeGroup: JSONEncodable {
+
     public var modeName: String?
     public var lineIdentifier: [String]?
 
@@ -19,6 +20,7 @@ open class LineModeGroup: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["modeName"] = self.modeName
         nillableDictionary["lineIdentifier"] = self.lineIdentifier?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

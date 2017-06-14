@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Timetable: JSONEncodable {
+
     public var departureStopId: String?
     public var routes: [TimetableRoute]?
 
@@ -19,6 +20,7 @@ open class Timetable: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["departureStopId"] = self.departureStopId
         nillableDictionary["routes"] = self.routes?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

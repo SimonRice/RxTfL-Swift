@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteOption: JSONEncodable {
+
     /** The Id of the route */
     public var id: String?
     /** Name such as \&quot;72\&quot; */
@@ -26,6 +27,7 @@ open class RouteOption: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["directions"] = self.directions?.encodeToJSON()
         nillableDictionary["lineIdentifier"] = self.lineIdentifier?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

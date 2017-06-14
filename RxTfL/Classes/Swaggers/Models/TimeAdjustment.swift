@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TimeAdjustment: JSONEncodable {
+
     public var date: String?
     public var time: String?
     public var timeIs: String?
@@ -23,6 +24,7 @@ open class TimeAdjustment: JSONEncodable {
         nillableDictionary["time"] = self.time
         nillableDictionary["timeIs"] = self.timeIs
         nillableDictionary["uri"] = self.uri
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

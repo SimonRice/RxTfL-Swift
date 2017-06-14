@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Obstacle: JSONEncodable {
+
     public var type: String?
     public var incline: String?
     public var stopId: Int32?
@@ -23,6 +24,7 @@ open class Obstacle: JSONEncodable {
         nillableDictionary["incline"] = self.incline
         nillableDictionary["stopId"] = self.stopId?.encodeToJSON()
         nillableDictionary["position"] = self.position
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

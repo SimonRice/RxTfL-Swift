@@ -10,6 +10,7 @@ import Foundation
 
 /**  */
 open class EmissionsSurchargeVehicle: JSONEncodable {
+
     public enum Compliance: String { 
         case notCompliant = "NotCompliant"
         case compliant = "Compliant"
@@ -33,6 +34,7 @@ open class EmissionsSurchargeVehicle: JSONEncodable {
         nillableDictionary["model"] = self.model
         nillableDictionary["colour"] = self.colour
         nillableDictionary["compliance"] = self.compliance?.rawValue
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

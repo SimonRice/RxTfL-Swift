@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StatusSeverity: JSONEncodable {
+
     public var modeName: String?
     public var severityLevel: Int32?
     public var description: String?
@@ -21,6 +22,7 @@ open class StatusSeverity: JSONEncodable {
         nillableDictionary["modeName"] = self.modeName
         nillableDictionary["severityLevel"] = self.severityLevel?.encodeToJSON()
         nillableDictionary["description"] = self.description
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

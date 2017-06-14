@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StopPointSequence: JSONEncodable {
+
     public enum ServiceType: String { 
         case regular = "Regular"
         case night = "Night"
@@ -38,6 +39,7 @@ open class StopPointSequence: JSONEncodable {
         nillableDictionary["prevBranchIds"] = self.prevBranchIds?.encodeToJSON()
         nillableDictionary["stopPoint"] = self.stopPoint?.encodeToJSON()
         nillableDictionary["serviceType"] = self.serviceType?.rawValue
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class FaresPeriod: JSONEncodable {
+
     public var id: Int32?
     public var startDate: Date?
     public var viewableDate: Date?
@@ -25,6 +26,7 @@ open class FaresPeriod: JSONEncodable {
         nillableDictionary["viewableDate"] = self.viewableDate?.encodeToJSON()
         nillableDictionary["endDate"] = self.endDate?.encodeToJSON()
         nillableDictionary["isFuture"] = self.isFuture
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

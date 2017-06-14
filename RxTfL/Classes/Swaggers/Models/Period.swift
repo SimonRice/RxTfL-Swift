@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Period: JSONEncodable {
+
     public enum ModelType: String { 
         case normal = "Normal"
         case frequencyHours = "FrequencyHours"
@@ -29,6 +30,7 @@ open class Period: JSONEncodable {
         nillableDictionary["fromTime"] = self.fromTime?.encodeToJSON()
         nillableDictionary["toTime"] = self.toTime?.encodeToJSON()
         nillableDictionary["frequency"] = self.frequency?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

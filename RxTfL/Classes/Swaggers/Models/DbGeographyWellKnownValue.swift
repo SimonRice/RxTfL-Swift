@@ -9,6 +9,7 @@ import Foundation
 
 
 open class DbGeographyWellKnownValue: JSONEncodable {
+
     public var coordinateSystemId: Int32?
     public var wellKnownText: String?
     public var wellKnownBinary: Data?
@@ -21,6 +22,7 @@ open class DbGeographyWellKnownValue: JSONEncodable {
         nillableDictionary["coordinateSystemId"] = self.coordinateSystemId?.encodeToJSON()
         nillableDictionary["wellKnownText"] = self.wellKnownText
         nillableDictionary["wellKnownBinary"] = self.wellKnownBinary?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

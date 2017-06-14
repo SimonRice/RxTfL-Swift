@@ -5,6 +5,7 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
+import Foundation
 import Alamofire
 import RxSwift
 
@@ -39,7 +40,7 @@ open class SearchAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 
@@ -143,7 +144,7 @@ open class SearchAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 
@@ -245,7 +246,7 @@ open class SearchAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 
@@ -296,7 +297,7 @@ open class SearchAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 
@@ -347,7 +348,7 @@ open class SearchAPI: APIBase {
                 }
                 observer.on(.completed)
             }
-            return NopDisposable.instance
+            return Disposables.create()
         }
     }
 

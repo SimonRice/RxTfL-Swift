@@ -9,6 +9,7 @@ import Foundation
 
 
 open class MatchedRouteSections: JSONEncodable {
+
     public var id: Int32?
 
     public init() {}
@@ -17,6 +18,7 @@ open class MatchedRouteSections: JSONEncodable {
     open func encodeToJSON() -> Any {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["id"] = self.id?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

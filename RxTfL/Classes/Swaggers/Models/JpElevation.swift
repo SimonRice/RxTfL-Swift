@@ -9,6 +9,7 @@ import Foundation
 
 
 open class JpElevation: JSONEncodable {
+
     public var distance: Int32?
     public var startLat: Double?
     public var startLon: Double?
@@ -29,6 +30,7 @@ open class JpElevation: JSONEncodable {
         nillableDictionary["endLon"] = self.endLon
         nillableDictionary["heightFromPreviousPoint"] = self.heightFromPreviousPoint?.encodeToJSON()
         nillableDictionary["gradient"] = self.gradient
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

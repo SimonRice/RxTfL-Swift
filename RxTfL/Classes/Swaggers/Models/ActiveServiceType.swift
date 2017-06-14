@@ -9,6 +9,7 @@ import Foundation
 
 
 open class ActiveServiceType: JSONEncodable {
+
     public var mode: String?
     public var serviceType: String?
 
@@ -19,6 +20,7 @@ open class ActiveServiceType: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["mode"] = self.mode
         nillableDictionary["serviceType"] = self.serviceType
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

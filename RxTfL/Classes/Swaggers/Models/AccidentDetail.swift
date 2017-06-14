@@ -9,6 +9,7 @@ import Foundation
 
 
 open class AccidentDetail: JSONEncodable {
+
     public var id: Int32?
     public var lat: Double?
     public var lon: Double?
@@ -33,6 +34,7 @@ open class AccidentDetail: JSONEncodable {
         nillableDictionary["borough"] = self.borough
         nillableDictionary["casualties"] = self.casualties?.encodeToJSON()
         nillableDictionary["vehicles"] = self.vehicles?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class JourneyVector: JSONEncodable {
+
     public var from: String?
     public var to: String?
     public var via: String?
@@ -23,6 +24,7 @@ open class JourneyVector: JSONEncodable {
         nillableDictionary["to"] = self.to
         nillableDictionary["via"] = self.via
         nillableDictionary["uri"] = self.uri
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

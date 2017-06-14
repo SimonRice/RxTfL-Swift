@@ -9,6 +9,7 @@ import Foundation
 
 
 open class ServiceFrequency: JSONEncodable {
+
     public var lowestFrequency: Double?
     public var highestFrequency: Double?
 
@@ -19,6 +20,7 @@ open class ServiceFrequency: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["lowestFrequency"] = self.lowestFrequency
         nillableDictionary["highestFrequency"] = self.highestFrequency
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

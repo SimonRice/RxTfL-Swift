@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Coordinate: JSONEncodable {
+
     public var longitude: Double?
     public var latitude: Double?
     public var easting: Double?
@@ -27,6 +28,7 @@ open class Coordinate: JSONEncodable {
         nillableDictionary["northing"] = self.northing
         nillableDictionary["xCoord"] = self.xCoord?.encodeToJSON()
         nillableDictionary["yCoord"] = self.yCoord?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

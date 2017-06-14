@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StreetSegment: JSONEncodable {
+
     /** A 16 digit unique integer identifying a OS ITN (Ordnance Survey Integrated Transport Network) road link. */
     public var toid: String?
     /** geoJSON formatted LineString containing two latitude/longitude (WGS84) pairs that identify the start and end points of the street segment. */
@@ -27,6 +28,7 @@ open class StreetSegment: JSONEncodable {
         nillableDictionary["lineString"] = self.lineString
         nillableDictionary["sourceSystemId"] = self.sourceSystemId?.encodeToJSON()
         nillableDictionary["sourceSystemKey"] = self.sourceSystemKey
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

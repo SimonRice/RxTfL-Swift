@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PlaceCategory: JSONEncodable {
+
     public var category: String?
     public var availableKeys: [String]?
 
@@ -19,6 +20,7 @@ open class PlaceCategory: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["category"] = self.category
         nillableDictionary["availableKeys"] = self.availableKeys?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

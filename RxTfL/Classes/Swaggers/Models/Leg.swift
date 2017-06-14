@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Leg: JSONEncodable {
+
     public var duration: Int32?
     public var speed: String?
     /** Describes the action the user need to take for this section, E.g. \&quot;walk to the              district line\&quot; */
@@ -48,6 +49,7 @@ open class Leg: JSONEncodable {
         nillableDictionary["distance"] = self.distance
         nillableDictionary["isDisrupted"] = self.isDisrupted
         nillableDictionary["hasFixedLocations"] = self.hasFixedLocations
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

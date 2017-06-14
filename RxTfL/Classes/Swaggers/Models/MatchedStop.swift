@@ -9,6 +9,7 @@ import Foundation
 
 
 open class MatchedStop: JSONEncodable {
+
     public var routeId: Int32?
     public var parentId: String?
     public var stationId: String?
@@ -55,6 +56,7 @@ open class MatchedStop: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

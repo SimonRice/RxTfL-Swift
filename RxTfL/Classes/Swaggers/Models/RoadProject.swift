@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RoadProject: JSONEncodable {
+
     public enum Phase: String { 
         case unscoped = "Unscoped"
         case concept = "Concept"
@@ -57,6 +58,7 @@ open class RoadProject: JSONEncodable {
         nillableDictionary["contactEmail"] = self.contactEmail
         nillableDictionary["externalPageUrl"] = self.externalPageUrl
         nillableDictionary["projectSummaryPageUrl"] = self.projectSummaryPageUrl
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class FaresMode: JSONEncodable {
+
     public var id: Int32?
     public var name: String?
     public var description: String?
@@ -21,6 +22,7 @@ open class FaresMode: JSONEncodable {
         nillableDictionary["id"] = self.id?.encodeToJSON()
         nillableDictionary["name"] = self.name
         nillableDictionary["description"] = self.description
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

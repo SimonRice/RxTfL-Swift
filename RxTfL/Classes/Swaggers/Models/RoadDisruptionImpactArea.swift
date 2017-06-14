@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RoadDisruptionImpactArea: JSONEncodable {
+
     public var id: Int32?
     public var roadDisruptionId: String?
     public var polygon: DbGeography?
@@ -29,6 +30,7 @@ open class RoadDisruptionImpactArea: JSONEncodable {
         nillableDictionary["endDate"] = self.endDate?.encodeToJSON()
         nillableDictionary["startTime"] = self.startTime
         nillableDictionary["endTime"] = self.endTime
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Path: JSONEncodable {
+
     public var lineString: String?
     public var stopPoints: [Identifier]?
     public var elevation: [JpElevation]?
@@ -21,6 +22,7 @@ open class Path: JSONEncodable {
         nillableDictionary["lineString"] = self.lineString
         nillableDictionary["stopPoints"] = self.stopPoints?.encodeToJSON()
         nillableDictionary["elevation"] = self.elevation?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

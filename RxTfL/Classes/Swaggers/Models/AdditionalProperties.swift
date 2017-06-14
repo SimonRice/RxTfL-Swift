@@ -9,6 +9,7 @@ import Foundation
 
 
 open class AdditionalProperties: JSONEncodable {
+
     public var category: String?
     public var key: String?
     public var sourceSystemKey: String?
@@ -25,6 +26,7 @@ open class AdditionalProperties: JSONEncodable {
         nillableDictionary["sourceSystemKey"] = self.sourceSystemKey
         nillableDictionary["value"] = self.value
         nillableDictionary["modified"] = self.modified?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

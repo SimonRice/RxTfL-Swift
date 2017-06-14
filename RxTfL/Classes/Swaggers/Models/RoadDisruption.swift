@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RoadDisruption: JSONEncodable {
+
     /** Unique identifier for the road disruption */
     public var id: String?
     /** URL to retrieve this road disruption */
@@ -103,6 +104,7 @@ open class RoadDisruption: JSONEncodable {
         nillableDictionary["roadDisruptionLines"] = self.roadDisruptionLines?.encodeToJSON()
         nillableDictionary["roadDisruptionImpactAreas"] = self.roadDisruptionImpactAreas?.encodeToJSON()
         nillableDictionary["recurringSchedules"] = self.recurringSchedules?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class FareBounds: JSONEncodable {
+
     public var id: Int32?
     public var from: String?
     public var to: String?
@@ -41,6 +42,7 @@ open class FareBounds: JSONEncodable {
         nillableDictionary["isPopularTravelCard"] = self.isPopularTravelCard
         nillableDictionary["isTour"] = self.isTour
         nillableDictionary["messages"] = self.messages?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

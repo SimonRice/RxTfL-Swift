@@ -9,6 +9,7 @@ import Foundation
 
 
 open class CarParkOccupancy: JSONEncodable {
+
     public var id: String?
     public var bays: [Bay]?
     public var name: String?
@@ -23,6 +24,7 @@ open class CarParkOccupancy: JSONEncodable {
         nillableDictionary["bays"] = self.bays?.encodeToJSON()
         nillableDictionary["name"] = self.name
         nillableDictionary["carParkDetailsUrl"] = self.carParkDetailsUrl
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

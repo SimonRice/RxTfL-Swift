@@ -9,6 +9,7 @@ import Foundation
 
 
 open class GeoCodeSearchMatch: JSONEncodable {
+
     /** The type of the place e.g. \&quot;street_address\&quot; */
     public var types: [String]?
     /** A string describing the formatted address of the place. Adds additional context to the place&#39;s Name. */
@@ -31,6 +32,7 @@ open class GeoCodeSearchMatch: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

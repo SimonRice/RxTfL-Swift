@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Bay: JSONEncodable {
+
     public var bayType: String?
     public var bayCount: Int32?
     public var free: Int32?
@@ -23,6 +24,7 @@ open class Bay: JSONEncodable {
         nillableDictionary["bayCount"] = self.bayCount?.encodeToJSON()
         nillableDictionary["free"] = self.free?.encodeToJSON()
         nillableDictionary["occupied"] = self.occupied?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class TimeAdjustments: JSONEncodable {
+
     public var earliest: TimeAdjustment?
     public var earlier: TimeAdjustment?
     public var later: TimeAdjustment?
@@ -23,6 +24,7 @@ open class TimeAdjustments: JSONEncodable {
         nillableDictionary["earlier"] = self.earlier?.encodeToJSON()
         nillableDictionary["later"] = self.later?.encodeToJSON()
         nillableDictionary["latest"] = self.latest?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

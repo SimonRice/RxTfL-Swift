@@ -9,6 +9,7 @@ import Foundation
 
 
 open class LineGroup: JSONEncodable {
+
     public var naptanIdReference: String?
     public var stationAtcoCode: String?
     public var lineIdentifier: [String]?
@@ -21,6 +22,7 @@ open class LineGroup: JSONEncodable {
         nillableDictionary["naptanIdReference"] = self.naptanIdReference
         nillableDictionary["stationAtcoCode"] = self.stationAtcoCode
         nillableDictionary["lineIdentifier"] = self.lineIdentifier?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

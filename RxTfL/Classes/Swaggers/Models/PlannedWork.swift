@@ -9,6 +9,7 @@ import Foundation
 
 
 open class PlannedWork: JSONEncodable {
+
     public var id: String?
     public var description: String?
     public var createdDateTime: Date?
@@ -23,6 +24,7 @@ open class PlannedWork: JSONEncodable {
         nillableDictionary["description"] = self.description
         nillableDictionary["createdDateTime"] = self.createdDateTime?.encodeToJSON()
         nillableDictionary["lastUpdateDateTime"] = self.lastUpdateDateTime?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

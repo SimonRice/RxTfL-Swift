@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StationInterval: JSONEncodable {
+
     public var id: String?
     public var intervals: [Interval]?
 
@@ -19,6 +20,7 @@ open class StationInterval: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["id"] = self.id
         nillableDictionary["intervals"] = self.intervals?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

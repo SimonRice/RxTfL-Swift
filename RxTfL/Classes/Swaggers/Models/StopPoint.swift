@@ -9,6 +9,7 @@ import Foundation
 
 
 open class StopPoint: JSONEncodable {
+
     public var naptanId: String?
     public var platformName: String?
     /** The indicator of the stop point e.g. \&quot;Stop K\&quot; */
@@ -79,6 +80,7 @@ open class StopPoint: JSONEncodable {
         nillableDictionary["childrenUrls"] = self.childrenUrls?.encodeToJSON()
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteSearchMatch: JSONEncodable {
+
     public var lineId: String?
     public var mode: String?
     public var lineName: String?
@@ -37,6 +38,7 @@ open class RouteSearchMatch: JSONEncodable {
         nillableDictionary["name"] = self.name
         nillableDictionary["lat"] = self.lat
         nillableDictionary["lon"] = self.lon
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

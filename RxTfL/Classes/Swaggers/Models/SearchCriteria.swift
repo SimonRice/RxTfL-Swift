@@ -9,6 +9,7 @@ import Foundation
 
 
 open class SearchCriteria: JSONEncodable {
+
     public enum DateTimeType: String { 
         case arriving = "Arriving"
         case departing = "Departing"
@@ -25,6 +26,7 @@ open class SearchCriteria: JSONEncodable {
         nillableDictionary["dateTime"] = self.dateTime?.encodeToJSON()
         nillableDictionary["dateTimeType"] = self.dateTimeType?.rawValue
         nillableDictionary["timeAdjustments"] = self.timeAdjustments?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

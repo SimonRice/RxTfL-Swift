@@ -9,6 +9,7 @@ import Foundation
 
 
 open class KnownJourney: JSONEncodable {
+
     public var hour: String?
     public var minute: String?
     public var intervalId: Int32?
@@ -21,6 +22,7 @@ open class KnownJourney: JSONEncodable {
         nillableDictionary["hour"] = self.hour
         nillableDictionary["minute"] = self.minute
         nillableDictionary["intervalId"] = self.intervalId?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

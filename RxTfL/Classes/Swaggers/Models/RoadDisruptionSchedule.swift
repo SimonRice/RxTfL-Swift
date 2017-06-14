@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RoadDisruptionSchedule: JSONEncodable {
+
     public var startTime: Date?
     public var endTime: Date?
 
@@ -19,6 +20,7 @@ open class RoadDisruptionSchedule: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["startTime"] = self.startTime?.encodeToJSON()
         nillableDictionary["endTime"] = self.endTime?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RoadCorridor: JSONEncodable {
+
     /** The Id of the Corridor e.g. \&quot;A406\&quot; */
     public var id: String?
     /** The display name of the Corridor e.g. \&quot;North Circular (A406)\&quot;. This              may be identical to the Id. */
@@ -45,6 +46,7 @@ open class RoadCorridor: JSONEncodable {
         nillableDictionary["statusAggregationStartDate"] = self.statusAggregationStartDate?.encodeToJSON()
         nillableDictionary["statusAggregationEndDate"] = self.statusAggregationEndDate?.encodeToJSON()
         nillableDictionary["url"] = self.url
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

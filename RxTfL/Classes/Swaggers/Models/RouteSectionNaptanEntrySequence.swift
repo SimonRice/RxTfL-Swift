@@ -9,6 +9,7 @@ import Foundation
 
 
 open class RouteSectionNaptanEntrySequence: JSONEncodable {
+
     public var ordinal: Int32?
     public var stopPoint: StopPoint?
 
@@ -19,6 +20,7 @@ open class RouteSectionNaptanEntrySequence: JSONEncodable {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["ordinal"] = self.ordinal?.encodeToJSON()
         nillableDictionary["stopPoint"] = self.stopPoint?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

@@ -9,6 +9,7 @@ import Foundation
 
 
 open class Schedule: JSONEncodable {
+
     public var name: String?
     public var knownJourneys: [KnownJourney]?
     public var firstJourney: KnownJourney?
@@ -25,6 +26,7 @@ open class Schedule: JSONEncodable {
         nillableDictionary["firstJourney"] = self.firstJourney?.encodeToJSON()
         nillableDictionary["lastJourney"] = self.lastJourney?.encodeToJSON()
         nillableDictionary["periods"] = self.periods?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

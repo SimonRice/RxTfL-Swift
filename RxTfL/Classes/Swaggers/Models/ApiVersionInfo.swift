@@ -9,6 +9,7 @@ import Foundation
 
 
 open class ApiVersionInfo: JSONEncodable {
+
     public var label: String?
     public var timestamp: Date?
     public var version: String?
@@ -23,6 +24,7 @@ open class ApiVersionInfo: JSONEncodable {
         nillableDictionary["timestamp"] = self.timestamp?.encodeToJSON()
         nillableDictionary["version"] = self.version
         nillableDictionary["assemblies"] = self.assemblies?.encodeToJSON()
+
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }
