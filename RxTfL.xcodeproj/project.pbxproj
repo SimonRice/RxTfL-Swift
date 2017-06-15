@@ -1,7 +1,8 @@
 // !$*UTF8*$!
 {
-	archiveVersion = "";
-	classes = "";
+	archiveVersion = 1;
+	classes = {
+	};
 	objectVersion = 46;
 	objects = {
 
@@ -310,7 +311,6 @@
 				DED7EDB5023294D518419432 /* TravelTimeAPI.swift */,
 				D99D16E2A2026F254710D2CE /* VehicleAPI.swift */,
 			);
-			name = APIs;
 			path = APIs;
 			sourceTree = "<group>";
 		};
@@ -428,7 +428,6 @@
 				02B4C263D84875137094C11C /* ValidityPeriod.swift */,
 				087F5562A969DFFE5582126E /* Vehicle.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -468,7 +467,6 @@
 				5A51C0A7BAD45D67EF77FA98 /* Models */,
 				33284AF2DC2DCB3CEF38220B /* Models.swift */,
 			);
-			name = Swaggers;
 			path = Swaggers;
 			sourceTree = "<group>";
 		};
@@ -477,7 +475,6 @@
 			children = (
 				ECD375A518336A2C17BC9E13 /* Classes */,
 			);
-			name = RxTfL;
 			path = RxTfL;
 			sourceTree = "<group>";
 		};
@@ -486,7 +483,6 @@
 			children = (
 				A3411B2016FB62837A8F209F /* Swaggers */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -693,6 +689,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonrice.RxTfL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,8 +699,10 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -783,6 +782,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonrice.RxTfL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -791,8 +791,10 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
