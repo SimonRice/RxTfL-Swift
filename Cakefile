@@ -41,6 +41,8 @@ project.all_configurations.each do |configuration|
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]"] = "$(SRCROOT)/Carthage/Build/iOS";
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]"] = "$(SRCROOT)/Carthage/Build/iOS";
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=macosx*]"] = "$(SRCROOT)/Carthage/Build/Mac";
+    configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=watchos*]"] = "$(SRCROOT)/Carthage/Build/watchOS";
+    configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]"] = "$(SRCROOT)/Carthage/Build/watchOS";
 
     #===
 
