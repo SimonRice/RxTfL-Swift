@@ -43,6 +43,7 @@ project.all_configurations.each do |configuration|
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=macosx*]"] = "$(SRCROOT)/Carthage/Build/Mac";
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=watchos*]"] = "$(SRCROOT)/Carthage/Build/watchOS";
     configuration.settings["FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]"] = "$(SRCROOT)/Carthage/Build/watchOS";
+    configuration.settings["SDKROOT"] = ""
 
     #===
 
@@ -77,7 +78,7 @@ target do |target|
     target.language = :swift
     target.platform = :ios
     target.deployment_target = iOSdeploymentTarget
-    target.system_frameworks = ['Foundation']
+    target.system_frameworks = []
 
     #=== CUSTOM settings for the target
 
@@ -90,6 +91,7 @@ target do |target|
         configuration.settings["PRODUCT_NAME"] = "$(TARGET_NAME)"
         configuration.settings["SWIFT_VERSION"] = currentSwiftVersion # Xcode 8
         configuration.settings["TARGETED_DEVICE_FAMILY"] = "1,2,3,4"
+        configuration.settings["SDKROOT"] = ""
 
     end
 
