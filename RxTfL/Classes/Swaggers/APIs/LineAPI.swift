@@ -20,7 +20,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineArrivals(stopPointId: String, ids: [String], completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        lineArrivalsWithRequestBuilder(stopPointId: stopPointId.asParameter, ids: ids.asParameter).execute { (response, error) -> Void in
+        lineArrivalsWithRequestBuilder(stopPointId: stopPointId, ids: ids).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -155,7 +155,7 @@ open class LineAPI: APIBase {
      */
     open class func lineArrivalsWithRequestBuilder(stopPointId: String, ids: [String]) -> RequestBuilder<[Prediction]> {
         var path = "/Line/{ids}/Arrivals"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -188,7 +188,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineArrivals_0(stopPointId: String, ids: [String], direction: Direction_lineArrivals_0, completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        lineArrivals_0WithRequestBuilder(stopPointId: stopPointId.asParameter, ids: ids.asParameter, direction: direction.asParameter).execute { (response, error) -> Void in
+        lineArrivals_0WithRequestBuilder(stopPointId: stopPointId, ids: ids, direction: direction).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -325,8 +325,8 @@ open class LineAPI: APIBase {
      */
     open class func lineArrivals_0WithRequestBuilder(stopPointId: String, ids: [String], direction: Direction_lineArrivals_0) -> RequestBuilder<[Prediction]> {
         var path = "/Line/{ids}/Arrivals/{stopPointId}"
-        path = path.replacingOccurrences(of: "{stopPointId}", with: "\(stopPointId)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{stopPointId}", with: stopPointId.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -348,7 +348,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineDisruption(ids: [String], completion: @escaping ((_ data: [Disruption]?,_ error: Error?) -> Void)) {
-        lineDisruptionWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
+        lineDisruptionWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -605,7 +605,7 @@ open class LineAPI: APIBase {
      */
     open class func lineDisruptionWithRequestBuilder(ids: [String]) -> RequestBuilder<[Disruption]> {
         var path = "/Line/{ids}/Disruption"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -624,7 +624,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineDisruptionByMode(modes: [String], completion: @escaping ((_ data: [Disruption]?,_ error: Error?) -> Void)) {
-        lineDisruptionByModeWithRequestBuilder(modes: modes.asParameter).execute { (response, error) -> Void in
+        lineDisruptionByModeWithRequestBuilder(modes: modes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -881,7 +881,7 @@ open class LineAPI: APIBase {
      */
     open class func lineDisruptionByModeWithRequestBuilder(modes: [String]) -> RequestBuilder<[Disruption]> {
         var path = "/Line/Mode/{modes}/Disruption"
-        path = path.replacingOccurrences(of: "{modes}", with: "\(modes)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{modes}", with: modes.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -900,7 +900,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineGet(ids: [String], completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineGetWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
+        lineGetWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1221,7 +1221,7 @@ open class LineAPI: APIBase {
      */
     open class func lineGetWithRequestBuilder(ids: [String]) -> RequestBuilder<[Line]> {
         var path = "/Line/{ids}"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -1240,7 +1240,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineGetByMode(modes: [String], completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineGetByModeWithRequestBuilder(modes: modes.asParameter).execute { (response, error) -> Void in
+        lineGetByModeWithRequestBuilder(modes: modes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1561,7 +1561,7 @@ open class LineAPI: APIBase {
      */
     open class func lineGetByModeWithRequestBuilder(modes: [String]) -> RequestBuilder<[Line]> {
         var path = "/Line/Mode/{modes}"
-        path = path.replacingOccurrences(of: "{modes}", with: "\(modes)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{modes}", with: modes.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -1589,7 +1589,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineLineRoutesByIds(ids: [String], serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineLineRoutesByIdsWithRequestBuilder(ids: ids.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
+        lineLineRoutesByIdsWithRequestBuilder(ids: ids, serviceTypes: serviceTypes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1912,7 +1912,7 @@ open class LineAPI: APIBase {
      */
     open class func lineLineRoutesByIdsWithRequestBuilder(ids: [String], serviceTypes: [String]? = nil) -> RequestBuilder<[Line]> {
         var path = "/Line/{ids}/Route"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -2182,7 +2182,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRoute(serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineRouteWithRequestBuilder(serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
+        lineRouteWithRequestBuilder(serviceTypes: serviceTypes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2533,7 +2533,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRouteByMode(modes: [String], serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineRouteByModeWithRequestBuilder(modes: modes.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
+        lineRouteByModeWithRequestBuilder(modes: modes, serviceTypes: serviceTypes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2856,7 +2856,7 @@ open class LineAPI: APIBase {
      */
     open class func lineRouteByModeWithRequestBuilder(modes: [String], serviceTypes: [String]? = nil) -> RequestBuilder<[Line]> {
         var path = "/Line/Mode/{modes}/Route"
-        path = path.replacingOccurrences(of: "{modes}", with: "\(modes)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{modes}", with: modes.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -2898,7 +2898,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRouteSequence(id: String, direction: Direction_lineRouteSequence, serviceTypes: [String]? = nil, excludeCrowding: Bool? = nil, completion: @escaping ((_ data: RouteSequence?,_ error: Error?) -> Void)) {
-        lineRouteSequenceWithRequestBuilder(id: id.asParameter, direction: direction.asParameter, serviceTypes: serviceTypes.asParameter, excludeCrowding: excludeCrowding.asParameter).execute { (response, error) -> Void in
+        lineRouteSequenceWithRequestBuilder(id: id, direction: direction, serviceTypes: serviceTypes, excludeCrowding: excludeCrowding).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3085,8 +3085,8 @@ open class LineAPI: APIBase {
      */
     open class func lineRouteSequenceWithRequestBuilder(id: String, direction: Direction_lineRouteSequence, serviceTypes: [String]? = nil, excludeCrowding: Bool? = nil) -> RequestBuilder<RouteSequence> {
         var path = "/Line/{id}/Route/Sequence/{direction}"
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{direction}", with: "\(direction.rawValue)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{direction}", with: direction.rawValue.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -3119,7 +3119,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineSearch(query: String, modes: [String]? = nil, serviceTypes: [String]? = nil, completion: @escaping ((_ data: RouteSearchResponse?,_ error: Error?) -> Void)) {
-        lineSearchWithRequestBuilder(query: query.asParameter, modes: modes.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
+        lineSearchWithRequestBuilder(query: query, modes: modes, serviceTypes: serviceTypes).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3298,7 +3298,7 @@ open class LineAPI: APIBase {
      */
     open class func lineSearchWithRequestBuilder(query: String, modes: [String]? = nil, serviceTypes: [String]? = nil) -> RequestBuilder<RouteSearchResponse> {
         var path = "/Line/Search/{query}"
-        path = path.replacingOccurrences(of: "{query}", with: "\(query)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{query}", with: query.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -3326,7 +3326,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatus(ids: [String], startDate: String, endDate: String, detail: Bool? = nil, dateRangeStartDate: Date? = nil, dateRangeEndDate: Date? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusWithRequestBuilder(ids: ids.asParameter, startDate: startDate.asParameter, endDate: endDate.asParameter, detail: detail.asParameter, dateRangeStartDate: dateRangeStartDate.asParameter, dateRangeEndDate: dateRangeEndDate.asParameter).execute { (response, error) -> Void in
+        lineStatusWithRequestBuilder(ids: ids, startDate: startDate, endDate: endDate, detail: detail, dateRangeStartDate: dateRangeStartDate, dateRangeEndDate: dateRangeEndDate).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3657,7 +3657,7 @@ open class LineAPI: APIBase {
      */
     open class func lineStatusWithRequestBuilder(ids: [String], startDate: String, endDate: String, detail: Bool? = nil, dateRangeStartDate: Date? = nil, dateRangeEndDate: Date? = nil) -> RequestBuilder<[Line]> {
         var path = "/Line/{ids}/Status/{startDate}/to/{endDate}"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -3684,7 +3684,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusByIds(ids: [String], detail: Bool? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusByIdsWithRequestBuilder(ids: ids.asParameter, detail: detail.asParameter).execute { (response, error) -> Void in
+        lineStatusByIdsWithRequestBuilder(ids: ids, detail: detail).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4007,7 +4007,7 @@ open class LineAPI: APIBase {
      */
     open class func lineStatusByIdsWithRequestBuilder(ids: [String], detail: Bool? = nil) -> RequestBuilder<[Line]> {
         var path = "/Line/{ids}/Status"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -4030,7 +4030,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusByMode(modes: [String], detail: Bool? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusByModeWithRequestBuilder(modes: modes.asParameter, detail: detail.asParameter).execute { (response, error) -> Void in
+        lineStatusByModeWithRequestBuilder(modes: modes, detail: detail).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4353,7 +4353,7 @@ open class LineAPI: APIBase {
      */
     open class func lineStatusByModeWithRequestBuilder(modes: [String], detail: Bool? = nil) -> RequestBuilder<[Line]> {
         var path = "/Line/Mode/{modes}/Status"
-        path = path.replacingOccurrences(of: "{modes}", with: "\(modes)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{modes}", with: modes.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -4375,7 +4375,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusBySeverity(severity: Int32, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusBySeverityWithRequestBuilder(severity: severity.asParameter).execute { (response, error) -> Void in
+        lineStatusBySeverityWithRequestBuilder(severity: severity).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4696,7 +4696,7 @@ open class LineAPI: APIBase {
      */
     open class func lineStatusBySeverityWithRequestBuilder(severity: Int32) -> RequestBuilder<[Line]> {
         var path = "/Line/Status/{severity}"
-        path = path.replacingOccurrences(of: "{severity}", with: "\(severity)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{severity}", with: severity.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -4715,7 +4715,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStopPoints(id: String, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        lineStopPointsWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
+        lineStopPointsWithRequestBuilder(id: id).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4944,7 +4944,7 @@ open class LineAPI: APIBase {
      */
     open class func lineStopPointsWithRequestBuilder(id: String) -> RequestBuilder<[StopPoint]> {
         var path = "/Line/{id}/StopPoints"
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -4964,7 +4964,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineTimetable(fromStopPointId: String, id: String, completion: @escaping ((_ data: TimetableResponse?,_ error: Error?) -> Void)) {
-        lineTimetableWithRequestBuilder(fromStopPointId: fromStopPointId.asParameter, id: id.asParameter).execute { (response, error) -> Void in
+        lineTimetableWithRequestBuilder(fromStopPointId: fromStopPointId, id: id).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -5195,8 +5195,8 @@ open class LineAPI: APIBase {
      */
     open class func lineTimetableWithRequestBuilder(fromStopPointId: String, id: String) -> RequestBuilder<TimetableResponse> {
         var path = "/Line/{id}/Timetable/{fromStopPointId}"
-        path = path.replacingOccurrences(of: "{fromStopPointId}", with: "\(fromStopPointId)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{fromStopPointId}", with: fromStopPointId.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -5217,7 +5217,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineTimetableTo(fromStopPointId: String, id: String, toStopPointId: String, completion: @escaping ((_ data: TimetableResponse?,_ error: Error?) -> Void)) {
-        lineTimetableToWithRequestBuilder(fromStopPointId: fromStopPointId.asParameter, id: id.asParameter, toStopPointId: toStopPointId.asParameter).execute { (response, error) -> Void in
+        lineTimetableToWithRequestBuilder(fromStopPointId: fromStopPointId, id: id, toStopPointId: toStopPointId).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -5450,9 +5450,9 @@ open class LineAPI: APIBase {
      */
     open class func lineTimetableToWithRequestBuilder(fromStopPointId: String, id: String, toStopPointId: String) -> RequestBuilder<TimetableResponse> {
         var path = "/Line/{id}/Timetable/{fromStopPointId}/to/{toStopPointId}"
-        path = path.replacingOccurrences(of: "{fromStopPointId}", with: "\(fromStopPointId)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{toStopPointId}", with: "\(toStopPointId)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{fromStopPointId}", with: fromStopPointId.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{toStopPointId}", with: toStopPointId.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 

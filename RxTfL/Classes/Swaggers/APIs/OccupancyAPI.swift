@@ -19,7 +19,7 @@ open class OccupancyAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func occupancyGet(id: String, completion: @escaping ((_ data: CarParkOccupancy?,_ error: Error?) -> Void)) {
-        occupancyGetWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
+        occupancyGetWithRequestBuilder(id: id).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -84,7 +84,7 @@ open class OccupancyAPI: APIBase {
      */
     open class func occupancyGetWithRequestBuilder(id: String) -> RequestBuilder<CarParkOccupancy> {
         var path = "/Occupancy/CarPark/{id}"
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 

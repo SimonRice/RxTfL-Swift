@@ -19,7 +19,7 @@ open class VehicleAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func vehicleGet(ids: [String], completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        vehicleGetWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
+        vehicleGetWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -152,7 +152,7 @@ open class VehicleAPI: APIBase {
      */
     open class func vehicleGetWithRequestBuilder(ids: [String]) -> RequestBuilder<[Prediction]> {
         var path = "/Vehicle/{ids}/Arrivals"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -171,7 +171,7 @@ open class VehicleAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func vehicleGetVehicle(vrm: String, completion: @escaping ((_ data: EmissionsSurchargeVehicle?,_ error: Error?) -> Void)) {
-        vehicleGetVehicleWithRequestBuilder(vrm: vrm.asParameter).execute { (response, error) -> Void in
+        vehicleGetVehicleWithRequestBuilder(vrm: vrm).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

@@ -19,7 +19,7 @@ open class SearchAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func searchBusSchedules(query: String, completion: @escaping ((_ data: SearchResponse?,_ error: Error?) -> Void)) {
-        searchBusSchedulesWithRequestBuilder(query: query.asParameter).execute { (response, error) -> Void in
+        searchBusSchedulesWithRequestBuilder(query: query).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -123,7 +123,7 @@ open class SearchAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func searchGet(query: String, completion: @escaping ((_ data: SearchResponse?,_ error: Error?) -> Void)) {
-        searchGetWithRequestBuilder(query: query.asParameter).execute { (response, error) -> Void in
+        searchGetWithRequestBuilder(query: query).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

@@ -19,7 +19,7 @@ open class BikePointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func bikePointGet(id: String, completion: @escaping ((_ data: Place?,_ error: Error?) -> Void)) {
-        bikePointGetWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
+        bikePointGetWithRequestBuilder(id: id).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -108,7 +108,7 @@ open class BikePointAPI: APIBase {
      */
     open class func bikePointGetWithRequestBuilder(id: String) -> RequestBuilder<Place> {
         var path = "/BikePoint/{id}"
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -230,7 +230,7 @@ open class BikePointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func bikePointSearch(query: String, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        bikePointSearchWithRequestBuilder(query: query.asParameter).execute { (response, error) -> Void in
+        bikePointSearchWithRequestBuilder(query: query).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

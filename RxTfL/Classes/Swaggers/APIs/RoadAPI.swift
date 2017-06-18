@@ -20,7 +20,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruptedStreets(startDate: Date, endDate: Date, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        roadDisruptedStreetsWithRequestBuilder(startDate: startDate.asParameter, endDate: endDate.asParameter).execute { (response, error) -> Void in
+        roadDisruptedStreetsWithRequestBuilder(startDate: startDate, endDate: endDate).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -87,7 +87,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruption(ids: [String], stripContent: Bool? = nil, severities: [String]? = nil, categories: [String]? = nil, closures: Bool? = nil, completion: @escaping ((_ data: [RoadDisruption]?,_ error: Error?) -> Void)) {
-        roadDisruptionWithRequestBuilder(ids: ids.asParameter, stripContent: stripContent.asParameter, severities: severities.asParameter, categories: categories.asParameter, closures: closures.asParameter).execute { (response, error) -> Void in
+        roadDisruptionWithRequestBuilder(ids: ids, stripContent: stripContent, severities: severities, categories: categories, closures: closures).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -358,7 +358,7 @@ open class RoadAPI: APIBase {
      */
     open class func roadDisruptionWithRequestBuilder(ids: [String], stripContent: Bool? = nil, severities: [String]? = nil, categories: [String]? = nil, closures: Bool? = nil) -> RequestBuilder<[RoadDisruption]> {
         var path = "/Road/{ids}/Disruption"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -384,7 +384,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruptionById(disruptionIds: [String], stripContent: Bool? = nil, completion: @escaping ((_ data: RoadDisruption?,_ error: Error?) -> Void)) {
-        roadDisruptionByIdWithRequestBuilder(disruptionIds: disruptionIds.asParameter, stripContent: stripContent.asParameter).execute { (response, error) -> Void in
+        roadDisruptionByIdWithRequestBuilder(disruptionIds: disruptionIds, stripContent: stripContent).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -649,7 +649,7 @@ open class RoadAPI: APIBase {
      */
     open class func roadDisruptionByIdWithRequestBuilder(disruptionIds: [String], stripContent: Bool? = nil) -> RequestBuilder<RoadDisruption> {
         var path = "/Road/all/Disruption/{disruptionIds}"
-        path = path.replacingOccurrences(of: "{disruptionIds}", with: "\(disruptionIds)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{disruptionIds}", with: disruptionIds.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -766,7 +766,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadGet_0(ids: [String], completion: @escaping ((_ data: [RoadCorridor]?,_ error: Error?) -> Void)) {
-        roadGet_0WithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
+        roadGet_0WithRequestBuilder(ids: ids).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -847,7 +847,7 @@ open class RoadAPI: APIBase {
      */
     open class func roadGet_0WithRequestBuilder(ids: [String]) -> RequestBuilder<[RoadCorridor]> {
         var path = "/Road/{ids}"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -986,7 +986,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadStatus(ids: [String], dateRangeNullableStartDate: Date? = nil, dateRangeNullableEndDate: Date? = nil, completion: @escaping ((_ data: [RoadCorridor]?,_ error: Error?) -> Void)) {
-        roadStatusWithRequestBuilder(ids: ids.asParameter, dateRangeNullableStartDate: dateRangeNullableStartDate.asParameter, dateRangeNullableEndDate: dateRangeNullableEndDate.asParameter).execute { (response, error) -> Void in
+        roadStatusWithRequestBuilder(ids: ids, dateRangeNullableStartDate: dateRangeNullableStartDate, dateRangeNullableEndDate: dateRangeNullableEndDate).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1071,7 +1071,7 @@ open class RoadAPI: APIBase {
      */
     open class func roadStatusWithRequestBuilder(ids: [String], dateRangeNullableStartDate: Date? = nil, dateRangeNullableEndDate: Date? = nil) -> RequestBuilder<[RoadCorridor]> {
         var path = "/Road/{ids}/Status"
-        path = path.replacingOccurrences(of: "{ids}", with: "\(ids)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{ids}", with: ids.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 

@@ -20,7 +20,7 @@ open class ModeAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func modeArrivals(mode: String, count: Int32? = nil, completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        modeArrivalsWithRequestBuilder(mode: mode.asParameter, count: count.asParameter).execute { (response, error) -> Void in
+        modeArrivalsWithRequestBuilder(mode: mode, count: count).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -155,7 +155,7 @@ open class ModeAPI: APIBase {
      */
     open class func modeArrivalsWithRequestBuilder(mode: String, count: Int32? = nil) -> RequestBuilder<[Prediction]> {
         var path = "/Mode/{mode}/Arrivals"
-        path = path.replacingOccurrences(of: "{mode}", with: "\(mode)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{mode}", with: mode.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 

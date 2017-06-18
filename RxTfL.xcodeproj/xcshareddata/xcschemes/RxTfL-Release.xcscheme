@@ -14,7 +14,7 @@
             buildForArchiving = "NO">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0948B7FE88EEE6FFB16208B4'
+               BlueprintIdentifier = '1EEF259F13475367EA7240E6'
                BlueprintName = 'RxTfL'
                ReferencedContainer = 'container:RxTfL.xcodeproj'
                BuildableName = 'RxTfL.framework'>
@@ -46,7 +46,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = 'primary'
-            BlueprintIdentifier = '0948B7FE88EEE6FFB16208B4'
+            BlueprintIdentifier = '1EEF259F13475367EA7240E6'
             BlueprintName = 'RxTfL'
             ReferencedContainer = 'container:RxTfL.xcodeproj'
             BuildableName = 'RxTfL.framework'>
@@ -62,7 +62,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = 'primary'
-            BlueprintIdentifier = '0948B7FE88EEE6FFB16208B4'
+            BlueprintIdentifier = '1EEF259F13475367EA7240E6'
             BlueprintName = 'RxTfL'
             ReferencedContainer = 'container:RxTfL.xcodeproj'
             BuildableName = 'RxTfL.framework'>

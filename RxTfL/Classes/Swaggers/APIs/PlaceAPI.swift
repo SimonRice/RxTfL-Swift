@@ -20,7 +20,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGet(id: String, includeChildren: Bool? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeGetWithRequestBuilder(id: id.asParameter, includeChildren: includeChildren.asParameter).execute { (response, error) -> Void in
+        placeGetWithRequestBuilder(id: id, includeChildren: includeChildren).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -111,7 +111,7 @@ open class PlaceAPI: APIBase {
      */
     open class func placeGetWithRequestBuilder(id: String, includeChildren: Bool? = nil) -> RequestBuilder<[Place]> {
         var path = "/Place/{id}"
-        path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{id}", with: id.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -137,7 +137,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetAt(type: [String], lat: String, lon: String, locationLat: Double, locationLon: Double, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetAtWithRequestBuilder(type: type.asParameter, lat: lat.asParameter, lon: lon.asParameter, locationLat: locationLat.asParameter, locationLon: locationLon.asParameter).execute { (response, error) -> Void in
+        placeGetAtWithRequestBuilder(type: type, lat: lat, lon: lon, locationLat: locationLat, locationLon: locationLon).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -184,7 +184,7 @@ open class PlaceAPI: APIBase {
      */
     open class func placeGetAtWithRequestBuilder(type: [String], lat: String, lon: String, locationLat: Double, locationLon: Double) -> RequestBuilder<Object> {
         var path = "/Place/{type}/At/{lat}/{lon}"
-        path = path.replacingOccurrences(of: "{type}", with: "\(type)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{type}", with: type.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -216,7 +216,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetByGeoBox(bbBoxpointsSwLat: Double, bbBoxpointsSwLon: Double, bbBoxpointsNeLat: Double, bbBoxpointsNeLon: Double, categories: [String]? = nil, includeChildren: Bool? = nil, type: [String]? = nil, activeOnly: Bool? = nil, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        placeGetByGeoBoxWithRequestBuilder(bbBoxpointsSwLat: bbBoxpointsSwLat.asParameter, bbBoxpointsSwLon: bbBoxpointsSwLon.asParameter, bbBoxpointsNeLat: bbBoxpointsNeLat.asParameter, bbBoxpointsNeLon: bbBoxpointsNeLon.asParameter, categories: categories.asParameter, includeChildren: includeChildren.asParameter, type: type.asParameter, activeOnly: activeOnly.asParameter).execute { (response, error) -> Void in
+        placeGetByGeoBoxWithRequestBuilder(bbBoxpointsSwLat: bbBoxpointsSwLat, bbBoxpointsSwLon: bbBoxpointsSwLon, bbBoxpointsNeLat: bbBoxpointsNeLat, bbBoxpointsNeLon: bbBoxpointsNeLon, categories: categories, includeChildren: includeChildren, type: type, activeOnly: activeOnly).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -488,7 +488,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetByType(types: [String], activeOnly: Bool? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeGetByTypeWithRequestBuilder(types: types.asParameter, activeOnly: activeOnly.asParameter).execute { (response, error) -> Void in
+        placeGetByTypeWithRequestBuilder(types: types, activeOnly: activeOnly).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -579,7 +579,7 @@ open class PlaceAPI: APIBase {
      */
     open class func placeGetByTypeWithRequestBuilder(types: [String], activeOnly: Bool? = nil) -> RequestBuilder<[Place]> {
         var path = "/Place/Type/{types}"
-        path = path.replacingOccurrences(of: "{types}", with: "\(types)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{types}", with: types.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -608,7 +608,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetOverlay(z: Int32, type: [String], width: Int32, height: Int32, lat: String, lon: String, locationLat: Double, locationLon: Double, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetOverlayWithRequestBuilder(z: z.asParameter, type: type.asParameter, width: width.asParameter, height: height.asParameter, lat: lat.asParameter, lon: lon.asParameter, locationLat: locationLat.asParameter, locationLon: locationLon.asParameter).execute { (response, error) -> Void in
+        placeGetOverlayWithRequestBuilder(z: z, type: type, width: width, height: height, lat: lat, lon: lon, locationLat: locationLat, locationLon: locationLon).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -661,10 +661,10 @@ open class PlaceAPI: APIBase {
      */
     open class func placeGetOverlayWithRequestBuilder(z: Int32, type: [String], width: Int32, height: Int32, lat: String, lon: String, locationLat: Double, locationLon: Double) -> RequestBuilder<Object> {
         var path = "/Place/{type}/overlay/{z}/{lat}/{lon}/{width}/{height}"
-        path = path.replacingOccurrences(of: "{z}", with: "\(z)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{type}", with: "\(type)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{width}", with: "\(width)", options: .literal, range: nil)
-        path = path.replacingOccurrences(of: "{height}", with: "\(height)", options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{z}", with: z.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{type}", with: type.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{width}", with: width.asParameter, options: .literal, range: nil)
+        path = path.replacingOccurrences(of: "{height}", with: height.asParameter, options: .literal, range: nil)
         let URLString = RxTfLAPI.basePath + path
         let parameters: [String:Any]? = nil
 
@@ -690,7 +690,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetStreetsByPostCode(postcode: String, postcodeInputPostcode: String? = nil, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetStreetsByPostCodeWithRequestBuilder(postcode: postcode.asParameter, postcodeInputPostcode: postcodeInputPostcode.asParameter).execute { (response, error) -> Void in
+        placeGetStreetsByPostCodeWithRequestBuilder(postcode: postcode, postcodeInputPostcode: postcodeInputPostcode).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -880,7 +880,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeSearch(name: String, types: [String]? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeSearchWithRequestBuilder(name: name.asParameter, types: types.asParameter).execute { (response, error) -> Void in
+        placeSearchWithRequestBuilder(name: name, types: types).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
