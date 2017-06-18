@@ -41,7 +41,7 @@ open class TravelTimeAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func travelTimeGetCompareOverlay(z: Int32, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int32, height: Int32, direction: Direction_travelTimeGetCompareOverlay, travelTimeInterval: Int32, compareType: String, compareValue: String, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        travelTimeGetCompareOverlayWithRequestBuilder(z: z, pinLat: pinLat, pinLon: pinLon, mapCenterLat: mapCenterLat, mapCenterLon: mapCenterLon, scenarioTitle: scenarioTitle, timeOfDayId: timeOfDayId, modeId: modeId, width: width, height: height, direction: direction, travelTimeInterval: travelTimeInterval, compareType: compareType, compareValue: compareValue).execute { (response, error) -> Void in
+        travelTimeGetCompareOverlayWithRequestBuilder(z: z.asParameter, pinLat: pinLat.asParameter, pinLon: pinLon.asParameter, mapCenterLat: mapCenterLat.asParameter, mapCenterLon: mapCenterLon.asParameter, scenarioTitle: scenarioTitle.asParameter, timeOfDayId: timeOfDayId.asParameter, modeId: modeId.asParameter, width: width.asParameter, height: height.asParameter, direction: direction.asParameter, travelTimeInterval: travelTimeInterval.asParameter, compareType: compareType.asParameter, compareValue: compareValue.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -160,7 +160,7 @@ open class TravelTimeAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func travelTimeGetOverlay(z: Int32, pinLat: Double, pinLon: Double, mapCenterLat: Double, mapCenterLon: Double, scenarioTitle: String, timeOfDayId: String, modeId: String, width: Int32, height: Int32, direction: Direction_travelTimeGetOverlay, travelTimeInterval: Int32, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        travelTimeGetOverlayWithRequestBuilder(z: z, pinLat: pinLat, pinLon: pinLon, mapCenterLat: mapCenterLat, mapCenterLon: mapCenterLon, scenarioTitle: scenarioTitle, timeOfDayId: timeOfDayId, modeId: modeId, width: width, height: height, direction: direction, travelTimeInterval: travelTimeInterval).execute { (response, error) -> Void in
+        travelTimeGetOverlayWithRequestBuilder(z: z.asParameter, pinLat: pinLat.asParameter, pinLon: pinLon.asParameter, mapCenterLat: mapCenterLat.asParameter, mapCenterLon: mapCenterLon.asParameter, scenarioTitle: scenarioTitle.asParameter, timeOfDayId: timeOfDayId.asParameter, modeId: modeId.asParameter, width: width.asParameter, height: height.asParameter, direction: direction.asParameter, travelTimeInterval: travelTimeInterval.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

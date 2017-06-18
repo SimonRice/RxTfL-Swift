@@ -20,7 +20,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineArrivals(stopPointId: String, ids: [String], completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        lineArrivalsWithRequestBuilder(stopPointId: stopPointId, ids: ids).execute { (response, error) -> Void in
+        lineArrivalsWithRequestBuilder(stopPointId: stopPointId.asParameter, ids: ids.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -188,7 +188,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineArrivals_0(stopPointId: String, ids: [String], direction: Direction_lineArrivals_0, completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        lineArrivals_0WithRequestBuilder(stopPointId: stopPointId, ids: ids, direction: direction).execute { (response, error) -> Void in
+        lineArrivals_0WithRequestBuilder(stopPointId: stopPointId.asParameter, ids: ids.asParameter, direction: direction.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -348,7 +348,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineDisruption(ids: [String], completion: @escaping ((_ data: [Disruption]?,_ error: Error?) -> Void)) {
-        lineDisruptionWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
+        lineDisruptionWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -624,7 +624,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineDisruptionByMode(modes: [String], completion: @escaping ((_ data: [Disruption]?,_ error: Error?) -> Void)) {
-        lineDisruptionByModeWithRequestBuilder(modes: modes).execute { (response, error) -> Void in
+        lineDisruptionByModeWithRequestBuilder(modes: modes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -900,7 +900,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineGet(ids: [String], completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineGetWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
+        lineGetWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1240,7 +1240,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineGetByMode(modes: [String], completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineGetByModeWithRequestBuilder(modes: modes).execute { (response, error) -> Void in
+        lineGetByModeWithRequestBuilder(modes: modes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1589,7 +1589,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineLineRoutesByIds(ids: [String], serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineLineRoutesByIdsWithRequestBuilder(ids: ids, serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        lineLineRoutesByIdsWithRequestBuilder(ids: ids.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2182,7 +2182,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRoute(serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineRouteWithRequestBuilder(serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        lineRouteWithRequestBuilder(serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2533,7 +2533,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRouteByMode(modes: [String], serviceTypes: [String]? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineRouteByModeWithRequestBuilder(modes: modes, serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        lineRouteByModeWithRequestBuilder(modes: modes.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2898,7 +2898,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineRouteSequence(id: String, direction: Direction_lineRouteSequence, serviceTypes: [String]? = nil, excludeCrowding: Bool? = nil, completion: @escaping ((_ data: RouteSequence?,_ error: Error?) -> Void)) {
-        lineRouteSequenceWithRequestBuilder(id: id, direction: direction, serviceTypes: serviceTypes, excludeCrowding: excludeCrowding).execute { (response, error) -> Void in
+        lineRouteSequenceWithRequestBuilder(id: id.asParameter, direction: direction.asParameter, serviceTypes: serviceTypes.asParameter, excludeCrowding: excludeCrowding.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3119,7 +3119,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineSearch(query: String, modes: [String]? = nil, serviceTypes: [String]? = nil, completion: @escaping ((_ data: RouteSearchResponse?,_ error: Error?) -> Void)) {
-        lineSearchWithRequestBuilder(query: query, modes: modes, serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        lineSearchWithRequestBuilder(query: query.asParameter, modes: modes.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3326,7 +3326,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatus(ids: [String], startDate: String, endDate: String, detail: Bool? = nil, dateRangeStartDate: Date? = nil, dateRangeEndDate: Date? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusWithRequestBuilder(ids: ids, startDate: startDate, endDate: endDate, detail: detail, dateRangeStartDate: dateRangeStartDate, dateRangeEndDate: dateRangeEndDate).execute { (response, error) -> Void in
+        lineStatusWithRequestBuilder(ids: ids.asParameter, startDate: startDate.asParameter, endDate: endDate.asParameter, detail: detail.asParameter, dateRangeStartDate: dateRangeStartDate.asParameter, dateRangeEndDate: dateRangeEndDate.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -3684,7 +3684,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusByIds(ids: [String], detail: Bool? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusByIdsWithRequestBuilder(ids: ids, detail: detail).execute { (response, error) -> Void in
+        lineStatusByIdsWithRequestBuilder(ids: ids.asParameter, detail: detail.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4030,7 +4030,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusByMode(modes: [String], detail: Bool? = nil, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusByModeWithRequestBuilder(modes: modes, detail: detail).execute { (response, error) -> Void in
+        lineStatusByModeWithRequestBuilder(modes: modes.asParameter, detail: detail.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4375,7 +4375,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStatusBySeverity(severity: Int32, completion: @escaping ((_ data: [Line]?,_ error: Error?) -> Void)) {
-        lineStatusBySeverityWithRequestBuilder(severity: severity).execute { (response, error) -> Void in
+        lineStatusBySeverityWithRequestBuilder(severity: severity.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4715,7 +4715,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineStopPoints(id: String, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        lineStopPointsWithRequestBuilder(id: id).execute { (response, error) -> Void in
+        lineStopPointsWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -4964,7 +4964,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineTimetable(fromStopPointId: String, id: String, completion: @escaping ((_ data: TimetableResponse?,_ error: Error?) -> Void)) {
-        lineTimetableWithRequestBuilder(fromStopPointId: fromStopPointId, id: id).execute { (response, error) -> Void in
+        lineTimetableWithRequestBuilder(fromStopPointId: fromStopPointId.asParameter, id: id.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -5217,7 +5217,7 @@ open class LineAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func lineTimetableTo(fromStopPointId: String, id: String, toStopPointId: String, completion: @escaping ((_ data: TimetableResponse?,_ error: Error?) -> Void)) {
-        lineTimetableToWithRequestBuilder(fromStopPointId: fromStopPointId, id: id, toStopPointId: toStopPointId).execute { (response, error) -> Void in
+        lineTimetableToWithRequestBuilder(fromStopPointId: fromStopPointId.asParameter, id: id.asParameter, toStopPointId: toStopPointId.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

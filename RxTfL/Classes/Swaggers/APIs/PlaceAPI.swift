@@ -20,7 +20,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGet(id: String, includeChildren: Bool? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeGetWithRequestBuilder(id: id, includeChildren: includeChildren).execute { (response, error) -> Void in
+        placeGetWithRequestBuilder(id: id.asParameter, includeChildren: includeChildren.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -137,7 +137,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetAt(type: [String], lat: String, lon: String, locationLat: Double, locationLon: Double, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetAtWithRequestBuilder(type: type, lat: lat, lon: lon, locationLat: locationLat, locationLon: locationLon).execute { (response, error) -> Void in
+        placeGetAtWithRequestBuilder(type: type.asParameter, lat: lat.asParameter, lon: lon.asParameter, locationLat: locationLat.asParameter, locationLon: locationLon.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -216,7 +216,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetByGeoBox(bbBoxpointsSwLat: Double, bbBoxpointsSwLon: Double, bbBoxpointsNeLat: Double, bbBoxpointsNeLon: Double, categories: [String]? = nil, includeChildren: Bool? = nil, type: [String]? = nil, activeOnly: Bool? = nil, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        placeGetByGeoBoxWithRequestBuilder(bbBoxpointsSwLat: bbBoxpointsSwLat, bbBoxpointsSwLon: bbBoxpointsSwLon, bbBoxpointsNeLat: bbBoxpointsNeLat, bbBoxpointsNeLon: bbBoxpointsNeLon, categories: categories, includeChildren: includeChildren, type: type, activeOnly: activeOnly).execute { (response, error) -> Void in
+        placeGetByGeoBoxWithRequestBuilder(bbBoxpointsSwLat: bbBoxpointsSwLat.asParameter, bbBoxpointsSwLon: bbBoxpointsSwLon.asParameter, bbBoxpointsNeLat: bbBoxpointsNeLat.asParameter, bbBoxpointsNeLon: bbBoxpointsNeLon.asParameter, categories: categories.asParameter, includeChildren: includeChildren.asParameter, type: type.asParameter, activeOnly: activeOnly.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -488,7 +488,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetByType(types: [String], activeOnly: Bool? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeGetByTypeWithRequestBuilder(types: types, activeOnly: activeOnly).execute { (response, error) -> Void in
+        placeGetByTypeWithRequestBuilder(types: types.asParameter, activeOnly: activeOnly.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -608,7 +608,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetOverlay(z: Int32, type: [String], width: Int32, height: Int32, lat: String, lon: String, locationLat: Double, locationLon: Double, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetOverlayWithRequestBuilder(z: z, type: type, width: width, height: height, lat: lat, lon: lon, locationLat: locationLat, locationLon: locationLon).execute { (response, error) -> Void in
+        placeGetOverlayWithRequestBuilder(z: z.asParameter, type: type.asParameter, width: width.asParameter, height: height.asParameter, lat: lat.asParameter, lon: lon.asParameter, locationLat: locationLat.asParameter, locationLon: locationLon.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -690,7 +690,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeGetStreetsByPostCode(postcode: String, postcodeInputPostcode: String? = nil, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        placeGetStreetsByPostCodeWithRequestBuilder(postcode: postcode, postcodeInputPostcode: postcodeInputPostcode).execute { (response, error) -> Void in
+        placeGetStreetsByPostCodeWithRequestBuilder(postcode: postcode.asParameter, postcodeInputPostcode: postcodeInputPostcode.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -880,7 +880,7 @@ open class PlaceAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func placeSearch(name: String, types: [String]? = nil, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        placeSearchWithRequestBuilder(name: name, types: types).execute { (response, error) -> Void in
+        placeSearchWithRequestBuilder(name: name.asParameter, types: types.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

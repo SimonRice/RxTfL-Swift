@@ -19,7 +19,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointArrivals(id: String, completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        stopPointArrivalsWithRequestBuilder(id: id).execute { (response, error) -> Void in
+        stopPointArrivalsWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -182,7 +182,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointCrowding(id: String, line: String, direction: Direction_stopPointCrowding, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        stopPointCrowdingWithRequestBuilder(id: id, line: line, direction: direction).execute { (response, error) -> Void in
+        stopPointCrowdingWithRequestBuilder(id: id.asParameter, line: line.asParameter, direction: direction.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -440,7 +440,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointDirection(id: String, toStopPointId: String, lineId: String? = nil, completion: @escaping ((_ data: String?,_ error: Error?) -> Void)) {
-        stopPointDirectionWithRequestBuilder(id: id, toStopPointId: toStopPointId, lineId: lineId).execute { (response, error) -> Void in
+        stopPointDirectionWithRequestBuilder(id: id.asParameter, toStopPointId: toStopPointId.asParameter, lineId: lineId.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -507,7 +507,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointDisruption(ids: [String], getFamily: Bool? = nil, includeRouteBlockedStops: Bool? = nil, flattenResponse: Bool? = nil, completion: @escaping ((_ data: [DisruptedPoint]?,_ error: Error?) -> Void)) {
-        stopPointDisruptionWithRequestBuilder(ids: ids, getFamily: getFamily, includeRouteBlockedStops: includeRouteBlockedStops, flattenResponse: flattenResponse).execute { (response, error) -> Void in
+        stopPointDisruptionWithRequestBuilder(ids: ids.asParameter, getFamily: getFamily.asParameter, includeRouteBlockedStops: includeRouteBlockedStops.asParameter, flattenResponse: flattenResponse.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -619,7 +619,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointDisruptionByMode(modes: [String], includeRouteBlockedStops: Bool? = nil, completion: @escaping ((_ data: [DisruptedPoint]?,_ error: Error?) -> Void)) {
-        stopPointDisruptionByModeWithRequestBuilder(modes: modes, includeRouteBlockedStops: includeRouteBlockedStops).execute { (response, error) -> Void in
+        stopPointDisruptionByModeWithRequestBuilder(modes: modes.asParameter, includeRouteBlockedStops: includeRouteBlockedStops.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -725,7 +725,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGet(ids: [String], includeCrowdingData: Bool? = nil, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        stopPointGetWithRequestBuilder(ids: ids, includeCrowdingData: includeCrowdingData).execute { (response, error) -> Void in
+        stopPointGetWithRequestBuilder(ids: ids.asParameter, includeCrowdingData: includeCrowdingData.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -985,7 +985,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetByGeoPoint(stopTypes: [String], locationLat: Double, locationLon: Double, radius: Int32? = nil, useStopPointHierarchy: Bool? = nil, modes: [String]? = nil, categories: [String]? = nil, returnLines: Bool? = nil, completion: @escaping ((_ data: StopPointsResponse?,_ error: Error?) -> Void)) {
-        stopPointGetByGeoPointWithRequestBuilder(stopTypes: stopTypes, locationLat: locationLat, locationLon: locationLon, radius: radius, useStopPointHierarchy: useStopPointHierarchy, modes: modes, categories: categories, returnLines: returnLines).execute { (response, error) -> Void in
+        stopPointGetByGeoPointWithRequestBuilder(stopTypes: stopTypes.asParameter, locationLat: locationLat.asParameter, locationLon: locationLon.asParameter, radius: radius.asParameter, useStopPointHierarchy: useStopPointHierarchy.asParameter, modes: modes.asParameter, categories: categories.asParameter, returnLines: returnLines.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1233,7 +1233,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetByMode(modes: [String], page: Int32? = nil, completion: @escaping ((_ data: StopPointsResponse?,_ error: Error?) -> Void)) {
-        stopPointGetByModeWithRequestBuilder(modes: modes, page: page).execute { (response, error) -> Void in
+        stopPointGetByModeWithRequestBuilder(modes: modes.asParameter, page: page.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1463,7 +1463,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetBySms(id: String, output: String? = nil, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        stopPointGetBySmsWithRequestBuilder(id: id, output: output).execute { (response, error) -> Void in
+        stopPointGetBySmsWithRequestBuilder(id: id.asParameter, output: output.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1526,7 +1526,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetByType(types: [String], completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        stopPointGetByTypeWithRequestBuilder(types: types).execute { (response, error) -> Void in
+        stopPointGetByTypeWithRequestBuilder(types: types.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1774,7 +1774,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetCarParksById(stopPointId: String, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        stopPointGetCarParksByIdWithRequestBuilder(stopPointId: stopPointId).execute { (response, error) -> Void in
+        stopPointGetCarParksByIdWithRequestBuilder(stopPointId: stopPointId.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1884,7 +1884,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetServiceTypes(id: String, lineIds: [String]? = nil, modes: [String]? = nil, completion: @escaping ((_ data: [LineServiceType]?,_ error: Error?) -> Void)) {
-        stopPointGetServiceTypesWithRequestBuilder(id: id, lineIds: lineIds, modes: modes).execute { (response, error) -> Void in
+        stopPointGetServiceTypesWithRequestBuilder(id: id.asParameter, lineIds: lineIds.asParameter, modes: modes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -1970,7 +1970,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointGetTaxiRanksByIds(stopPointId: String, completion: @escaping ((_ data: [Place]?,_ error: Error?) -> Void)) {
-        stopPointGetTaxiRanksByIdsWithRequestBuilder(stopPointId: stopPointId).execute { (response, error) -> Void in
+        stopPointGetTaxiRanksByIdsWithRequestBuilder(stopPointId: stopPointId.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2273,7 +2273,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointReachableFrom(id: String, lineId: String, serviceTypes: [String]? = nil, completion: @escaping ((_ data: [StopPoint]?,_ error: Error?) -> Void)) {
-        stopPointReachableFromWithRequestBuilder(id: id, lineId: lineId, serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        stopPointReachableFromWithRequestBuilder(id: id.asParameter, lineId: lineId.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2538,7 +2538,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointRoute(id: String, serviceTypes: [String]? = nil, completion: @escaping ((_ data: [StopPointRouteSection]?,_ error: Error?) -> Void)) {
-        stopPointRouteWithRequestBuilder(id: id, serviceTypes: serviceTypes).execute { (response, error) -> Void in
+        stopPointRouteWithRequestBuilder(id: id.asParameter, serviceTypes: serviceTypes.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2656,7 +2656,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointSearch(query: String, modes: [String]? = nil, faresOnly: Bool? = nil, maxResults: Int32? = nil, lines: [String]? = nil, includeHubs: Bool? = nil, completion: @escaping ((_ data: SearchResponse?,_ error: Error?) -> Void)) {
-        stopPointSearchWithRequestBuilder(query: query, modes: modes, faresOnly: faresOnly, maxResults: maxResults, lines: lines, includeHubs: includeHubs).execute { (response, error) -> Void in
+        stopPointSearchWithRequestBuilder(query: query.asParameter, modes: modes.asParameter, faresOnly: faresOnly.asParameter, maxResults: maxResults.asParameter, lines: lines.asParameter, includeHubs: includeHubs.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -2780,7 +2780,7 @@ open class StopPointAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func stopPointSearch_0(query: String, modes: [String]? = nil, faresOnly: Bool? = nil, maxResults: Int32? = nil, lines: [String]? = nil, includeHubs: Bool? = nil, completion: @escaping ((_ data: SearchResponse?,_ error: Error?) -> Void)) {
-        stopPointSearch_0WithRequestBuilder(query: query, modes: modes, faresOnly: faresOnly, maxResults: maxResults, lines: lines, includeHubs: includeHubs).execute { (response, error) -> Void in
+        stopPointSearch_0WithRequestBuilder(query: query.asParameter, modes: modes.asParameter, faresOnly: faresOnly.asParameter, maxResults: maxResults.asParameter, lines: lines.asParameter, includeHubs: includeHubs.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

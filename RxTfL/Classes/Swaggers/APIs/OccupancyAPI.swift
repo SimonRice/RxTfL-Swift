@@ -19,7 +19,7 @@ open class OccupancyAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func occupancyGet(id: String, completion: @escaping ((_ data: CarParkOccupancy?,_ error: Error?) -> Void)) {
-        occupancyGetWithRequestBuilder(id: id).execute { (response, error) -> Void in
+        occupancyGetWithRequestBuilder(id: id.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

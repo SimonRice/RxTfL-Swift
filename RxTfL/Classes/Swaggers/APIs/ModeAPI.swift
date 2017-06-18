@@ -20,7 +20,7 @@ open class ModeAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func modeArrivals(mode: String, count: Int32? = nil, completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        modeArrivalsWithRequestBuilder(mode: mode, count: count).execute { (response, error) -> Void in
+        modeArrivalsWithRequestBuilder(mode: mode.asParameter, count: count.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

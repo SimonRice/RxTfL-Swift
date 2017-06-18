@@ -19,7 +19,7 @@ open class VehicleAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func vehicleGet(ids: [String], completion: @escaping ((_ data: [Prediction]?,_ error: Error?) -> Void)) {
-        vehicleGetWithRequestBuilder(ids: ids).execute { (response, error) -> Void in
+        vehicleGetWithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -171,7 +171,7 @@ open class VehicleAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func vehicleGetVehicle(vrm: String, completion: @escaping ((_ data: EmissionsSurchargeVehicle?,_ error: Error?) -> Void)) {
-        vehicleGetVehicleWithRequestBuilder(vrm: vrm).execute { (response, error) -> Void in
+        vehicleGetVehicleWithRequestBuilder(vrm: vrm.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

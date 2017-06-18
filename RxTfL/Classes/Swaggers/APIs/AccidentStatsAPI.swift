@@ -19,7 +19,7 @@ open class AccidentStatsAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func accidentStatsGet(year: Int32, completion: @escaping ((_ data: [AccidentDetail]?,_ error: Error?) -> Void)) {
-        accidentStatsGetWithRequestBuilder(year: year).execute { (response, error) -> Void in
+        accidentStatsGetWithRequestBuilder(year: year.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

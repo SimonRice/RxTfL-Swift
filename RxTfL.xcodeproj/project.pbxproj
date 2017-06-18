@@ -6,468 +6,480 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DAB620393ED15B41E84033 /* OrderedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C47C4558905EFEB639257 /* OrderedRoute.swift */; };
-		0139C52FCED71E091BC25969 /* TicketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E9CAE207C84F15D913277 /* TicketType.swift */; };
-		01CA83E58541DD88F8A11F5C /* ApiVersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17731D52391EB03C0D9CF3A7 /* ApiVersionInfo.swift */; };
-		0388916A4B69DDCF10F71C6B /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C9DE1B16D4BDDE69FC06F /* Journey.swift */; };
-		03E6B5C546599C19044ABB1B /* PostcodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EFDE8551A458FDDA4AFC4 /* PostcodeInput.swift */; };
-		05862C1D311DA5A491774D5C /* FareBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39BD00B5D68CAEEC2A8539 /* FareBounds.swift */; };
-		06E311B6B49A6AF68DAD9609 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617DC4326AB2EDAEEEEFB0F /* Place.swift */; };
-		089DD73332411240EBE51028 /* DbGeographyWellKnownValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B5E575E76955760FB2969 /* DbGeographyWellKnownValue.swift */; };
-		08FA43E5B1DAD41F876B5506 /* AccidentStatsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B12D7A7091197C550671A /* AccidentStatsAPI.swift */; };
-		0940EE38A431BDC053D20ABC /* TravelTimeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920BB5884B87D3F0160B765 /* TravelTimeAPI.swift */; };
-		09A332DFE90BD30397380B18 /* RouteSearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA318F8A9B32D8AE7FC1CA /* RouteSearchMatch.swift */; };
-		0F2AC0705E96532647AD8F43 /* FareDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4E2F96E3F80DCEB1FE26E /* FareDetails.swift */; };
-		107D906DB3FBB4066F14D77C /* PlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49BB311E1E6E0A0F83F03CE /* PlaceAPI.swift */; };
-		120FCA8E06758132947B6914 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020EADC9CE8FF85B7B709BC2 /* Interval.swift */; };
-		134B5C100040081819E8CA1D /* GeoPointBBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0BA9A57FFD870CEF26008 /* GeoPointBBox.swift */; };
-		15DE1FED45FC25562DBF3DA6 /* Disambiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2516AEA365DA156C1682CA /* Disambiguation.swift */; };
-		16B89821CC2E41961F851162 /* PlannedWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E19C898A41DFC5834FC4B /* PlannedWork.swift */; };
-		18F0A6538145EB1390C3DE13 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41A043217E80DD973119FF /* Identifier.swift */; };
-		1A7BD6962BF4AE242ACA9D42 /* RouteOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938358203BA3078A0F31DE05 /* RouteOption.swift */; };
-		1C51BEA9111FE0E581F2CD11 /* StopPointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D92F251B380103985DA1B /* StopPointAPI.swift */; };
-		20D39968EF58B4EC522C23AD /* MatchedStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAA37FFD1593EF12D6981C /* MatchedStop.swift */; };
-		217492E4EA607B34C1DE5D8E /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4791219F5BDAF28323D936BD /* Timetable.swift */; };
-		2666058DEF896989BE3E57BC /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52095A588188C7B2C9E22103 /* Fare.swift */; };
-		26F0C4AA49A7E41136F14562 /* StationInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABB6B102AB305A2C549A61 /* StationInterval.swift */; };
-		27F41CF90E17131A0390E3B7 /* StopPointSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49BEF556BF1C091124233B4 /* StopPointSequence.swift */; };
-		2A0BFBC831A5FF91B55D825E /* LineSpecificServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842DE5F77520C51A12F15A4 /* LineSpecificServiceType.swift */; };
-		2A99EE948A19A3FC226FE2A8 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430D018F06F41AC34C41EAE3 /* VehicleAPI.swift */; };
-		2ACB37AC9745AAF947879B88 /* TimetableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390B1B82C3E60299580A002 /* TimetableRoute.swift */; };
-		2B4AD1FB97421102D722C229 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62438BD4D12F280D18BF1D0A /* Period.swift */; };
-		2D4BB14355E8231E070C1BB1 /* BikePointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014C6580C40C9503FD629A9 /* BikePointAPI.swift */; };
-		2EB16A3438588940A6224039 /* LineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72ADCEE72010811BFDFD27 /* LineStatus.swift */; };
-		30E88B0F15A22FCB7820DAC4 /* AirQualityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92812F488F3138DECD9D8D63 /* AirQualityAPI.swift */; };
-		31AC534914E028DEE3723520 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB76ED5B19A94D28A88324 /* Ticket.swift */; };
-		32A1A18AE0766D799476D5FF /* RouteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D428EDA4B78FF49F67991E /* RouteSequence.swift */; };
-		34AECD2F48FF1C704CDB3C76 /* RecommendationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14F100D1D6635463D1B30DD /* RecommendationResponse.swift */; };
-		350B6CB10B073466695265CC /* RouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF517850D616295E0113424 /* RouteSection.swift */; };
-		36215B429011C4AE127BBE8A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDE29734784E6683F9736F /* Message.swift */; };
-		36A5D62A8CE671877B32E38C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F165CA70648BC8495418B /* Schedule.swift */; };
-		389B409025F2285A4763AA2A /* FaresMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EC31D612EB1323A38EB27 /* FaresMode.swift */; };
-		3925AC63DFD64CD78F98A217 /* Redirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82431B201FAD1C3A03A2D28A /* Redirect.swift */; };
-		3FD7208A598144907BAA21E5 /* RoadProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A517EB60BDACB373F9938 /* RoadProject.swift */; };
-		406805D700E42BF5FD9A9030 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B902CC5EB07C7AB83FFBB /* Leg.swift */; };
-		40A9A7C4350861EB523EC14D /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7560EB2E27B61D0679623D5 /* GeoPoint.swift */; };
-		4298D295250445AE1AA48F37 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6679F8E169B713A31199960 /* Obstacle.swift */; };
-		43D8CCB437719AD3440A2BDC /* CarParkOccupancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F330F1E37DCCC2BBC292C /* CarParkOccupancy.swift */; };
-		44BB24321CFABCE74FF2D4F4 /* RoadDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866BA2DFE8B7280D6EA4CCB5 /* RoadDisruption.swift */; };
-		4624F68D56BDFCCEF42DA020 /* SearchCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104A1DA8A90DC47534B05E7 /* SearchCriteria.swift */; };
-		4B63A58D3CBD9B828E1C9655 /* Disruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F00F94B6D33DDD3CF9A1C /* Disruption.swift */; };
-		4FB54C52E240BBBCEB127AE9 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8742C775A3DC890A3E99EF /* StopPoint.swift */; };
-		536F8B70AC76D6A0B2CFA2A8 /* TimeAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC02F3A0B6DA33E31EA3475 /* TimeAdjustments.swift */; };
-		54579C11AB8A72942AE0886F /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B96ED588FFA5470628794 /* APIHelper.swift */; };
-		557095C0507041F1DB8AEE66 /* LineModeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A97D5A143EB0249DD5620C /* LineModeGroup.swift */; };
-		583BA387FEF61DA22BA82927 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A93F925241ECE5DF9FCBC5 /* AlamofireImplementations.swift */; };
-		5AD6506A01B9E4C0A2CD3BFA /* TrainLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0EA6BC5FD5757ACD9E1A7 /* TrainLoading.swift */; };
-		5CB255E62B5F6C067F6C743C /* LineGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAC9469EF7AE3E0B3C3E92 /* LineGroup.swift */; };
-		5E24BFEF31C7D7CABA0A5F04 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524084F2AAB7DF0462135B7 /* Prediction.swift */; };
-		6003ED1F17CFFF41A9907115 /* FaresSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3ED2C13523CC7275F7881E /* FaresSection.swift */; };
-		602C6FD97917DD8162864A5E /* JourneyPlannerCycleHireDockingStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBED6398F77C10D55E69AD5 /* JourneyPlannerCycleHireDockingStationData.swift */; };
-		60BD251D968BD0A7552A1E66 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358A8029BF79DEE004987E40 /* Vehicle.swift */; };
-		63B584BCB056B9A578B37972 /* JourneyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A479B6CE00701078670D /* JourneyAPI.swift */; };
-		656DDC0513930F27A2DC60B5 /* CabwiseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1243456C9663CC4DA61E07 /* CabwiseAPI.swift */; };
-		6E5EEEF8534B98DECCB6877E /* StreetSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C544A8877EF66BEDFB9FA4 /* StreetSegment.swift */; };
-		6F6598240FA224262ECD3CC9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519D888444C71C986709E2D /* Models.swift */; };
-		718B5B981339D418EE6D86DB /* PassengerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBFA60FFDABA7A320791BC /* PassengerType.swift */; };
-		73232BEF817EE8A9B72FCA08 /* KnownJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0A4D396BC0EA55213917E /* KnownJourney.swift */; };
-		7462B0140520D79D809FB42F /* DisruptedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E18208B2EBD6BFF80B2756B /* DisruptedPoint.swift */; };
-		74CB4DD8AA528316287DF222 /* TicketTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE28629C32AE467612BD4 /* TicketTime.swift */; };
-		79660333D329D58E481F8A93 /* DateRangeNullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB59391B98D0EE62087204F /* DateRangeNullable.swift */; };
-		7AB6A69FB2F7E3DC9C8B52F8 /* RoadDisruptionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0836F6D26C4E672F24591F6F /* RoadDisruptionSchedule.swift */; };
-		7AC73973841637191DF5E30D /* DbGeography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD0A2CBE020498C28EFA11 /* DbGeography.swift */; };
-		7C7A88DB636AE9EC4D41246B /* InstructionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78EDAC4C03A4FCB89DE79A0 /* InstructionStep.swift */; };
-		89F95C70E7CC995CE5FCB46D /* PlacePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEC704F33CE356BFFC40225 /* PlacePolygon.swift */; };
-		8A5017C468A7D05EB13F727E /* StopPointRouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD7AE8FF14D991090CEC53 /* StopPointRouteSection.swift */; };
-		8B64F58F6B26FFABDD0BCFD5 /* DisambiguationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC510919FA24B6D4A3A0A8F1 /* DisambiguationOption.swift */; };
-		92BA8ADEC1B469356B2CDFF6 /* ModeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B8BF88DD02D6A2361D83C /* ModeAPI.swift */; };
-		980822A8E0A2564750F00380 /* LineServiceTypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C3C83FBE687B81BE0D20 /* LineServiceTypeInfo.swift */; };
-		9DC024A45FE8F51D92DEBF3E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A630BC8216869121639FAC7 /* Coordinate.swift */; };
-		9EB1BE5CBCF1865405747ACB /* SearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78253AF25EB992D4A06F130 /* SearchMatch.swift */; };
-		9F2D2BC00AE4AB4CB1C98341 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F10FB2BD1AA1976E148B8 /* Extensions.swift */; };
-		A155CD2A3446B1B13E838E51 /* TimeAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740A99445E33DF1D721A0 /* TimeAdjustment.swift */; };
-		A308F32302EDDC2690CF104E /* Casualty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47983B82DD29707FD1287F4 /* Casualty.swift */; };
-		A6A93E1FEB3128C735BF7FFB /* Crowding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A39F6A21B373F0405665E /* Crowding.swift */; };
-		A7C228900534D264BACB0844 /* StopPointCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF004656DD0DE42E7D366D /* StopPointCategory.swift */; };
-		A97AFC4D0231ED9EF5CAF6F4 /* Bay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7E070201471A6CA961D41 /* Bay.swift */; };
-		A982D72B59DCA791F9959B85 /* CycleSuperhighway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D791190FC2C9CD1CBCF666A /* CycleSuperhighway.swift */; };
-		AC155D1A52DDE5D51ABE4A64 /* RouteSectionNaptanEntrySequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C812F5C5CD4ED229149E1A /* RouteSectionNaptanEntrySequence.swift */; };
-		AD3076FA131D052AD6B6AD4C /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C19D2C75C639D38649DC3 /* Object.swift */; };
-		AFFF2EFB230F0F2D8D753B0B /* PredictionTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F2F01B0D94A40711CEAA5 /* PredictionTiming.swift */; };
-		B5964D93F0E40E38BF60ACB6 /* LineServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F412BEA39ED4992E6DBDD8 /* LineServiceType.swift */; };
-		B5AF7B82B9AAD3581720B2B3 /* MatchedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5CACFA56B1979D0CB89E4 /* MatchedRoute.swift */; };
-		B6B45B2824C97A64A322A4BD /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88510391231BC485D725B50 /* Point.swift */; };
-		B81000C926DB6AF6E2960DF4 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E8E9C7F01C2BC35E0D6F99 /* DateRange.swift */; };
-		BAFD69263BAD79A32B8F8345 /* LineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5DAAD9AA6ABD8D5A0EDB2 /* LineAPI.swift */; };
-		BB2EFE0F6B9EF328FB570BB6 /* LineRouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327A16858FCCDB709CE7B6 /* LineRouteSection.swift */; };
-		BC951B7B5DBB4F26520AB5DC /* RouteSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3A678C5B00EC04C32220E /* RouteSearchResponse.swift */; };
-		BDF629EDA60652D85FFC4698 /* RoadDisruptionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC25DBC0D8A73E144C4E0E /* RoadDisruptionLine.swift */; };
-		BE932190CCCD28ED447EBDD4 /* ServiceFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E37518AC36E25E4AEA6AA /* ServiceFrequency.swift */; };
-		C05167F4C873547AD3CDB7F0 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B4D641684B8E2E409CF5E /* Path.swift */; };
-		C292181438E66B4F56B1EC77 /* RoadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216AE854EF9D1517F9975624 /* RoadAPI.swift */; };
-		C3E687887C2C1C191703AEDF /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312D634A0638C98897A0140 /* SearchResponse.swift */; };
-		CA2032860AC08CCF3C9068F6 /* MatchedRouteSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED394DCE2361623EB55D6C20 /* MatchedRouteSections.swift */; };
-		CB10257A2674442F91787187 /* ValidityPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333ABE6107D32BA256ADDE4 /* ValidityPeriod.swift */; };
-		CBF8570970A0140A7F9E4081 /* RoadDisruptionImpactArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FD1BE39753BA60F5A2BFF /* RoadDisruptionImpactArea.swift */; };
-		CD2F67CDC01FA4B0C56AFBD1 /* PassengerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056A0BF31A6EB7D526D0D0C /* PassengerFlow.swift */; };
-		CDA28041CD0F44988A1A8068 /* JourneyVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF990F9B4773007A4F2B98 /* JourneyVector.swift */; };
-		D082A3E36222B30CA4E8547D /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973CFE2DE10071E9E6DBE33 /* Instruction.swift */; };
-		D52D7B2BEE1919829BF4CD4F /* TwentyFourHourClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C85068B0C056CC6FF5F599 /* TwentyFourHourClockTime.swift */; };
-		D92981B796371F020F151A2D /* TimetableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC59F45BE62CB15C712690 /* TimetableResponse.swift */; };
-		D9CCC408E23F0166C9386C60 /* JpElevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C1CC2CE26B163CA3EF5CF /* JpElevation.swift */; };
-		DCD09A8867931BA16E2758D6 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B32010E4733262445CC4634 /* Mode.swift */; };
-		DE74AA8C0205EF304679AEF3 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650A39777D0BD738394E5E44 /* APIs.swift */; };
-		E2623A29EC4A4BE0EEC51443 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A638EB7126A52DD0FB679 /* SearchAPI.swift */; };
-		E2E50E4470D62B23C9AFBCCC /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C38A5582C3C52EE9C958F8 /* Recommendation.swift */; };
-		E36F4BCD37AC9943A45FB34E /* PlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265FCE9F11B2CEBBC9056CB /* PlaceCategory.swift */; };
-		E3CAE645EB98F5DF9815F86B /* OccupancyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCDE5726FAF7AD72CD5873 /* OccupancyAPI.swift */; };
-		E43C95B1923CD0EBEB364106 /* FaresPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5DB88E19643DD82EF45E7 /* FaresPeriod.swift */; };
-		E45B7CE89D5079F816CFC224 /* ActiveServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E370885E23B964FFA2BD817 /* ActiveServiceType.swift */; };
-		E72FE89F32A435B0D79CF353 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34DC00F6212AA5CED9856AC /* Street.swift */; };
-		E761E4175EBE156542CD97C4 /* StopPointsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15083C72EB3E28125145D35F /* StopPointsResponse.swift */; };
-		E96E7BE0D5E41ED1E98F6465 /* AdditionalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEEBCB07E524A9F5325A21B /* AdditionalProperties.swift */; };
-		EA29C18E4CFE5E6292E60239 /* PathAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BB35A70FFCF6BA7975921 /* PathAttribute.swift */; };
-		EA86300336B367DF4C917E4A /* ItineraryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B000B77814510EC3B5F49 /* ItineraryResult.swift */; };
-		EC289DD5D265853DC4B64840 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D502BDCFBF059BD9157432 /* Line.swift */; };
-		F06ED2EA1DD8268563F3984B /* AccidentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7E41BFF52B0EF2B68B2 /* AccidentDetail.swift */; };
-		F0A4A661925E078F32E10BC1 /* StatusSeverity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7268FFEEAAB0E2B28D417C3 /* StatusSeverity.swift */; };
-		F345D7FD4BC6A1C7F7B0DBB6 /* AccidentStatsOrderedSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF5A78BB6129F1FA9CF995 /* AccidentStatsOrderedSummary.swift */; };
-		F4BD1FA750C40119371CD06E /* RoadCorridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C120CAA4308A9B79F6016C /* RoadCorridor.swift */; };
-		F7D05F2B4BBBD8D14AA580CD /* EmissionsSurchargeVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374D8D404B0C0814CC50347 /* EmissionsSurchargeVehicle.swift */; };
-		F89B5F0543B82563B0E21C06 /* GeoCodeSearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FA828A2FEAA16BA4E26B /* GeoCodeSearchMatch.swift */; };
+		0395DF861467F820D5220039 /* MatchedRouteSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DA7E1CD15476D13EDCFAF /* MatchedRouteSections.swift */; };
+		048F831348CE830F1F86259A /* JourneyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E144DDA01285EDDF2A6C660 /* JourneyAPI.swift */; };
+		086F8A662C05D63065974DAB /* PlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4792780A03BCDC0CF8296C7F /* PlaceAPI.swift */; };
+		093E78E55423A6AA3F6E7F70 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD2CFFA31B42E044BD2496 /* Point.swift */; };
+		0C898872BC566213D0BFBFE1 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433204A62A7E88F2D9B7B73 /* Obstacle.swift */; };
+		0D4A0C19C1BE995AE34D4A93 /* StopPointCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687C6D23407C0A6D4A4E20A /* StopPointCategory.swift */; };
+		0FEE59DD56361A271A6CBDE0 /* PassengerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605316E48BF170995B13D14 /* PassengerFlow.swift */; };
+		109F0C40E0AF0B28D0BA1789 /* TrainLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D69D398B446219FA45910 /* TrainLoading.swift */; };
+		13DEAF4BEE5BF18C2F8C7D20 /* DbGeographyWellKnownValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A80179DE86532711BF691B /* DbGeographyWellKnownValue.swift */; };
+		13EA5AB81BECB1B7D910B201 /* PlannedWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0874EA0AB145497BEC2B7C /* PlannedWork.swift */; };
+		14BE1E5A7D8C1E31E9130D6B /* FaresSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95542E172D9DF908AFF840 /* FaresSection.swift */; };
+		18168592382E3FD6A6BCC5E3 /* ValidityPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8F9F1AC8EF7F6975002A7 /* ValidityPeriod.swift */; };
+		1A2AD52B4584B1A109694568 /* ModeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC782A56375CDCE5EA4A2 /* ModeAPI.swift */; };
+		1BA185593F9F9B6168A6E364 /* DisambiguationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65791D407F26A736A7EC672 /* DisambiguationOption.swift */; };
+		1DA0DF0D29E1F07E907A15FD /* FaresPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762EB4C6C1FF2D485D7F39D0 /* FaresPeriod.swift */; };
+		1E97730F3F5A4E0D5CAA9EB6 /* PlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A867D340B4A14BEBCBD56 /* PlaceCategory.swift */; };
+		1F4E33ADFC7B373BD1F530C1 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78941EEED8D21B7B066F63 /* Schedule.swift */; };
+		1F53B6C1A354E30750373D0B /* AsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD03B5E6C907BE52129E3ED /* AsParameter.swift */; };
+		1FAD184412ED067A25C26455 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E28C4B45B8D1DDBC43EF0B /* Object.swift */; };
+		201352A4F838D7DBB9DF24E6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF0D4EECF7CDDCC3D30916C /* Vehicle.swift */; };
+		20A6BE3FE66A8C3B02922285 /* SearchCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59458F00E41B344158A73DE7 /* SearchCriteria.swift */; };
+		223649D39DEBCBE9EAA923F8 /* Disambiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB74B3341B6709AB771D58 /* Disambiguation.swift */; };
+		235C44D6B6627B5E554503E0 /* AccidentStatsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF639B2C2F82BE57ABEC89 /* AccidentStatsAPI.swift */; };
+		257982E2AA6413F8C6B12582 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B59E5C299CD9E968D4659D /* Interval.swift */; };
+		28EB9F6BC7E840473F3F7CA7 /* StopPointRouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F9312EDABEC3CCE8AABF4 /* StopPointRouteSection.swift */; };
+		2A6E8B0560DE1607A0CEB0E4 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86508271C46E90476AE8C8 /* Path.swift */; };
+		2D2BEC5FBF0117211D5EBC75 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995887B3C5F7EB1B0E42F554 /* StopPoint.swift */; };
+		2DDC28D305427453EF617BCF /* Casualty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1EC596BB12CA842EB29D1A /* Casualty.swift */; };
+		2DE72E9C3FB639AC28FFDA5F /* TimetableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51046539D1C3587FA7EFBE16 /* TimetableResponse.swift */; };
+		308BB9518FBB6029601CF889 /* RoadDisruptionImpactArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A783E1E39BB090A6C5D23 /* RoadDisruptionImpactArea.swift */; };
+		3206F9DC5731C0C3AABF3F8E /* Bay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033F188D1145CE53CC0A6BCF /* Bay.swift */; };
+		331F1D76FBA34A299FF05FC4 /* PredictionTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6EF99D354CE0FD6B270F7 /* PredictionTiming.swift */; };
+		33C6FE5748588BBD66D321BB /* MatchedStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8C484A99C742365E73CCB /* MatchedStop.swift */; };
+		340A41EB36614D7F9D7F3635 /* JpElevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372ACEFB33429F262A74F53 /* JpElevation.swift */; };
+		34D77D08CF8278E803BFBEBA /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F863969192A5B529E6252FC /* Recommendation.swift */; };
+		355D190C76FB4E2E069B8C32 /* StopPointSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA608086BA5B114F5A722EA /* StopPointSequence.swift */; };
+		3607481C06CB3B9DD6EDD953 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1A256236AA4E21EC9BDBCD /* Identifier.swift */; };
+		38285EC7CD50D626B581E362 /* Disruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D385B852A920BC84D0B338 /* Disruption.swift */; };
+		3894F4D554F0133905834868 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B964C12C31179B9C4AA4B861 /* Models.swift */; };
+		397541914EA0221888B83BA3 /* TwentyFourHourClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12541A2D114B193DBDCDEE69 /* TwentyFourHourClockTime.swift */; };
+		3A6904B43C2F89273F887E00 /* RecommendationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728245CB710AEDD04458828 /* RecommendationResponse.swift */; };
+		3B654B73A84DB5C262742687 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99759EFDC55B413A8B75E6DD /* Line.swift */; };
+		3DEC935A290473E8B00EF5D5 /* DbGeography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0673531D2B8D74905B9AF2E0 /* DbGeography.swift */; };
+		41E892D5F25B4AD833D6922B /* CycleSuperhighway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525244FD7D714F352C55129A /* CycleSuperhighway.swift */; };
+		45792644DAF395677F5160E7 /* BikePointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08584DEF75BCD4FBA0848B9 /* BikePointAPI.swift */; };
+		4A30AF7D2EC17992BE847148 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F3691EC4BA56A4031727F8 /* AlamofireImplementations.swift */; };
+		4AAA7EB7454FBEB7A082DCD1 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99407A99345AA359A29A1F42 /* Leg.swift */; };
+		4CAEE2D3B9BFFB8AAF1D2C25 /* CarParkOccupancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12B8A49AD26E60E3EC8B48 /* CarParkOccupancy.swift */; };
+		4D966C944EC161F2ADC73289 /* ServiceFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069BA200B154D9C291240A7 /* ServiceFrequency.swift */; };
+		4EAC399D0452D2982BA41BDC /* JourneyPlannerCycleHireDockingStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621976F4BA921B410220D35C /* JourneyPlannerCycleHireDockingStationData.swift */; };
+		4F043EFBEFBA54106324B363 /* OccupancyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A51A42050324DD68D4D3C /* OccupancyAPI.swift */; };
+		4F3DE82F98861BA9D4F7612A /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27B5DCAAD4353949ADF48A /* Instruction.swift */; };
+		4F49B692079A8C811B8AA417 /* FareDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17773BBBA17DC686FCD03BD /* FareDetails.swift */; };
+		526DAE9AB930234EA258B0AD /* CabwiseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E4AD03228A3606693F560 /* CabwiseAPI.swift */; };
+		53DF68F5002D9C453541F0FC /* StatusSeverity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0974AE1411CC2159394BF3A /* StatusSeverity.swift */; };
+		550742F35EF8287D4CD7C96A /* ApiVersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780057473D5BBC49D8455D2 /* ApiVersionInfo.swift */; };
+		566EA40B134281D294512A8C /* InstructionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B879E6DD90C80825DD15F84 /* InstructionStep.swift */; };
+		5792555E8FA1D2E7C07724C1 /* TicketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFABA7063E2F240C437847 /* TicketType.swift */; };
+		580A7E94A08D02FD77ECB635 /* TimetableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D2985258E791D838B9EA4 /* TimetableRoute.swift */; };
+		58F9872039CE0198202BFCF4 /* TravelTimeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E948CBE3AD4B924B8ED47A3 /* TravelTimeAPI.swift */; };
+		594B3DDB73E13FCAF1AFB15A /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240F23A4639B57353A0ABF /* GeoPoint.swift */; };
+		59DE61F1D6D8CD4F9AEE91ED /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBFFF65CD36045B33620E2 /* VehicleAPI.swift */; };
+		5BDEC8D3F9E57CA75093EE08 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA67B4C46498973A8610B1DB /* DateRange.swift */; };
+		5BF0844EB3F7EC2C235D2004 /* AirQualityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AB9F1784FB2CAED22C066 /* AirQualityAPI.swift */; };
+		625C9690793C3074570AE9F6 /* RoadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B5F76A93AC14A9695EA94 /* RoadAPI.swift */; };
+		6262A1579D0CF0EE7D770BF0 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B58CAB84FF6F0ACC619DEB /* Coordinate.swift */; };
+		6598A24A1AEB2ACCE6BE643A /* EmissionsSurchargeVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E8FACB740D058A8F35583 /* EmissionsSurchargeVehicle.swift */; };
+		685D996A1AC6CAC16BF56E16 /* StreetSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9ACDF995745E5CFD0288 /* StreetSegment.swift */; };
+		6B0920553E0E8179DD2ACA8D /* LineServiceTypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB7555053E323F8E2DBF7B /* LineServiceTypeInfo.swift */; };
+		6D0ADFF04A572A31CEA1FA64 /* AdditionalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A6DA3D0416BD07D10D0C0F /* AdditionalProperties.swift */; };
+		6E1298B15C5B5E565F36E527 /* TicketTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6C4A035035AA2BB3D15168 /* TicketTime.swift */; };
+		727D6BC027AC532DE95ACC83 /* TimeAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EE53D919B7970AC09077E /* TimeAdjustment.swift */; };
+		74C610A509FAE856137F4F08 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C418ED5E97A33E68BF0A0 /* Mode.swift */; };
+		75E208EA1552D2A8BAFC5075 /* LineModeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EB78B08974EDD81D83385 /* LineModeGroup.swift */; };
+		79BEC14D2F78F2EFFD9871CC /* StationInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741767A920739AB6CA6690AB /* StationInterval.swift */; };
+		7A0A7EAD2D2B501439F06633 /* LineRouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCEC2EF5C3A6D30A4F96F6B /* LineRouteSection.swift */; };
+		7A2610294D090A81AC4CEC7A /* RoadDisruptionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E927DC656CA6DC572E68C0 /* RoadDisruptionSchedule.swift */; };
+		7A6FBF7C1764950D593223C9 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410FB488750883ED28A0F169 /* SearchAPI.swift */; };
+		7FAD74BABFE72674145DF677 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BA5CBF4ECEC6A622F89BE /* Ticket.swift */; };
+		836BF887F4F8E005782ABD72 /* RouteSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532292506F73E6B5A5F0F857 /* RouteSearchResponse.swift */; };
+		83771A1A7E775076623084D8 /* LineSpecificServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D405FB0B991C710D2D74DA /* LineSpecificServiceType.swift */; };
+		849B5DE1583373CA5F1D8C2F /* Redirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35D192B7C0C64537EF3067 /* Redirect.swift */; };
+		87480BCA648EE075416682E7 /* RouteOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9868C27E383F61FB9957E /* RouteOption.swift */; };
+		89EEEE88A023BFDDBCF0BB33 /* SearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746E902DF6C16F97E67AF80 /* SearchMatch.swift */; };
+		8CACBF55B7C6D30B82C10479 /* AccidentStatsOrderedSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A18320233A7BC22BB3ECCD /* AccidentStatsOrderedSummary.swift */; };
+		9049B646A42DE72DD815BB4A /* GeoCodeSearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5D4518EC083BDA16E2599 /* GeoCodeSearchMatch.swift */; };
+		9940F979AAE2E2396A496E1E /* StopPointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EE56B7363EC7AEB130710 /* StopPointAPI.swift */; };
+		9B7F395C026DA8A2EA207A25 /* MatchedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06863DC8E25DE35681F87 /* MatchedRoute.swift */; };
+		9E5CAE4739963DAAE58DD04E /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E1B3A10B1E352919EBA3D3 /* Journey.swift */; };
+		9F89A4A97D67CAF1B9E1D84F /* PassengerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA05B249BEA48D042DE60E6 /* PassengerType.swift */; };
+		9FF1A604C3FF8F1E22A70102 /* RoadDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F978CC864DAB909401B69 /* RoadDisruption.swift */; };
+		A3358094DA787D0894C7DCF4 /* RouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1738776F4A425F665BB0A1A /* RouteSection.swift */; };
+		A7898673A79A50240B3D072A /* RoadDisruptionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859720E152C138C00EF919 /* RoadDisruptionLine.swift */; };
+		A86302BEF6419FAD271222BD /* PostcodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D2D3F93F70F71FFBFABE7B /* PostcodeInput.swift */; };
+		A95C8DC232136A49D4A01A50 /* RouteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA59111916DBCB8857ED47B /* RouteSequence.swift */; };
+		AA264928118DECD909E28024 /* KnownJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91435664B1D1D18E88BE643 /* KnownJourney.swift */; };
+		AAA5DE2F145ADD77EA87F8BD /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D727AA95220440310FDF22 /* APIs.swift */; };
+		AEF0047AAD4E761000037841 /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6628B36B4BF4896A85BCA610 /* Fare.swift */; };
+		B047AE527B613BEB28EA380D /* JourneyVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B9068C2A5AC4D14DBC490 /* JourneyVector.swift */; };
+		B197DFD3AC63FD84B13620F1 /* LineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C4F73820681F3B125DE3 /* LineAPI.swift */; };
+		B1D75B80AF326FD5963EBF5E /* PlacePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071EC4EBF81FE4485E09C8C /* PlacePolygon.swift */; };
+		B34893FCAC5195A4103D5AAF /* LineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44734B2982D8384AFFC90B01 /* LineStatus.swift */; };
+		B54A1BABD25260031D7902F3 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0D2CE21AC4A34DB76F9AE /* Street.swift */; };
+		BA679DB5958A6457CB36474F /* PathAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219952A7A74CE4D64BBE259 /* PathAttribute.swift */; };
+		BEE7D47C62794A324DDAA38F /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EF5E440936BB498BA95EC /* Period.swift */; };
+		C11A5EA7A13E9350E8B38273 /* RoadProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB76CE708803F1017E5311B /* RoadProject.swift */; };
+		C158173091E300916B3AF802 /* DisruptedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC882D167433D8919163 /* DisruptedPoint.swift */; };
+		C330D77108A446198CC5C1E5 /* TimeAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324474BE4349FB1F3B2E18E /* TimeAdjustments.swift */; };
+		CA42745078E05148D7617E9A /* RouteSectionNaptanEntrySequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D414C3A0DCF1E411C34CC81 /* RouteSectionNaptanEntrySequence.swift */; };
+		CB8A4353F0C7F3470CAE8BD2 /* RoadCorridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816C7E5C4CC8D38BD4F3FBC /* RoadCorridor.swift */; };
+		CBC6BE5E8EC3DC44E1456773 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C8D225E97F18D2B62030DC /* Prediction.swift */; };
+		CDA7C4B3B67C59A674E48EAE /* DateRangeNullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150860729FC3BD55E5AAD0C8 /* DateRangeNullable.swift */; };
+		CF274418DA466F63215DBB32 /* GeoPointBBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40EA280E6CD369CBFAB83A /* GeoPointBBox.swift */; };
+		D24BAB114811B6085D37277F /* FareBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06F7F576F7EDF80C8ED93 /* FareBounds.swift */; };
+		D3A785017987EFBDAED25EAB /* RouteSearchMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC15C6C366F3CED161032E6 /* RouteSearchMatch.swift */; };
+		D79B01E3B5FBA3050632BC8F /* ItineraryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB039E1A139A5B32EFA46 /* ItineraryResult.swift */; };
+		E08A0F8FAA817B33F80D0DFA /* LineServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02250DF934AD864BCCC7B8 /* LineServiceType.swift */; };
+		E12C878FBCEAB95EE564D1B9 /* FaresMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F76A93C1178C25B05B5654 /* FaresMode.swift */; };
+		E2E27A3AD984391A29F0916D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739AF9F713103B82724E7A2 /* Message.swift */; };
+		E3804AFFDB2F3D6CA6F7FACB /* LineGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B430BAA22E1F16E3164A9 /* LineGroup.swift */; };
+		E461C8E05615A98B3D595405 /* AccidentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135105AC49D07899CDE6028 /* AccidentDetail.swift */; };
+		E78E116E7FF631C7B79FD550 /* ActiveServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA45F7E92FA237731AE50A /* ActiveServiceType.swift */; };
+		E8EDF50B428FD11D000C5828 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4615F7EFBEFBC60501AEF11 /* SearchResponse.swift */; };
+		E8F908CACDDA3F2003A350D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40872A31434918CD989198 /* Extensions.swift */; };
+		EA2F8D76EB168E3FB6FD25AB /* StopPointsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5222DCC3DBAFE0BC0362F2 /* StopPointsResponse.swift */; };
+		EE8971CED3087D4028356FF9 /* Crowding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF961EA3E79D49517913782 /* Crowding.swift */; };
+		F07A3CB72AE73397B381BA2D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3AE1886931F6049738A39 /* Place.swift */; };
+		F259DF642248729644635E07 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D2FE045B69A546EB2E2E5C /* Timetable.swift */; };
+		FAB4CEECAD0F153B803F81AD /* OrderedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1EE05EC9C8B8FC8E88DF0 /* OrderedRoute.swift */; };
+		FF57B1A4BEDC899B66F92015 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F11A5A41BCCC921EF7CA9 /* APIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		020EADC9CE8FF85B7B709BC2 /* Interval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
-		0312D634A0638C98897A0140 /* SearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
-		03DF004656DD0DE42E7D366D /* StopPointCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointCategory.swift; sourceTree = "<group>"; };
-		0836F6D26C4E672F24591F6F /* RoadDisruptionSchedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionSchedule.swift; sourceTree = "<group>"; };
-		0842DE5F77520C51A12F15A4 /* LineSpecificServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineSpecificServiceType.swift; sourceTree = "<group>"; };
-		0AC02F3A0B6DA33E31EA3475 /* TimeAdjustments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeAdjustments.swift; sourceTree = "<group>"; };
-		0B32010E4733262445CC4634 /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
-		0FF7E070201471A6CA961D41 /* Bay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Bay.swift; sourceTree = "<group>"; };
-		1333ABE6107D32BA256ADDE4 /* ValidityPeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidityPeriod.swift; sourceTree = "<group>"; };
-		13BA318F8A9B32D8AE7FC1CA /* RouteSearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSearchMatch.swift; sourceTree = "<group>"; };
-		14C120CAA4308A9B79F6016C /* RoadCorridor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadCorridor.swift; sourceTree = "<group>"; };
-		15083C72EB3E28125145D35F /* StopPointsResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointsResponse.swift; sourceTree = "<group>"; };
-		17731D52391EB03C0D9CF3A7 /* ApiVersionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApiVersionInfo.swift; sourceTree = "<group>"; };
-		1E18208B2EBD6BFF80B2756B /* DisruptedPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisruptedPoint.swift; sourceTree = "<group>"; };
-		1E8742C775A3DC890A3E99EF /* StopPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPoint.swift; sourceTree = "<group>"; };
-		216AE854EF9D1517F9975624 /* RoadAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadAPI.swift; sourceTree = "<group>"; };
-		21CD7AE8FF14D991090CEC53 /* StopPointRouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointRouteSection.swift; sourceTree = "<group>"; };
-		26F412BEA39ED4992E6DBDD8 /* LineServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineServiceType.swift; sourceTree = "<group>"; };
-		28327A16858FCCDB709CE7B6 /* LineRouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineRouteSection.swift; sourceTree = "<group>"; };
-		28F5DAAD9AA6ABD8D5A0EDB2 /* LineAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineAPI.swift; sourceTree = "<group>"; };
-		2B4B5E575E76955760FB2969 /* DbGeographyWellKnownValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DbGeographyWellKnownValue.swift; sourceTree = "<group>"; };
-		358A8029BF79DEE004987E40 /* Vehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
-		38C5CACFA56B1979D0CB89E4 /* MatchedRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedRoute.swift; sourceTree = "<group>"; };
-		3A9F330F1E37DCCC2BBC292C /* CarParkOccupancy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarParkOccupancy.swift; sourceTree = "<group>"; };
-		3D3E9CAE207C84F15D913277 /* TicketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicketType.swift; sourceTree = "<group>"; };
-		430D018F06F41AC34C41EAE3 /* VehicleAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
-		44C544A8877EF66BEDFB9FA4 /* StreetSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreetSegment.swift; sourceTree = "<group>"; };
-		4791219F5BDAF28323D936BD /* Timetable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
-		4A39BD00B5D68CAEEC2A8539 /* FareBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FareBounds.swift; sourceTree = "<group>"; };
-		4B7F165CA70648BC8495418B /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		4C3ED2C13523CC7275F7881E /* FaresSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresSection.swift; sourceTree = "<group>"; };
-		4D5EFDE8551A458FDDA4AFC4 /* PostcodeInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostcodeInput.swift; sourceTree = "<group>"; };
-		4E8C47C4558905EFEB639257 /* OrderedRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderedRoute.swift; sourceTree = "<group>"; };
-		5056A0BF31A6EB7D526D0D0C /* PassengerFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PassengerFlow.swift; sourceTree = "<group>"; };
-		52095A588188C7B2C9E22103 /* Fare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
-		5265FCE9F11B2CEBBC9056CB /* PlaceCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceCategory.swift; sourceTree = "<group>"; };
-		537E37518AC36E25E4AEA6AA /* ServiceFrequency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServiceFrequency.swift; sourceTree = "<group>"; };
-		54AD0A2CBE020498C28EFA11 /* DbGeography.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DbGeography.swift; sourceTree = "<group>"; };
-		582EC31D612EB1323A38EB27 /* FaresMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresMode.swift; sourceTree = "<group>"; };
-		59D502BDCFBF059BD9157432 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		59E3DC378BB1555405A7BB28 /* RxTfL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTfL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C5B902CC5EB07C7AB83FFBB /* Leg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
-		6075A479B6CE00701078670D /* JourneyAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyAPI.swift; sourceTree = "<group>"; };
-		62438BD4D12F280D18BF1D0A /* Period.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
-		650A39777D0BD738394E5E44 /* APIs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		6ABBFA60FFDABA7A320791BC /* PassengerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PassengerType.swift; sourceTree = "<group>"; };
-		6E370885E23B964FFA2BD817 /* ActiveServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActiveServiceType.swift; sourceTree = "<group>"; };
-		71D428EDA4B78FF49F67991E /* RouteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSequence.swift; sourceTree = "<group>"; };
-		7374D8D404B0C0814CC50347 /* EmissionsSurchargeVehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmissionsSurchargeVehicle.swift; sourceTree = "<group>"; };
-		74C38A5582C3C52EE9C958F8 /* Recommendation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
-		76C812F5C5CD4ED229149E1A /* RouteSectionNaptanEntrySequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSectionNaptanEntrySequence.swift; sourceTree = "<group>"; };
-		79EAC9469EF7AE3E0B3C3E92 /* LineGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineGroup.swift; sourceTree = "<group>"; };
-		7AC0BA9A57FFD870CEF26008 /* GeoPointBBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoPointBBox.swift; sourceTree = "<group>"; };
-		7C7F2F01B0D94A40711CEAA5 /* PredictionTiming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PredictionTiming.swift; sourceTree = "<group>"; };
-		7D791190FC2C9CD1CBCF666A /* CycleSuperhighway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CycleSuperhighway.swift; sourceTree = "<group>"; };
-		80AB76ED5B19A94D28A88324 /* Ticket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
-		82431B201FAD1C3A03A2D28A /* Redirect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Redirect.swift; sourceTree = "<group>"; };
-		866BA2DFE8B7280D6EA4CCB5 /* RoadDisruption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruption.swift; sourceTree = "<group>"; };
-		86ABB6B102AB305A2C549A61 /* StationInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StationInterval.swift; sourceTree = "<group>"; };
-		86BCDE5726FAF7AD72CD5873 /* OccupancyAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OccupancyAPI.swift; sourceTree = "<group>"; };
-		883D92F251B380103985DA1B /* StopPointAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointAPI.swift; sourceTree = "<group>"; };
-		896E19C898A41DFC5834FC4B /* PlannedWork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlannedWork.swift; sourceTree = "<group>"; };
-		8D41A043217E80DD973119FF /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
-		919A517EB60BDACB373F9938 /* RoadProject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadProject.swift; sourceTree = "<group>"; };
-		920FD1BE39753BA60F5A2BFF /* RoadDisruptionImpactArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionImpactArea.swift; sourceTree = "<group>"; };
-		92812F488F3138DECD9D8D63 /* AirQualityAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AirQualityAPI.swift; sourceTree = "<group>"; };
-		938358203BA3078A0F31DE05 /* RouteOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteOption.swift; sourceTree = "<group>"; };
-		9A630BC8216869121639FAC7 /* Coordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		9AA0EA6BC5FD5757ACD9E1A7 /* TrainLoading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainLoading.swift; sourceTree = "<group>"; };
-		9B7BB35A70FFCF6BA7975921 /* PathAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PathAttribute.swift; sourceTree = "<group>"; };
-		9CAF5A78BB6129F1FA9CF995 /* AccidentStatsOrderedSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentStatsOrderedSummary.swift; sourceTree = "<group>"; };
-		9DD4E2F96E3F80DCEB1FE26E /* FareDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FareDetails.swift; sourceTree = "<group>"; };
-		A014C6580C40C9503FD629A9 /* BikePointAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BikePointAPI.swift; sourceTree = "<group>"; };
-		A104A1DA8A90DC47534B05E7 /* SearchCriteria.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchCriteria.swift; sourceTree = "<group>"; };
-		A37C19D2C75C639D38649DC3 /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
-		A3FF990F9B4773007A4F2B98 /* JourneyVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyVector.swift; sourceTree = "<group>"; };
-		A47983B82DD29707FD1287F4 /* Casualty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Casualty.swift; sourceTree = "<group>"; };
-		A49BEF556BF1C091124233B4 /* StopPointSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointSequence.swift; sourceTree = "<group>"; };
-		A524084F2AAB7DF0462135B7 /* Prediction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
-		A7268FFEEAAB0E2B28D417C3 /* StatusSeverity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusSeverity.swift; sourceTree = "<group>"; };
-		A920BB5884B87D3F0160B765 /* TravelTimeAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TravelTimeAPI.swift; sourceTree = "<group>"; };
-		A973CFE2DE10071E9E6DBE33 /* Instruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
-		AAB59391B98D0EE62087204F /* DateRangeNullable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateRangeNullable.swift; sourceTree = "<group>"; };
-		AAEC704F33CE356BFFC40225 /* PlacePolygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacePolygon.swift; sourceTree = "<group>"; };
-		ABE3A678C5B00EC04C32220E /* RouteSearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSearchResponse.swift; sourceTree = "<group>"; };
-		AD1243456C9663CC4DA61E07 /* CabwiseAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CabwiseAPI.swift; sourceTree = "<group>"; };
-		AD6C1CC2CE26B163CA3EF5CF /* JpElevation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JpElevation.swift; sourceTree = "<group>"; };
-		B10EE28629C32AE467612BD4 /* TicketTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicketTime.swift; sourceTree = "<group>"; };
-		B14F100D1D6635463D1B30DD /* RecommendationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecommendationResponse.swift; sourceTree = "<group>"; };
-		B24B12D7A7091197C550671A /* AccidentStatsAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentStatsAPI.swift; sourceTree = "<group>"; };
-		B2CAA37FFD1593EF12D6981C /* MatchedStop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedStop.swift; sourceTree = "<group>"; };
-		B390B1B82C3E60299580A002 /* TimetableRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimetableRoute.swift; sourceTree = "<group>"; };
-		B519D888444C71C986709E2D /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		B5EDE29734784E6683F9736F /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		B617DC4326AB2EDAEEEEFB0F /* Place.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		B7560EB2E27B61D0679623D5 /* GeoPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
-		B76F10FB2BD1AA1976E148B8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		B7A97D5A143EB0249DD5620C /* LineModeGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineModeGroup.swift; sourceTree = "<group>"; };
-		B8CC59F45BE62CB15C712690 /* TimetableResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimetableResponse.swift; sourceTree = "<group>"; };
-		B8E8E9C7F01C2BC35E0D6F99 /* DateRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
-		BA3A39F6A21B373F0405665E /* Crowding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Crowding.swift; sourceTree = "<group>"; };
-		BAADE7E41BFF52B0EF2B68B2 /* AccidentDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentDetail.swift; sourceTree = "<group>"; };
-		BBBED6398F77C10D55E69AD5 /* JourneyPlannerCycleHireDockingStationData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyPlannerCycleHireDockingStationData.swift; sourceTree = "<group>"; };
-		BE2516AEA365DA156C1682CA /* Disambiguation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Disambiguation.swift; sourceTree = "<group>"; };
-		C15740A99445E33DF1D721A0 /* TimeAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeAdjustment.swift; sourceTree = "<group>"; };
-		C49BB311E1E6E0A0F83F03CE /* PlaceAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceAPI.swift; sourceTree = "<group>"; };
-		CFDC25DBC0D8A73E144C4E0E /* RoadDisruptionLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionLine.swift; sourceTree = "<group>"; };
-		D34DC00F6212AA5CED9856AC /* Street.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
-		D6679F8E169B713A31199960 /* Obstacle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
-		D676C3C83FBE687B81BE0D20 /* LineServiceTypeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineServiceTypeInfo.swift; sourceTree = "<group>"; };
-		D88A638EB7126A52DD0FB679 /* SearchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
-		D88B96ED588FFA5470628794 /* APIHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
-		D96F00F94B6D33DDD3CF9A1C /* Disruption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Disruption.swift; sourceTree = "<group>"; };
-		DE34FA828A2FEAA16BA4E26B /* GeoCodeSearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoCodeSearchMatch.swift; sourceTree = "<group>"; };
-		E00B4D641684B8E2E409CF5E /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		E3A93F925241ECE5DF9FCBC5 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
-		E97C9DE1B16D4BDDE69FC06F /* Journey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
-		EA72ADCEE72010811BFDFD27 /* LineStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineStatus.swift; sourceTree = "<group>"; };
-		ED394DCE2361623EB55D6C20 /* MatchedRouteSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedRouteSections.swift; sourceTree = "<group>"; };
-		ED6B8BF88DD02D6A2361D83C /* ModeAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModeAPI.swift; sourceTree = "<group>"; };
-		EE5B000B77814510EC3B5F49 /* ItineraryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItineraryResult.swift; sourceTree = "<group>"; };
-		F2F0A4D396BC0EA55213917E /* KnownJourney.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KnownJourney.swift; sourceTree = "<group>"; };
-		F3A5DB88E19643DD82EF45E7 /* FaresPeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresPeriod.swift; sourceTree = "<group>"; };
-		F78253AF25EB992D4A06F130 /* SearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMatch.swift; sourceTree = "<group>"; };
-		F78EDAC4C03A4FCB89DE79A0 /* InstructionStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstructionStep.swift; sourceTree = "<group>"; };
-		F88510391231BC485D725B50 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		F8C85068B0C056CC6FF5F599 /* TwentyFourHourClockTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwentyFourHourClockTime.swift; sourceTree = "<group>"; };
-		FAEEBCB07E524A9F5325A21B /* AdditionalProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdditionalProperties.swift; sourceTree = "<group>"; };
-		FC510919FA24B6D4A3A0A8F1 /* DisambiguationOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisambiguationOption.swift; sourceTree = "<group>"; };
-		FEF517850D616295E0113424 /* RouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSection.swift; sourceTree = "<group>"; };
+		0069BA200B154D9C291240A7 /* ServiceFrequency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServiceFrequency.swift; sourceTree = "<group>"; };
+		0135105AC49D07899CDE6028 /* AccidentDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentDetail.swift; sourceTree = "<group>"; };
+		02859720E152C138C00EF919 /* RoadDisruptionLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionLine.swift; sourceTree = "<group>"; };
+		033F188D1145CE53CC0A6BCF /* Bay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Bay.swift; sourceTree = "<group>"; };
+		044EE56B7363EC7AEB130710 /* StopPointAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointAPI.swift; sourceTree = "<group>"; };
+		0673531D2B8D74905B9AF2E0 /* DbGeography.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DbGeography.swift; sourceTree = "<group>"; };
+		0816C7E5C4CC8D38BD4F3FBC /* RoadCorridor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadCorridor.swift; sourceTree = "<group>"; };
+		0B4D69D398B446219FA45910 /* TrainLoading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainLoading.swift; sourceTree = "<group>"; };
+		0BD03B5E6C907BE52129E3ED /* AsParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsParameter.swift; sourceTree = "<group>"; };
+		0C7A867D340B4A14BEBCBD56 /* PlaceCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceCategory.swift; sourceTree = "<group>"; };
+		0DE0D2CE21AC4A34DB76F9AE /* Street.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		0FE3B013937B4EA94751426D /* RxTfL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTfL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BD2CFFA31B42E044BD2496 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		115F9312EDABEC3CCE8AABF4 /* StopPointRouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointRouteSection.swift; sourceTree = "<group>"; };
+		12541A2D114B193DBDCDEE69 /* TwentyFourHourClockTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwentyFourHourClockTime.swift; sourceTree = "<group>"; };
+		12F76A93C1178C25B05B5654 /* FaresMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresMode.swift; sourceTree = "<group>"; };
+		150860729FC3BD55E5AAD0C8 /* DateRangeNullable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateRangeNullable.swift; sourceTree = "<group>"; };
+		15F06863DC8E25DE35681F87 /* MatchedRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedRoute.swift; sourceTree = "<group>"; };
+		1E5222DCC3DBAFE0BC0362F2 /* StopPointsResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointsResponse.swift; sourceTree = "<group>"; };
+		1F863969192A5B529E6252FC /* Recommendation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		21AB74B3341B6709AB771D58 /* Disambiguation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Disambiguation.swift; sourceTree = "<group>"; };
+		28CFABA7063E2F240C437847 /* TicketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicketType.swift; sourceTree = "<group>"; };
+		29B59E5C299CD9E968D4659D /* Interval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		2C95542E172D9DF908AFF840 /* FaresSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresSection.swift; sourceTree = "<group>"; };
+		2E0874EA0AB145497BEC2B7C /* PlannedWork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlannedWork.swift; sourceTree = "<group>"; };
+		3687C6D23407C0A6D4A4E20A /* StopPointCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointCategory.swift; sourceTree = "<group>"; };
+		380EDC882D167433D8919163 /* DisruptedPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisruptedPoint.swift; sourceTree = "<group>"; };
+		38B58CAB84FF6F0ACC619DEB /* Coordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		3AB76CE708803F1017E5311B /* RoadProject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadProject.swift; sourceTree = "<group>"; };
+		3C40872A31434918CD989198 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3E948CBE3AD4B924B8ED47A3 /* TravelTimeAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TravelTimeAPI.swift; sourceTree = "<group>"; };
+		410FB488750883ED28A0F169 /* SearchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		44734B2982D8384AFFC90B01 /* LineStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineStatus.swift; sourceTree = "<group>"; };
+		4792780A03BCDC0CF8296C7F /* PlaceAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceAPI.swift; sourceTree = "<group>"; };
+		48A6DA3D0416BD07D10D0C0F /* AdditionalProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdditionalProperties.swift; sourceTree = "<group>"; };
+		49E28C4B45B8D1DDBC43EF0B /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		4A6EB78B08974EDD81D83385 /* LineModeGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineModeGroup.swift; sourceTree = "<group>"; };
+		4CE1EE05EC9C8B8FC8E88DF0 /* OrderedRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderedRoute.swift; sourceTree = "<group>"; };
+		4D414C3A0DCF1E411C34CC81 /* RouteSectionNaptanEntrySequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSectionNaptanEntrySequence.swift; sourceTree = "<group>"; };
+		51046539D1C3587FA7EFBE16 /* TimetableResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimetableResponse.swift; sourceTree = "<group>"; };
+		51C8D225E97F18D2B62030DC /* Prediction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		5219952A7A74CE4D64BBE259 /* PathAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PathAttribute.swift; sourceTree = "<group>"; };
+		525244FD7D714F352C55129A /* CycleSuperhighway.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CycleSuperhighway.swift; sourceTree = "<group>"; };
+		532292506F73E6B5A5F0F857 /* RouteSearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSearchResponse.swift; sourceTree = "<group>"; };
+		54D2D3F93F70F71FFBFABE7B /* PostcodeInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostcodeInput.swift; sourceTree = "<group>"; };
+		59458F00E41B344158A73DE7 /* SearchCriteria.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchCriteria.swift; sourceTree = "<group>"; };
+		5C6C4A035035AA2BB3D15168 /* TicketTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicketTime.swift; sourceTree = "<group>"; };
+		5E74C4F73820681F3B125DE3 /* LineAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineAPI.swift; sourceTree = "<group>"; };
+		621976F4BA921B410220D35C /* JourneyPlannerCycleHireDockingStationData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyPlannerCycleHireDockingStationData.swift; sourceTree = "<group>"; };
+		622BA5CBF4ECEC6A622F89BE /* Ticket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		63FF639B2C2F82BE57ABEC89 /* AccidentStatsAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentStatsAPI.swift; sourceTree = "<group>"; };
+		64B8F9F1AC8EF7F6975002A7 /* ValidityPeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidityPeriod.swift; sourceTree = "<group>"; };
+		65E1B3A10B1E352919EBA3D3 /* Journey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		6628B36B4BF4896A85BCA610 /* Fare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
+		663F11A5A41BCCC921EF7CA9 /* APIHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		66D385B852A920BC84D0B338 /* Disruption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Disruption.swift; sourceTree = "<group>"; };
+		6780057473D5BBC49D8455D2 /* ApiVersionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApiVersionInfo.swift; sourceTree = "<group>"; };
+		67E927DC656CA6DC572E68C0 /* RoadDisruptionSchedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionSchedule.swift; sourceTree = "<group>"; };
+		6C02250DF934AD864BCCC7B8 /* LineServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineServiceType.swift; sourceTree = "<group>"; };
+		6CA05B249BEA48D042DE60E6 /* PassengerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PassengerType.swift; sourceTree = "<group>"; };
+		6E6A783E1E39BB090A6C5D23 /* RoadDisruptionImpactArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruptionImpactArea.swift; sourceTree = "<group>"; };
+		729E4AD03228A3606693F560 /* CabwiseAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CabwiseAPI.swift; sourceTree = "<group>"; };
+		741767A920739AB6CA6690AB /* StationInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StationInterval.swift; sourceTree = "<group>"; };
+		762EB4C6C1FF2D485D7F39D0 /* FaresPeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FaresPeriod.swift; sourceTree = "<group>"; };
+		7728245CB710AEDD04458828 /* RecommendationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecommendationResponse.swift; sourceTree = "<group>"; };
+		7746E902DF6C16F97E67AF80 /* SearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMatch.swift; sourceTree = "<group>"; };
+		77A18320233A7BC22BB3ECCD /* AccidentStatsOrderedSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccidentStatsOrderedSummary.swift; sourceTree = "<group>"; };
+		7AF961EA3E79D49517913782 /* Crowding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Crowding.swift; sourceTree = "<group>"; };
+		7B879E6DD90C80825DD15F84 /* InstructionStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstructionStep.swift; sourceTree = "<group>"; };
+		7CF0D4EECF7CDDCC3D30916C /* Vehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		7E144DDA01285EDDF2A6C660 /* JourneyAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyAPI.swift; sourceTree = "<group>"; };
+		7EC15C6C366F3CED161032E6 /* RouteSearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSearchMatch.swift; sourceTree = "<group>"; };
+		8071EC4EBF81FE4485E09C8C /* PlacePolygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacePolygon.swift; sourceTree = "<group>"; };
+		86DAC782A56375CDCE5EA4A2 /* ModeAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModeAPI.swift; sourceTree = "<group>"; };
+		89F3691EC4BA56A4031727F8 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		8B240F23A4639B57353A0ABF /* GeoPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
+		8E7A51A42050324DD68D4D3C /* OccupancyAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OccupancyAPI.swift; sourceTree = "<group>"; };
+		8F12B8A49AD26E60E3EC8B48 /* CarParkOccupancy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarParkOccupancy.swift; sourceTree = "<group>"; };
+		93CBFFF65CD36045B33620E2 /* VehicleAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
+		94B6EF99D354CE0FD6B270F7 /* PredictionTiming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PredictionTiming.swift; sourceTree = "<group>"; };
+		99407A99345AA359A29A1F42 /* Leg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		995887B3C5F7EB1B0E42F554 /* StopPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPoint.swift; sourceTree = "<group>"; };
+		99759EFDC55B413A8B75E6DD /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		9A27B5DCAAD4353949ADF48A /* Instruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		9BC06F7F576F7EDF80C8ED93 /* FareBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FareBounds.swift; sourceTree = "<group>"; };
+		A0974AE1411CC2159394BF3A /* StatusSeverity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusSeverity.swift; sourceTree = "<group>"; };
+		A1738776F4A425F665BB0A1A /* RouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSection.swift; sourceTree = "<group>"; };
+		A57AB039E1A139A5B32EFA46 /* ItineraryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItineraryResult.swift; sourceTree = "<group>"; };
+		A9DA45F7E92FA237731AE50A /* ActiveServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActiveServiceType.swift; sourceTree = "<group>"; };
+		AB1EC596BB12CA842EB29D1A /* Casualty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Casualty.swift; sourceTree = "<group>"; };
+		AF3A9ACDF995745E5CFD0288 /* StreetSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreetSegment.swift; sourceTree = "<group>"; };
+		B372ACEFB33429F262A74F53 /* JpElevation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JpElevation.swift; sourceTree = "<group>"; };
+		B83C418ED5E97A33E68BF0A0 /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		B91435664B1D1D18E88BE643 /* KnownJourney.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KnownJourney.swift; sourceTree = "<group>"; };
+		B964C12C31179B9C4AA4B861 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B9D405FB0B991C710D2D74DA /* LineSpecificServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineSpecificServiceType.swift; sourceTree = "<group>"; };
+		BA40EA280E6CD369CBFAB83A /* GeoPointBBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoPointBBox.swift; sourceTree = "<group>"; };
+		BAA59111916DBCB8857ED47B /* RouteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteSequence.swift; sourceTree = "<group>"; };
+		BC6EE53D919B7970AC09077E /* TimeAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeAdjustment.swift; sourceTree = "<group>"; };
+		C08584DEF75BCD4FBA0848B9 /* BikePointAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BikePointAPI.swift; sourceTree = "<group>"; };
+		C21D2985258E791D838B9EA4 /* TimetableRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimetableRoute.swift; sourceTree = "<group>"; };
+		C324474BE4349FB1F3B2E18E /* TimeAdjustments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeAdjustments.swift; sourceTree = "<group>"; };
+		C32DA7E1CD15476D13EDCFAF /* MatchedRouteSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedRouteSections.swift; sourceTree = "<group>"; };
+		C4615F7EFBEFBC60501AEF11 /* SearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		C58EF5E440936BB498BA95EC /* Period.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		CB5E8FACB740D058A8F35583 /* EmissionsSurchargeVehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmissionsSurchargeVehicle.swift; sourceTree = "<group>"; };
+		CEC8C484A99C742365E73CCB /* MatchedStop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchedStop.swift; sourceTree = "<group>"; };
+		D17773BBBA17DC686FCD03BD /* FareDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FareDetails.swift; sourceTree = "<group>"; };
+		D1D2FE045B69A546EB2E2E5C /* Timetable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
+		D2E3AE1886931F6049738A39 /* Place.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D605316E48BF170995B13D14 /* PassengerFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PassengerFlow.swift; sourceTree = "<group>"; };
+		D81AB9F1784FB2CAED22C066 /* AirQualityAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AirQualityAPI.swift; sourceTree = "<group>"; };
+		DA67B4C46498973A8610B1DB /* DateRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
+		DD35D192B7C0C64537EF3067 /* Redirect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Redirect.swift; sourceTree = "<group>"; };
+		DE1A256236AA4E21EC9BDBCD /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		DED9868C27E383F61FB9957E /* RouteOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteOption.swift; sourceTree = "<group>"; };
+		E11B9068C2A5AC4D14DBC490 /* JourneyVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JourneyVector.swift; sourceTree = "<group>"; };
+		E1A80179DE86532711BF691B /* DbGeographyWellKnownValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DbGeographyWellKnownValue.swift; sourceTree = "<group>"; };
+		E433204A62A7E88F2D9B7B73 /* Obstacle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		E739AF9F713103B82724E7A2 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E9A5D4518EC083BDA16E2599 /* GeoCodeSearchMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeoCodeSearchMatch.swift; sourceTree = "<group>"; };
+		EA78941EEED8D21B7B066F63 /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		EDCEC2EF5C3A6D30A4F96F6B /* LineRouteSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineRouteSection.swift; sourceTree = "<group>"; };
+		F14B430BAA22E1F16E3164A9 /* LineGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineGroup.swift; sourceTree = "<group>"; };
+		F1D727AA95220440310FDF22 /* APIs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		F37F978CC864DAB909401B69 /* RoadDisruption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadDisruption.swift; sourceTree = "<group>"; };
+		F65791D407F26A736A7EC672 /* DisambiguationOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisambiguationOption.swift; sourceTree = "<group>"; };
+		F6EB7555053E323F8E2DBF7B /* LineServiceTypeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineServiceTypeInfo.swift; sourceTree = "<group>"; };
+		F91B5F76A93AC14A9695EA94 /* RoadAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoadAPI.swift; sourceTree = "<group>"; };
+		FB86508271C46E90476AE8C8 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		FFA608086BA5B114F5A722EA /* StopPointSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StopPointSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		22F4CC14EA34660164048821 = {
+		2EA3343261F8504E2F4DDCA0 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				884BB5139AFAD51852271E5D /* Products */,
-				7C9451ACBEB67ABF2F704DC9 /* RxTfL */,
-			);
-			sourceTree = "<group>";
-		};
-		335505292FD9843DBF55DC69 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				872FD05525759FDAD01CB627 /* Swaggers */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6BE10C82407430C76029587C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BAADE7E41BFF52B0EF2B68B2 /* AccidentDetail.swift */,
-				9CAF5A78BB6129F1FA9CF995 /* AccidentStatsOrderedSummary.swift */,
-				6E370885E23B964FFA2BD817 /* ActiveServiceType.swift */,
-				FAEEBCB07E524A9F5325A21B /* AdditionalProperties.swift */,
-				17731D52391EB03C0D9CF3A7 /* ApiVersionInfo.swift */,
-				0FF7E070201471A6CA961D41 /* Bay.swift */,
-				3A9F330F1E37DCCC2BBC292C /* CarParkOccupancy.swift */,
-				A47983B82DD29707FD1287F4 /* Casualty.swift */,
-				9A630BC8216869121639FAC7 /* Coordinate.swift */,
-				BA3A39F6A21B373F0405665E /* Crowding.swift */,
-				7D791190FC2C9CD1CBCF666A /* CycleSuperhighway.swift */,
-				B8E8E9C7F01C2BC35E0D6F99 /* DateRange.swift */,
-				AAB59391B98D0EE62087204F /* DateRangeNullable.swift */,
-				54AD0A2CBE020498C28EFA11 /* DbGeography.swift */,
-				2B4B5E575E76955760FB2969 /* DbGeographyWellKnownValue.swift */,
-				BE2516AEA365DA156C1682CA /* Disambiguation.swift */,
-				FC510919FA24B6D4A3A0A8F1 /* DisambiguationOption.swift */,
-				1E18208B2EBD6BFF80B2756B /* DisruptedPoint.swift */,
-				D96F00F94B6D33DDD3CF9A1C /* Disruption.swift */,
-				7374D8D404B0C0814CC50347 /* EmissionsSurchargeVehicle.swift */,
-				52095A588188C7B2C9E22103 /* Fare.swift */,
-				4A39BD00B5D68CAEEC2A8539 /* FareBounds.swift */,
-				9DD4E2F96E3F80DCEB1FE26E /* FareDetails.swift */,
-				582EC31D612EB1323A38EB27 /* FaresMode.swift */,
-				F3A5DB88E19643DD82EF45E7 /* FaresPeriod.swift */,
-				4C3ED2C13523CC7275F7881E /* FaresSection.swift */,
-				DE34FA828A2FEAA16BA4E26B /* GeoCodeSearchMatch.swift */,
-				B7560EB2E27B61D0679623D5 /* GeoPoint.swift */,
-				7AC0BA9A57FFD870CEF26008 /* GeoPointBBox.swift */,
-				8D41A043217E80DD973119FF /* Identifier.swift */,
-				A973CFE2DE10071E9E6DBE33 /* Instruction.swift */,
-				F78EDAC4C03A4FCB89DE79A0 /* InstructionStep.swift */,
-				020EADC9CE8FF85B7B709BC2 /* Interval.swift */,
-				EE5B000B77814510EC3B5F49 /* ItineraryResult.swift */,
-				E97C9DE1B16D4BDDE69FC06F /* Journey.swift */,
-				BBBED6398F77C10D55E69AD5 /* JourneyPlannerCycleHireDockingStationData.swift */,
-				A3FF990F9B4773007A4F2B98 /* JourneyVector.swift */,
-				AD6C1CC2CE26B163CA3EF5CF /* JpElevation.swift */,
-				F2F0A4D396BC0EA55213917E /* KnownJourney.swift */,
-				5C5B902CC5EB07C7AB83FFBB /* Leg.swift */,
-				59D502BDCFBF059BD9157432 /* Line.swift */,
-				79EAC9469EF7AE3E0B3C3E92 /* LineGroup.swift */,
-				B7A97D5A143EB0249DD5620C /* LineModeGroup.swift */,
-				28327A16858FCCDB709CE7B6 /* LineRouteSection.swift */,
-				26F412BEA39ED4992E6DBDD8 /* LineServiceType.swift */,
-				D676C3C83FBE687B81BE0D20 /* LineServiceTypeInfo.swift */,
-				0842DE5F77520C51A12F15A4 /* LineSpecificServiceType.swift */,
-				EA72ADCEE72010811BFDFD27 /* LineStatus.swift */,
-				38C5CACFA56B1979D0CB89E4 /* MatchedRoute.swift */,
-				ED394DCE2361623EB55D6C20 /* MatchedRouteSections.swift */,
-				B2CAA37FFD1593EF12D6981C /* MatchedStop.swift */,
-				B5EDE29734784E6683F9736F /* Message.swift */,
-				0B32010E4733262445CC4634 /* Mode.swift */,
-				A37C19D2C75C639D38649DC3 /* Object.swift */,
-				D6679F8E169B713A31199960 /* Obstacle.swift */,
-				4E8C47C4558905EFEB639257 /* OrderedRoute.swift */,
-				5056A0BF31A6EB7D526D0D0C /* PassengerFlow.swift */,
-				6ABBFA60FFDABA7A320791BC /* PassengerType.swift */,
-				E00B4D641684B8E2E409CF5E /* Path.swift */,
-				9B7BB35A70FFCF6BA7975921 /* PathAttribute.swift */,
-				62438BD4D12F280D18BF1D0A /* Period.swift */,
-				B617DC4326AB2EDAEEEEFB0F /* Place.swift */,
-				5265FCE9F11B2CEBBC9056CB /* PlaceCategory.swift */,
-				AAEC704F33CE356BFFC40225 /* PlacePolygon.swift */,
-				896E19C898A41DFC5834FC4B /* PlannedWork.swift */,
-				F88510391231BC485D725B50 /* Point.swift */,
-				4D5EFDE8551A458FDDA4AFC4 /* PostcodeInput.swift */,
-				A524084F2AAB7DF0462135B7 /* Prediction.swift */,
-				7C7F2F01B0D94A40711CEAA5 /* PredictionTiming.swift */,
-				74C38A5582C3C52EE9C958F8 /* Recommendation.swift */,
-				B14F100D1D6635463D1B30DD /* RecommendationResponse.swift */,
-				82431B201FAD1C3A03A2D28A /* Redirect.swift */,
-				14C120CAA4308A9B79F6016C /* RoadCorridor.swift */,
-				866BA2DFE8B7280D6EA4CCB5 /* RoadDisruption.swift */,
-				920FD1BE39753BA60F5A2BFF /* RoadDisruptionImpactArea.swift */,
-				CFDC25DBC0D8A73E144C4E0E /* RoadDisruptionLine.swift */,
-				0836F6D26C4E672F24591F6F /* RoadDisruptionSchedule.swift */,
-				919A517EB60BDACB373F9938 /* RoadProject.swift */,
-				938358203BA3078A0F31DE05 /* RouteOption.swift */,
-				13BA318F8A9B32D8AE7FC1CA /* RouteSearchMatch.swift */,
-				ABE3A678C5B00EC04C32220E /* RouteSearchResponse.swift */,
-				FEF517850D616295E0113424 /* RouteSection.swift */,
-				76C812F5C5CD4ED229149E1A /* RouteSectionNaptanEntrySequence.swift */,
-				71D428EDA4B78FF49F67991E /* RouteSequence.swift */,
-				4B7F165CA70648BC8495418B /* Schedule.swift */,
-				A104A1DA8A90DC47534B05E7 /* SearchCriteria.swift */,
-				F78253AF25EB992D4A06F130 /* SearchMatch.swift */,
-				0312D634A0638C98897A0140 /* SearchResponse.swift */,
-				537E37518AC36E25E4AEA6AA /* ServiceFrequency.swift */,
-				86ABB6B102AB305A2C549A61 /* StationInterval.swift */,
-				A7268FFEEAAB0E2B28D417C3 /* StatusSeverity.swift */,
-				1E8742C775A3DC890A3E99EF /* StopPoint.swift */,
-				03DF004656DD0DE42E7D366D /* StopPointCategory.swift */,
-				21CD7AE8FF14D991090CEC53 /* StopPointRouteSection.swift */,
-				A49BEF556BF1C091124233B4 /* StopPointSequence.swift */,
-				15083C72EB3E28125145D35F /* StopPointsResponse.swift */,
-				D34DC00F6212AA5CED9856AC /* Street.swift */,
-				44C544A8877EF66BEDFB9FA4 /* StreetSegment.swift */,
-				80AB76ED5B19A94D28A88324 /* Ticket.swift */,
-				B10EE28629C32AE467612BD4 /* TicketTime.swift */,
-				3D3E9CAE207C84F15D913277 /* TicketType.swift */,
-				C15740A99445E33DF1D721A0 /* TimeAdjustment.swift */,
-				0AC02F3A0B6DA33E31EA3475 /* TimeAdjustments.swift */,
-				4791219F5BDAF28323D936BD /* Timetable.swift */,
-				B8CC59F45BE62CB15C712690 /* TimetableResponse.swift */,
-				B390B1B82C3E60299580A002 /* TimetableRoute.swift */,
-				9AA0EA6BC5FD5757ACD9E1A7 /* TrainLoading.swift */,
-				F8C85068B0C056CC6FF5F599 /* TwentyFourHourClockTime.swift */,
-				1333ABE6107D32BA256ADDE4 /* ValidityPeriod.swift */,
-				358A8029BF79DEE004987E40 /* Vehicle.swift */,
-			);
-			name = Models;
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7C9451ACBEB67ABF2F704DC9 /* RxTfL */ = {
-			isa = PBXGroup;
-			children = (
-				335505292FD9843DBF55DC69 /* Classes */,
-			);
-			name = RxTfL;
-			path = RxTfL;
-			sourceTree = "<group>";
-		};
-		872FD05525759FDAD01CB627 /* Swaggers */ = {
-			isa = PBXGroup;
-			children = (
-				E3A93F925241ECE5DF9FCBC5 /* AlamofireImplementations.swift */,
-				D88B96ED588FFA5470628794 /* APIHelper.swift */,
-				8DE1488557540FBCD0254A3C /* APIs */,
-				650A39777D0BD738394E5E44 /* APIs.swift */,
-				B76F10FB2BD1AA1976E148B8 /* Extensions.swift */,
-				6BE10C82407430C76029587C /* Models */,
-				B519D888444C71C986709E2D /* Models.swift */,
-			);
-			name = Swaggers;
-			path = Swaggers;
-			sourceTree = "<group>";
-		};
-		884BB5139AFAD51852271E5D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				59E3DC378BB1555405A7BB28 /* RxTfL.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8DE1488557540FBCD0254A3C /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				B24B12D7A7091197C550671A /* AccidentStatsAPI.swift */,
-				92812F488F3138DECD9D8D63 /* AirQualityAPI.swift */,
-				A014C6580C40C9503FD629A9 /* BikePointAPI.swift */,
-				AD1243456C9663CC4DA61E07 /* CabwiseAPI.swift */,
-				6075A479B6CE00701078670D /* JourneyAPI.swift */,
-				28F5DAAD9AA6ABD8D5A0EDB2 /* LineAPI.swift */,
-				ED6B8BF88DD02D6A2361D83C /* ModeAPI.swift */,
-				86BCDE5726FAF7AD72CD5873 /* OccupancyAPI.swift */,
-				C49BB311E1E6E0A0F83F03CE /* PlaceAPI.swift */,
-				216AE854EF9D1517F9975624 /* RoadAPI.swift */,
-				D88A638EB7126A52DD0FB679 /* SearchAPI.swift */,
-				883D92F251B380103985DA1B /* StopPointAPI.swift */,
-				A920BB5884B87D3F0160B765 /* TravelTimeAPI.swift */,
-				430D018F06F41AC34C41EAE3 /* VehicleAPI.swift */,
+				63FF639B2C2F82BE57ABEC89 /* AccidentStatsAPI.swift */,
+				D81AB9F1784FB2CAED22C066 /* AirQualityAPI.swift */,
+				C08584DEF75BCD4FBA0848B9 /* BikePointAPI.swift */,
+				729E4AD03228A3606693F560 /* CabwiseAPI.swift */,
+				7E144DDA01285EDDF2A6C660 /* JourneyAPI.swift */,
+				5E74C4F73820681F3B125DE3 /* LineAPI.swift */,
+				86DAC782A56375CDCE5EA4A2 /* ModeAPI.swift */,
+				8E7A51A42050324DD68D4D3C /* OccupancyAPI.swift */,
+				4792780A03BCDC0CF8296C7F /* PlaceAPI.swift */,
+				F91B5F76A93AC14A9695EA94 /* RoadAPI.swift */,
+				410FB488750883ED28A0F169 /* SearchAPI.swift */,
+				044EE56B7363EC7AEB130710 /* StopPointAPI.swift */,
+				3E948CBE3AD4B924B8ED47A3 /* TravelTimeAPI.swift */,
+				93CBFFF65CD36045B33620E2 /* VehicleAPI.swift */,
 			);
 			name = APIs;
 			path = APIs;
 			sourceTree = "<group>";
 		};
+		9608B039340FC97B2FF5D07F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FE3B013937B4EA94751426D /* RxTfL.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52AD7C16B4A0F8D5E7CFDEE /* Swaggers */ = {
+			isa = PBXGroup;
+			children = (
+				89F3691EC4BA56A4031727F8 /* AlamofireImplementations.swift */,
+				663F11A5A41BCCC921EF7CA9 /* APIHelper.swift */,
+				2EA3343261F8504E2F4DDCA0 /* APIs */,
+				F1D727AA95220440310FDF22 /* APIs.swift */,
+				3C40872A31434918CD989198 /* Extensions.swift */,
+				EBE910DB740718B1F646B447 /* Models */,
+				B964C12C31179B9C4AA4B861 /* Models.swift */,
+			);
+			name = Swaggers;
+			path = Swaggers;
+			sourceTree = "<group>";
+		};
+		B4714873A1CAB87333EA58C2 /* RxTfL */ = {
+			isa = PBXGroup;
+			children = (
+				B5B86103DE83FCACF4599E04 /* Classes */,
+			);
+			name = RxTfL;
+			path = RxTfL;
+			sourceTree = "<group>";
+		};
+		B5B86103DE83FCACF4599E04 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A52AD7C16B4A0F8D5E7CFDEE /* Swaggers */,
+				BC2C980DCA9E573406D00AD4 /* Util */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC2C980DCA9E573406D00AD4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0BD03B5E6C907BE52129E3ED /* AsParameter.swift */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E3FC3C9999C2F21FCF6AD553 = {
+			isa = PBXGroup;
+			children = (
+				9608B039340FC97B2FF5D07F /* Products */,
+				B4714873A1CAB87333EA58C2 /* RxTfL */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE910DB740718B1F646B447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0135105AC49D07899CDE6028 /* AccidentDetail.swift */,
+				77A18320233A7BC22BB3ECCD /* AccidentStatsOrderedSummary.swift */,
+				A9DA45F7E92FA237731AE50A /* ActiveServiceType.swift */,
+				48A6DA3D0416BD07D10D0C0F /* AdditionalProperties.swift */,
+				6780057473D5BBC49D8455D2 /* ApiVersionInfo.swift */,
+				033F188D1145CE53CC0A6BCF /* Bay.swift */,
+				8F12B8A49AD26E60E3EC8B48 /* CarParkOccupancy.swift */,
+				AB1EC596BB12CA842EB29D1A /* Casualty.swift */,
+				38B58CAB84FF6F0ACC619DEB /* Coordinate.swift */,
+				7AF961EA3E79D49517913782 /* Crowding.swift */,
+				525244FD7D714F352C55129A /* CycleSuperhighway.swift */,
+				DA67B4C46498973A8610B1DB /* DateRange.swift */,
+				150860729FC3BD55E5AAD0C8 /* DateRangeNullable.swift */,
+				0673531D2B8D74905B9AF2E0 /* DbGeography.swift */,
+				E1A80179DE86532711BF691B /* DbGeographyWellKnownValue.swift */,
+				21AB74B3341B6709AB771D58 /* Disambiguation.swift */,
+				F65791D407F26A736A7EC672 /* DisambiguationOption.swift */,
+				380EDC882D167433D8919163 /* DisruptedPoint.swift */,
+				66D385B852A920BC84D0B338 /* Disruption.swift */,
+				CB5E8FACB740D058A8F35583 /* EmissionsSurchargeVehicle.swift */,
+				6628B36B4BF4896A85BCA610 /* Fare.swift */,
+				9BC06F7F576F7EDF80C8ED93 /* FareBounds.swift */,
+				D17773BBBA17DC686FCD03BD /* FareDetails.swift */,
+				12F76A93C1178C25B05B5654 /* FaresMode.swift */,
+				762EB4C6C1FF2D485D7F39D0 /* FaresPeriod.swift */,
+				2C95542E172D9DF908AFF840 /* FaresSection.swift */,
+				E9A5D4518EC083BDA16E2599 /* GeoCodeSearchMatch.swift */,
+				8B240F23A4639B57353A0ABF /* GeoPoint.swift */,
+				BA40EA280E6CD369CBFAB83A /* GeoPointBBox.swift */,
+				DE1A256236AA4E21EC9BDBCD /* Identifier.swift */,
+				9A27B5DCAAD4353949ADF48A /* Instruction.swift */,
+				7B879E6DD90C80825DD15F84 /* InstructionStep.swift */,
+				29B59E5C299CD9E968D4659D /* Interval.swift */,
+				A57AB039E1A139A5B32EFA46 /* ItineraryResult.swift */,
+				65E1B3A10B1E352919EBA3D3 /* Journey.swift */,
+				621976F4BA921B410220D35C /* JourneyPlannerCycleHireDockingStationData.swift */,
+				E11B9068C2A5AC4D14DBC490 /* JourneyVector.swift */,
+				B372ACEFB33429F262A74F53 /* JpElevation.swift */,
+				B91435664B1D1D18E88BE643 /* KnownJourney.swift */,
+				99407A99345AA359A29A1F42 /* Leg.swift */,
+				99759EFDC55B413A8B75E6DD /* Line.swift */,
+				F14B430BAA22E1F16E3164A9 /* LineGroup.swift */,
+				4A6EB78B08974EDD81D83385 /* LineModeGroup.swift */,
+				EDCEC2EF5C3A6D30A4F96F6B /* LineRouteSection.swift */,
+				6C02250DF934AD864BCCC7B8 /* LineServiceType.swift */,
+				F6EB7555053E323F8E2DBF7B /* LineServiceTypeInfo.swift */,
+				B9D405FB0B991C710D2D74DA /* LineSpecificServiceType.swift */,
+				44734B2982D8384AFFC90B01 /* LineStatus.swift */,
+				15F06863DC8E25DE35681F87 /* MatchedRoute.swift */,
+				C32DA7E1CD15476D13EDCFAF /* MatchedRouteSections.swift */,
+				CEC8C484A99C742365E73CCB /* MatchedStop.swift */,
+				E739AF9F713103B82724E7A2 /* Message.swift */,
+				B83C418ED5E97A33E68BF0A0 /* Mode.swift */,
+				49E28C4B45B8D1DDBC43EF0B /* Object.swift */,
+				E433204A62A7E88F2D9B7B73 /* Obstacle.swift */,
+				4CE1EE05EC9C8B8FC8E88DF0 /* OrderedRoute.swift */,
+				D605316E48BF170995B13D14 /* PassengerFlow.swift */,
+				6CA05B249BEA48D042DE60E6 /* PassengerType.swift */,
+				FB86508271C46E90476AE8C8 /* Path.swift */,
+				5219952A7A74CE4D64BBE259 /* PathAttribute.swift */,
+				C58EF5E440936BB498BA95EC /* Period.swift */,
+				D2E3AE1886931F6049738A39 /* Place.swift */,
+				0C7A867D340B4A14BEBCBD56 /* PlaceCategory.swift */,
+				8071EC4EBF81FE4485E09C8C /* PlacePolygon.swift */,
+				2E0874EA0AB145497BEC2B7C /* PlannedWork.swift */,
+				10BD2CFFA31B42E044BD2496 /* Point.swift */,
+				54D2D3F93F70F71FFBFABE7B /* PostcodeInput.swift */,
+				51C8D225E97F18D2B62030DC /* Prediction.swift */,
+				94B6EF99D354CE0FD6B270F7 /* PredictionTiming.swift */,
+				1F863969192A5B529E6252FC /* Recommendation.swift */,
+				7728245CB710AEDD04458828 /* RecommendationResponse.swift */,
+				DD35D192B7C0C64537EF3067 /* Redirect.swift */,
+				0816C7E5C4CC8D38BD4F3FBC /* RoadCorridor.swift */,
+				F37F978CC864DAB909401B69 /* RoadDisruption.swift */,
+				6E6A783E1E39BB090A6C5D23 /* RoadDisruptionImpactArea.swift */,
+				02859720E152C138C00EF919 /* RoadDisruptionLine.swift */,
+				67E927DC656CA6DC572E68C0 /* RoadDisruptionSchedule.swift */,
+				3AB76CE708803F1017E5311B /* RoadProject.swift */,
+				DED9868C27E383F61FB9957E /* RouteOption.swift */,
+				7EC15C6C366F3CED161032E6 /* RouteSearchMatch.swift */,
+				532292506F73E6B5A5F0F857 /* RouteSearchResponse.swift */,
+				A1738776F4A425F665BB0A1A /* RouteSection.swift */,
+				4D414C3A0DCF1E411C34CC81 /* RouteSectionNaptanEntrySequence.swift */,
+				BAA59111916DBCB8857ED47B /* RouteSequence.swift */,
+				EA78941EEED8D21B7B066F63 /* Schedule.swift */,
+				59458F00E41B344158A73DE7 /* SearchCriteria.swift */,
+				7746E902DF6C16F97E67AF80 /* SearchMatch.swift */,
+				C4615F7EFBEFBC60501AEF11 /* SearchResponse.swift */,
+				0069BA200B154D9C291240A7 /* ServiceFrequency.swift */,
+				741767A920739AB6CA6690AB /* StationInterval.swift */,
+				A0974AE1411CC2159394BF3A /* StatusSeverity.swift */,
+				995887B3C5F7EB1B0E42F554 /* StopPoint.swift */,
+				3687C6D23407C0A6D4A4E20A /* StopPointCategory.swift */,
+				115F9312EDABEC3CCE8AABF4 /* StopPointRouteSection.swift */,
+				FFA608086BA5B114F5A722EA /* StopPointSequence.swift */,
+				1E5222DCC3DBAFE0BC0362F2 /* StopPointsResponse.swift */,
+				0DE0D2CE21AC4A34DB76F9AE /* Street.swift */,
+				AF3A9ACDF995745E5CFD0288 /* StreetSegment.swift */,
+				622BA5CBF4ECEC6A622F89BE /* Ticket.swift */,
+				5C6C4A035035AA2BB3D15168 /* TicketTime.swift */,
+				28CFABA7063E2F240C437847 /* TicketType.swift */,
+				BC6EE53D919B7970AC09077E /* TimeAdjustment.swift */,
+				C324474BE4349FB1F3B2E18E /* TimeAdjustments.swift */,
+				D1D2FE045B69A546EB2E2E5C /* Timetable.swift */,
+				51046539D1C3587FA7EFBE16 /* TimetableResponse.swift */,
+				C21D2985258E791D838B9EA4 /* TimetableRoute.swift */,
+				0B4D69D398B446219FA45910 /* TrainLoading.swift */,
+				12541A2D114B193DBDCDEE69 /* TwentyFourHourClockTime.swift */,
+				64B8F9F1AC8EF7F6975002A7 /* ValidityPeriod.swift */,
+				7CF0D4EECF7CDDCC3D30916C /* Vehicle.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5F984C0EBC038B7BE3AB45D /* RxTfL */ = {
+		0948B7FE88EEE6FFB16208B4 /* RxTfL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAAE1A8733545205280ED893 /* Build configuration list for PBXNativeTarget "RxTfL" */;
+			buildConfigurationList = 4C8E0B2C144479FA7C5A7739 /* Build configuration list for PBXNativeTarget "RxTfL" */;
 			buildPhases = (
-				CE5B67D9094D1542063287F5 /* Sources */,
+				6C83B9C8C3E6A5802DFBA546 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -475,177 +487,209 @@
 			);
 			name = RxTfL;
 			productName = RxTfL;
-			productReference = 59E3DC378BB1555405A7BB28 /* RxTfL.framework */;
+			productReference = 0FE3B013937B4EA94751426D /* RxTfL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6AD1E8BAE2CEDCB9C649674C /* Project object */ = {
+		D678BF5CE7050C9CD26A259D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Simon Rice";
 			};
-			buildConfigurationList = E4F33AC1D7A903C03D39C56C /* Build configuration list for PBXProject "RxTfL" */;
+			buildConfigurationList = 98058A16141E6320A5699E6A /* Build configuration list for PBXProject "RxTfL" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 22F4CC14EA34660164048821;
-			productRefGroup = 884BB5139AFAD51852271E5D /* Products */;
+			mainGroup = E3FC3C9999C2F21FCF6AD553;
+			productRefGroup = 9608B039340FC97B2FF5D07F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5F984C0EBC038B7BE3AB45D /* RxTfL */,
+				0948B7FE88EEE6FFB16208B4 /* RxTfL */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE5B67D9094D1542063287F5 /* Sources */ = {
+		6C83B9C8C3E6A5802DFBA546 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583BA387FEF61DA22BA82927 /* AlamofireImplementations.swift in Sources */,
-				54579C11AB8A72942AE0886F /* APIHelper.swift in Sources */,
-				08FA43E5B1DAD41F876B5506 /* AccidentStatsAPI.swift in Sources */,
-				30E88B0F15A22FCB7820DAC4 /* AirQualityAPI.swift in Sources */,
-				2D4BB14355E8231E070C1BB1 /* BikePointAPI.swift in Sources */,
-				656DDC0513930F27A2DC60B5 /* CabwiseAPI.swift in Sources */,
-				63B584BCB056B9A578B37972 /* JourneyAPI.swift in Sources */,
-				BAFD69263BAD79A32B8F8345 /* LineAPI.swift in Sources */,
-				92BA8ADEC1B469356B2CDFF6 /* ModeAPI.swift in Sources */,
-				E3CAE645EB98F5DF9815F86B /* OccupancyAPI.swift in Sources */,
-				107D906DB3FBB4066F14D77C /* PlaceAPI.swift in Sources */,
-				C292181438E66B4F56B1EC77 /* RoadAPI.swift in Sources */,
-				E2623A29EC4A4BE0EEC51443 /* SearchAPI.swift in Sources */,
-				1C51BEA9111FE0E581F2CD11 /* StopPointAPI.swift in Sources */,
-				0940EE38A431BDC053D20ABC /* TravelTimeAPI.swift in Sources */,
-				2A99EE948A19A3FC226FE2A8 /* VehicleAPI.swift in Sources */,
-				DE74AA8C0205EF304679AEF3 /* APIs.swift in Sources */,
-				9F2D2BC00AE4AB4CB1C98341 /* Extensions.swift in Sources */,
-				F06ED2EA1DD8268563F3984B /* AccidentDetail.swift in Sources */,
-				F345D7FD4BC6A1C7F7B0DBB6 /* AccidentStatsOrderedSummary.swift in Sources */,
-				E45B7CE89D5079F816CFC224 /* ActiveServiceType.swift in Sources */,
-				E96E7BE0D5E41ED1E98F6465 /* AdditionalProperties.swift in Sources */,
-				01CA83E58541DD88F8A11F5C /* ApiVersionInfo.swift in Sources */,
-				A97AFC4D0231ED9EF5CAF6F4 /* Bay.swift in Sources */,
-				43D8CCB437719AD3440A2BDC /* CarParkOccupancy.swift in Sources */,
-				A308F32302EDDC2690CF104E /* Casualty.swift in Sources */,
-				9DC024A45FE8F51D92DEBF3E /* Coordinate.swift in Sources */,
-				A6A93E1FEB3128C735BF7FFB /* Crowding.swift in Sources */,
-				A982D72B59DCA791F9959B85 /* CycleSuperhighway.swift in Sources */,
-				B81000C926DB6AF6E2960DF4 /* DateRange.swift in Sources */,
-				79660333D329D58E481F8A93 /* DateRangeNullable.swift in Sources */,
-				7AC73973841637191DF5E30D /* DbGeography.swift in Sources */,
-				089DD73332411240EBE51028 /* DbGeographyWellKnownValue.swift in Sources */,
-				15DE1FED45FC25562DBF3DA6 /* Disambiguation.swift in Sources */,
-				8B64F58F6B26FFABDD0BCFD5 /* DisambiguationOption.swift in Sources */,
-				7462B0140520D79D809FB42F /* DisruptedPoint.swift in Sources */,
-				4B63A58D3CBD9B828E1C9655 /* Disruption.swift in Sources */,
-				F7D05F2B4BBBD8D14AA580CD /* EmissionsSurchargeVehicle.swift in Sources */,
-				2666058DEF896989BE3E57BC /* Fare.swift in Sources */,
-				05862C1D311DA5A491774D5C /* FareBounds.swift in Sources */,
-				0F2AC0705E96532647AD8F43 /* FareDetails.swift in Sources */,
-				389B409025F2285A4763AA2A /* FaresMode.swift in Sources */,
-				E43C95B1923CD0EBEB364106 /* FaresPeriod.swift in Sources */,
-				6003ED1F17CFFF41A9907115 /* FaresSection.swift in Sources */,
-				F89B5F0543B82563B0E21C06 /* GeoCodeSearchMatch.swift in Sources */,
-				40A9A7C4350861EB523EC14D /* GeoPoint.swift in Sources */,
-				134B5C100040081819E8CA1D /* GeoPointBBox.swift in Sources */,
-				18F0A6538145EB1390C3DE13 /* Identifier.swift in Sources */,
-				D082A3E36222B30CA4E8547D /* Instruction.swift in Sources */,
-				7C7A88DB636AE9EC4D41246B /* InstructionStep.swift in Sources */,
-				120FCA8E06758132947B6914 /* Interval.swift in Sources */,
-				EA86300336B367DF4C917E4A /* ItineraryResult.swift in Sources */,
-				0388916A4B69DDCF10F71C6B /* Journey.swift in Sources */,
-				602C6FD97917DD8162864A5E /* JourneyPlannerCycleHireDockingStationData.swift in Sources */,
-				CDA28041CD0F44988A1A8068 /* JourneyVector.swift in Sources */,
-				D9CCC408E23F0166C9386C60 /* JpElevation.swift in Sources */,
-				73232BEF817EE8A9B72FCA08 /* KnownJourney.swift in Sources */,
-				406805D700E42BF5FD9A9030 /* Leg.swift in Sources */,
-				EC289DD5D265853DC4B64840 /* Line.swift in Sources */,
-				5CB255E62B5F6C067F6C743C /* LineGroup.swift in Sources */,
-				557095C0507041F1DB8AEE66 /* LineModeGroup.swift in Sources */,
-				BB2EFE0F6B9EF328FB570BB6 /* LineRouteSection.swift in Sources */,
-				B5964D93F0E40E38BF60ACB6 /* LineServiceType.swift in Sources */,
-				980822A8E0A2564750F00380 /* LineServiceTypeInfo.swift in Sources */,
-				2A0BFBC831A5FF91B55D825E /* LineSpecificServiceType.swift in Sources */,
-				2EB16A3438588940A6224039 /* LineStatus.swift in Sources */,
-				B5AF7B82B9AAD3581720B2B3 /* MatchedRoute.swift in Sources */,
-				CA2032860AC08CCF3C9068F6 /* MatchedRouteSections.swift in Sources */,
-				20D39968EF58B4EC522C23AD /* MatchedStop.swift in Sources */,
-				36215B429011C4AE127BBE8A /* Message.swift in Sources */,
-				DCD09A8867931BA16E2758D6 /* Mode.swift in Sources */,
-				AD3076FA131D052AD6B6AD4C /* Object.swift in Sources */,
-				4298D295250445AE1AA48F37 /* Obstacle.swift in Sources */,
-				00DAB620393ED15B41E84033 /* OrderedRoute.swift in Sources */,
-				CD2F67CDC01FA4B0C56AFBD1 /* PassengerFlow.swift in Sources */,
-				718B5B981339D418EE6D86DB /* PassengerType.swift in Sources */,
-				C05167F4C873547AD3CDB7F0 /* Path.swift in Sources */,
-				EA29C18E4CFE5E6292E60239 /* PathAttribute.swift in Sources */,
-				2B4AD1FB97421102D722C229 /* Period.swift in Sources */,
-				06E311B6B49A6AF68DAD9609 /* Place.swift in Sources */,
-				E36F4BCD37AC9943A45FB34E /* PlaceCategory.swift in Sources */,
-				89F95C70E7CC995CE5FCB46D /* PlacePolygon.swift in Sources */,
-				16B89821CC2E41961F851162 /* PlannedWork.swift in Sources */,
-				B6B45B2824C97A64A322A4BD /* Point.swift in Sources */,
-				03E6B5C546599C19044ABB1B /* PostcodeInput.swift in Sources */,
-				5E24BFEF31C7D7CABA0A5F04 /* Prediction.swift in Sources */,
-				AFFF2EFB230F0F2D8D753B0B /* PredictionTiming.swift in Sources */,
-				E2E50E4470D62B23C9AFBCCC /* Recommendation.swift in Sources */,
-				34AECD2F48FF1C704CDB3C76 /* RecommendationResponse.swift in Sources */,
-				3925AC63DFD64CD78F98A217 /* Redirect.swift in Sources */,
-				F4BD1FA750C40119371CD06E /* RoadCorridor.swift in Sources */,
-				44BB24321CFABCE74FF2D4F4 /* RoadDisruption.swift in Sources */,
-				CBF8570970A0140A7F9E4081 /* RoadDisruptionImpactArea.swift in Sources */,
-				BDF629EDA60652D85FFC4698 /* RoadDisruptionLine.swift in Sources */,
-				7AB6A69FB2F7E3DC9C8B52F8 /* RoadDisruptionSchedule.swift in Sources */,
-				3FD7208A598144907BAA21E5 /* RoadProject.swift in Sources */,
-				1A7BD6962BF4AE242ACA9D42 /* RouteOption.swift in Sources */,
-				09A332DFE90BD30397380B18 /* RouteSearchMatch.swift in Sources */,
-				BC951B7B5DBB4F26520AB5DC /* RouteSearchResponse.swift in Sources */,
-				350B6CB10B073466695265CC /* RouteSection.swift in Sources */,
-				AC155D1A52DDE5D51ABE4A64 /* RouteSectionNaptanEntrySequence.swift in Sources */,
-				32A1A18AE0766D799476D5FF /* RouteSequence.swift in Sources */,
-				36A5D62A8CE671877B32E38C /* Schedule.swift in Sources */,
-				4624F68D56BDFCCEF42DA020 /* SearchCriteria.swift in Sources */,
-				9EB1BE5CBCF1865405747ACB /* SearchMatch.swift in Sources */,
-				C3E687887C2C1C191703AEDF /* SearchResponse.swift in Sources */,
-				BE932190CCCD28ED447EBDD4 /* ServiceFrequency.swift in Sources */,
-				26F0C4AA49A7E41136F14562 /* StationInterval.swift in Sources */,
-				F0A4A661925E078F32E10BC1 /* StatusSeverity.swift in Sources */,
-				4FB54C52E240BBBCEB127AE9 /* StopPoint.swift in Sources */,
-				A7C228900534D264BACB0844 /* StopPointCategory.swift in Sources */,
-				8A5017C468A7D05EB13F727E /* StopPointRouteSection.swift in Sources */,
-				27F41CF90E17131A0390E3B7 /* StopPointSequence.swift in Sources */,
-				E761E4175EBE156542CD97C4 /* StopPointsResponse.swift in Sources */,
-				E72FE89F32A435B0D79CF353 /* Street.swift in Sources */,
-				6E5EEEF8534B98DECCB6877E /* StreetSegment.swift in Sources */,
-				31AC534914E028DEE3723520 /* Ticket.swift in Sources */,
-				74CB4DD8AA528316287DF222 /* TicketTime.swift in Sources */,
-				0139C52FCED71E091BC25969 /* TicketType.swift in Sources */,
-				A155CD2A3446B1B13E838E51 /* TimeAdjustment.swift in Sources */,
-				536F8B70AC76D6A0B2CFA2A8 /* TimeAdjustments.swift in Sources */,
-				217492E4EA607B34C1DE5D8E /* Timetable.swift in Sources */,
-				D92981B796371F020F151A2D /* TimetableResponse.swift in Sources */,
-				2ACB37AC9745AAF947879B88 /* TimetableRoute.swift in Sources */,
-				5AD6506A01B9E4C0A2CD3BFA /* TrainLoading.swift in Sources */,
-				D52D7B2BEE1919829BF4CD4F /* TwentyFourHourClockTime.swift in Sources */,
-				CB10257A2674442F91787187 /* ValidityPeriod.swift in Sources */,
-				60BD251D968BD0A7552A1E66 /* Vehicle.swift in Sources */,
-				6F6598240FA224262ECD3CC9 /* Models.swift in Sources */,
+				4A30AF7D2EC17992BE847148 /* AlamofireImplementations.swift in Sources */,
+				FF57B1A4BEDC899B66F92015 /* APIHelper.swift in Sources */,
+				235C44D6B6627B5E554503E0 /* AccidentStatsAPI.swift in Sources */,
+				5BF0844EB3F7EC2C235D2004 /* AirQualityAPI.swift in Sources */,
+				45792644DAF395677F5160E7 /* BikePointAPI.swift in Sources */,
+				526DAE9AB930234EA258B0AD /* CabwiseAPI.swift in Sources */,
+				048F831348CE830F1F86259A /* JourneyAPI.swift in Sources */,
+				B197DFD3AC63FD84B13620F1 /* LineAPI.swift in Sources */,
+				1A2AD52B4584B1A109694568 /* ModeAPI.swift in Sources */,
+				4F043EFBEFBA54106324B363 /* OccupancyAPI.swift in Sources */,
+				086F8A662C05D63065974DAB /* PlaceAPI.swift in Sources */,
+				625C9690793C3074570AE9F6 /* RoadAPI.swift in Sources */,
+				7A6FBF7C1764950D593223C9 /* SearchAPI.swift in Sources */,
+				9940F979AAE2E2396A496E1E /* StopPointAPI.swift in Sources */,
+				58F9872039CE0198202BFCF4 /* TravelTimeAPI.swift in Sources */,
+				59DE61F1D6D8CD4F9AEE91ED /* VehicleAPI.swift in Sources */,
+				AAA5DE2F145ADD77EA87F8BD /* APIs.swift in Sources */,
+				E8F908CACDDA3F2003A350D2 /* Extensions.swift in Sources */,
+				E461C8E05615A98B3D595405 /* AccidentDetail.swift in Sources */,
+				8CACBF55B7C6D30B82C10479 /* AccidentStatsOrderedSummary.swift in Sources */,
+				E78E116E7FF631C7B79FD550 /* ActiveServiceType.swift in Sources */,
+				6D0ADFF04A572A31CEA1FA64 /* AdditionalProperties.swift in Sources */,
+				550742F35EF8287D4CD7C96A /* ApiVersionInfo.swift in Sources */,
+				3206F9DC5731C0C3AABF3F8E /* Bay.swift in Sources */,
+				4CAEE2D3B9BFFB8AAF1D2C25 /* CarParkOccupancy.swift in Sources */,
+				2DDC28D305427453EF617BCF /* Casualty.swift in Sources */,
+				6262A1579D0CF0EE7D770BF0 /* Coordinate.swift in Sources */,
+				EE8971CED3087D4028356FF9 /* Crowding.swift in Sources */,
+				41E892D5F25B4AD833D6922B /* CycleSuperhighway.swift in Sources */,
+				5BDEC8D3F9E57CA75093EE08 /* DateRange.swift in Sources */,
+				CDA7C4B3B67C59A674E48EAE /* DateRangeNullable.swift in Sources */,
+				3DEC935A290473E8B00EF5D5 /* DbGeography.swift in Sources */,
+				13DEAF4BEE5BF18C2F8C7D20 /* DbGeographyWellKnownValue.swift in Sources */,
+				223649D39DEBCBE9EAA923F8 /* Disambiguation.swift in Sources */,
+				1BA185593F9F9B6168A6E364 /* DisambiguationOption.swift in Sources */,
+				C158173091E300916B3AF802 /* DisruptedPoint.swift in Sources */,
+				38285EC7CD50D626B581E362 /* Disruption.swift in Sources */,
+				6598A24A1AEB2ACCE6BE643A /* EmissionsSurchargeVehicle.swift in Sources */,
+				AEF0047AAD4E761000037841 /* Fare.swift in Sources */,
+				D24BAB114811B6085D37277F /* FareBounds.swift in Sources */,
+				4F49B692079A8C811B8AA417 /* FareDetails.swift in Sources */,
+				E12C878FBCEAB95EE564D1B9 /* FaresMode.swift in Sources */,
+				1DA0DF0D29E1F07E907A15FD /* FaresPeriod.swift in Sources */,
+				14BE1E5A7D8C1E31E9130D6B /* FaresSection.swift in Sources */,
+				9049B646A42DE72DD815BB4A /* GeoCodeSearchMatch.swift in Sources */,
+				594B3DDB73E13FCAF1AFB15A /* GeoPoint.swift in Sources */,
+				CF274418DA466F63215DBB32 /* GeoPointBBox.swift in Sources */,
+				3607481C06CB3B9DD6EDD953 /* Identifier.swift in Sources */,
+				4F3DE82F98861BA9D4F7612A /* Instruction.swift in Sources */,
+				566EA40B134281D294512A8C /* InstructionStep.swift in Sources */,
+				257982E2AA6413F8C6B12582 /* Interval.swift in Sources */,
+				D79B01E3B5FBA3050632BC8F /* ItineraryResult.swift in Sources */,
+				9E5CAE4739963DAAE58DD04E /* Journey.swift in Sources */,
+				4EAC399D0452D2982BA41BDC /* JourneyPlannerCycleHireDockingStationData.swift in Sources */,
+				B047AE527B613BEB28EA380D /* JourneyVector.swift in Sources */,
+				340A41EB36614D7F9D7F3635 /* JpElevation.swift in Sources */,
+				AA264928118DECD909E28024 /* KnownJourney.swift in Sources */,
+				4AAA7EB7454FBEB7A082DCD1 /* Leg.swift in Sources */,
+				3B654B73A84DB5C262742687 /* Line.swift in Sources */,
+				E3804AFFDB2F3D6CA6F7FACB /* LineGroup.swift in Sources */,
+				75E208EA1552D2A8BAFC5075 /* LineModeGroup.swift in Sources */,
+				7A0A7EAD2D2B501439F06633 /* LineRouteSection.swift in Sources */,
+				E08A0F8FAA817B33F80D0DFA /* LineServiceType.swift in Sources */,
+				6B0920553E0E8179DD2ACA8D /* LineServiceTypeInfo.swift in Sources */,
+				83771A1A7E775076623084D8 /* LineSpecificServiceType.swift in Sources */,
+				B34893FCAC5195A4103D5AAF /* LineStatus.swift in Sources */,
+				9B7F395C026DA8A2EA207A25 /* MatchedRoute.swift in Sources */,
+				0395DF861467F820D5220039 /* MatchedRouteSections.swift in Sources */,
+				33C6FE5748588BBD66D321BB /* MatchedStop.swift in Sources */,
+				E2E27A3AD984391A29F0916D /* Message.swift in Sources */,
+				74C610A509FAE856137F4F08 /* Mode.swift in Sources */,
+				1FAD184412ED067A25C26455 /* Object.swift in Sources */,
+				0C898872BC566213D0BFBFE1 /* Obstacle.swift in Sources */,
+				FAB4CEECAD0F153B803F81AD /* OrderedRoute.swift in Sources */,
+				0FEE59DD56361A271A6CBDE0 /* PassengerFlow.swift in Sources */,
+				9F89A4A97D67CAF1B9E1D84F /* PassengerType.swift in Sources */,
+				2A6E8B0560DE1607A0CEB0E4 /* Path.swift in Sources */,
+				BA679DB5958A6457CB36474F /* PathAttribute.swift in Sources */,
+				BEE7D47C62794A324DDAA38F /* Period.swift in Sources */,
+				F07A3CB72AE73397B381BA2D /* Place.swift in Sources */,
+				1E97730F3F5A4E0D5CAA9EB6 /* PlaceCategory.swift in Sources */,
+				B1D75B80AF326FD5963EBF5E /* PlacePolygon.swift in Sources */,
+				13EA5AB81BECB1B7D910B201 /* PlannedWork.swift in Sources */,
+				093E78E55423A6AA3F6E7F70 /* Point.swift in Sources */,
+				A86302BEF6419FAD271222BD /* PostcodeInput.swift in Sources */,
+				CBC6BE5E8EC3DC44E1456773 /* Prediction.swift in Sources */,
+				331F1D76FBA34A299FF05FC4 /* PredictionTiming.swift in Sources */,
+				34D77D08CF8278E803BFBEBA /* Recommendation.swift in Sources */,
+				3A6904B43C2F89273F887E00 /* RecommendationResponse.swift in Sources */,
+				849B5DE1583373CA5F1D8C2F /* Redirect.swift in Sources */,
+				CB8A4353F0C7F3470CAE8BD2 /* RoadCorridor.swift in Sources */,
+				9FF1A604C3FF8F1E22A70102 /* RoadDisruption.swift in Sources */,
+				308BB9518FBB6029601CF889 /* RoadDisruptionImpactArea.swift in Sources */,
+				A7898673A79A50240B3D072A /* RoadDisruptionLine.swift in Sources */,
+				7A2610294D090A81AC4CEC7A /* RoadDisruptionSchedule.swift in Sources */,
+				C11A5EA7A13E9350E8B38273 /* RoadProject.swift in Sources */,
+				87480BCA648EE075416682E7 /* RouteOption.swift in Sources */,
+				D3A785017987EFBDAED25EAB /* RouteSearchMatch.swift in Sources */,
+				836BF887F4F8E005782ABD72 /* RouteSearchResponse.swift in Sources */,
+				A3358094DA787D0894C7DCF4 /* RouteSection.swift in Sources */,
+				CA42745078E05148D7617E9A /* RouteSectionNaptanEntrySequence.swift in Sources */,
+				A95C8DC232136A49D4A01A50 /* RouteSequence.swift in Sources */,
+				1F4E33ADFC7B373BD1F530C1 /* Schedule.swift in Sources */,
+				20A6BE3FE66A8C3B02922285 /* SearchCriteria.swift in Sources */,
+				89EEEE88A023BFDDBCF0BB33 /* SearchMatch.swift in Sources */,
+				E8EDF50B428FD11D000C5828 /* SearchResponse.swift in Sources */,
+				4D966C944EC161F2ADC73289 /* ServiceFrequency.swift in Sources */,
+				79BEC14D2F78F2EFFD9871CC /* StationInterval.swift in Sources */,
+				53DF68F5002D9C453541F0FC /* StatusSeverity.swift in Sources */,
+				2D2BEC5FBF0117211D5EBC75 /* StopPoint.swift in Sources */,
+				0D4A0C19C1BE995AE34D4A93 /* StopPointCategory.swift in Sources */,
+				28EB9F6BC7E840473F3F7CA7 /* StopPointRouteSection.swift in Sources */,
+				355D190C76FB4E2E069B8C32 /* StopPointSequence.swift in Sources */,
+				EA2F8D76EB168E3FB6FD25AB /* StopPointsResponse.swift in Sources */,
+				B54A1BABD25260031D7902F3 /* Street.swift in Sources */,
+				685D996A1AC6CAC16BF56E16 /* StreetSegment.swift in Sources */,
+				7FAD74BABFE72674145DF677 /* Ticket.swift in Sources */,
+				6E1298B15C5B5E565F36E527 /* TicketTime.swift in Sources */,
+				5792555E8FA1D2E7C07724C1 /* TicketType.swift in Sources */,
+				727D6BC027AC532DE95ACC83 /* TimeAdjustment.swift in Sources */,
+				C330D77108A446198CC5C1E5 /* TimeAdjustments.swift in Sources */,
+				F259DF642248729644635E07 /* Timetable.swift in Sources */,
+				2DE72E9C3FB639AC28FFDA5F /* TimetableResponse.swift in Sources */,
+				580A7E94A08D02FD77ECB635 /* TimetableRoute.swift in Sources */,
+				109F0C40E0AF0B28D0BA1789 /* TrainLoading.swift in Sources */,
+				397541914EA0221888B83BA3 /* TwentyFourHourClockTime.swift in Sources */,
+				18168592382E3FD6A6BCC5E3 /* ValidityPeriod.swift in Sources */,
+				201352A4F838D7DBB9DF24E6 /* Vehicle.swift in Sources */,
+				3894F4D554F0133905834868 /* Models.swift in Sources */,
+				1F53B6C1A354E30750373D0B /* AsParameter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		45ADBCDD26EE3369D799E129 /* Debug */ = {
+		1C1CC98E707DC97E595F4CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Info/RxTfL.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonrice.RxTfL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5276D973F184A0B2DA6C8367 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -705,38 +749,7 @@
 			};
 			name = Debug;
 		};
-		5DB1B34FB3A80EEF243AD6A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Info/RxTfL.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simonrice.RxTfL;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2,3,4";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		83D7A805591F36D2861EBA4F /* Release */ = {
+		BD7D1D0BA75C7B654F764BFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -766,7 +779,7 @@
 			};
 			name = Release;
 		};
-		8522AA914FEAB9F2781A4A30 /* Release */ = {
+		D302156C99E6B4FCDB8FD8EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -822,25 +835,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAAE1A8733545205280ED893 /* Build configuration list for PBXNativeTarget "RxTfL" */ = {
+		4C8E0B2C144479FA7C5A7739 /* Build configuration list for PBXNativeTarget "RxTfL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DB1B34FB3A80EEF243AD6A0 /* Debug */,
-				83D7A805591F36D2861EBA4F /* Release */,
+				1C1CC98E707DC97E595F4CAA /* Debug */,
+				BD7D1D0BA75C7B654F764BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4F33AC1D7A903C03D39C56C /* Build configuration list for PBXProject "RxTfL" */ = {
+		98058A16141E6320A5699E6A /* Build configuration list for PBXProject "RxTfL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45ADBCDD26EE3369D799E129 /* Debug */,
-				8522AA914FEAB9F2781A4A30 /* Release */,
+				5276D973F184A0B2DA6C8367 /* Debug */,
+				D302156C99E6B4FCDB8FD8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6AD1E8BAE2CEDCB9C649674C /* Project object */;
+	rootObject = D678BF5CE7050C9CD26A259D /* Project object */;
 }

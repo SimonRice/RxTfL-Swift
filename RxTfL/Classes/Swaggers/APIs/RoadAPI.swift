@@ -20,7 +20,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruptedStreets(startDate: Date, endDate: Date, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        roadDisruptedStreetsWithRequestBuilder(startDate: startDate, endDate: endDate).execute { (response, error) -> Void in
+        roadDisruptedStreetsWithRequestBuilder(startDate: startDate.asParameter, endDate: endDate.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -87,7 +87,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruption(ids: [String], stripContent: Bool? = nil, severities: [String]? = nil, categories: [String]? = nil, closures: Bool? = nil, completion: @escaping ((_ data: [RoadDisruption]?,_ error: Error?) -> Void)) {
-        roadDisruptionWithRequestBuilder(ids: ids, stripContent: stripContent, severities: severities, categories: categories, closures: closures).execute { (response, error) -> Void in
+        roadDisruptionWithRequestBuilder(ids: ids.asParameter, stripContent: stripContent.asParameter, severities: severities.asParameter, categories: categories.asParameter, closures: closures.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -384,7 +384,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadDisruptionById(disruptionIds: [String], stripContent: Bool? = nil, completion: @escaping ((_ data: RoadDisruption?,_ error: Error?) -> Void)) {
-        roadDisruptionByIdWithRequestBuilder(disruptionIds: disruptionIds, stripContent: stripContent).execute { (response, error) -> Void in
+        roadDisruptionByIdWithRequestBuilder(disruptionIds: disruptionIds.asParameter, stripContent: stripContent.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -766,7 +766,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadGet_0(ids: [String], completion: @escaping ((_ data: [RoadCorridor]?,_ error: Error?) -> Void)) {
-        roadGet_0WithRequestBuilder(ids: ids).execute { (response, error) -> Void in
+        roadGet_0WithRequestBuilder(ids: ids.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
@@ -986,7 +986,7 @@ open class RoadAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func roadStatus(ids: [String], dateRangeNullableStartDate: Date? = nil, dateRangeNullableEndDate: Date? = nil, completion: @escaping ((_ data: [RoadCorridor]?,_ error: Error?) -> Void)) {
-        roadStatusWithRequestBuilder(ids: ids, dateRangeNullableStartDate: dateRangeNullableStartDate, dateRangeNullableEndDate: dateRangeNullableEndDate).execute { (response, error) -> Void in
+        roadStatusWithRequestBuilder(ids: ids.asParameter, dateRangeNullableStartDate: dateRangeNullableStartDate.asParameter, dateRangeNullableEndDate: dateRangeNullableEndDate.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }

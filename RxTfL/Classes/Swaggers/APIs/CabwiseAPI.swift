@@ -28,7 +28,7 @@ open class CabwiseAPI: APIBase {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func cabwiseGet(lat: Double, lon: Double, optype: String? = nil, wc: String? = nil, radius: Double? = nil, name: String? = nil, maxResults: Int32? = nil, legacyFormat: Bool? = nil, forceXml: Bool? = nil, twentyFourSevenOnly: Bool? = nil, completion: @escaping ((_ data: Object?,_ error: Error?) -> Void)) {
-        cabwiseGetWithRequestBuilder(lat: lat, lon: lon, optype: optype, wc: wc, radius: radius, name: name, maxResults: maxResults, legacyFormat: legacyFormat, forceXml: forceXml, twentyFourSevenOnly: twentyFourSevenOnly).execute { (response, error) -> Void in
+        cabwiseGetWithRequestBuilder(lat: lat.asParameter, lon: lon.asParameter, optype: optype.asParameter, wc: wc.asParameter, radius: radius.asParameter, name: name.asParameter, maxResults: maxResults.asParameter, legacyFormat: legacyFormat.asParameter, forceXml: forceXml.asParameter, twentyFourSevenOnly: twentyFourSevenOnly.asParameter).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
     }
